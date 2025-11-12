@@ -16,18 +16,30 @@ interface PuzzlePiece {
 
 // Description cho từng hình
 const imageDescriptions: Record<string, string> = {
-  "chien-thang.jpg":
-    "Chiến thắng Điện Biên Phủ (7/5/1954) là đỉnh cao của nghệ thuật quân sự Việt Nam, kết thúc 56 ngày đêm chiến đấu anh heroic. Chiến thắng này không chỉ có ý nghĩa quân sự mà còn là thắng lợi chính trị to lớn, buộc thực dân Pháp phải ngồi vào bàn đàm phán tại Hội nghị Genève, chấm dứt ách thống trị của họ tại Đông Dương và mở ra kỷ nguyên mới cho các dân tộc Đông Dương.",
+  "Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954.jpg":
+    'Chiến thắng Điện Biên Phủ (7/5/1954) là đỉnh cao của nghệ thuật quân sự Việt Nam, kết thúc 56 ngày đêm chiến đấu anh dũng, kiên cường. Chiến thắng này không chỉ có ý nghĩa quân sự to lớn mà còn là thắng lợi chính trị - ngoại giao vang dội trên toàn thế giới, buộc thực dân Pháp phải ngồi vào bàn đàm phán tại Hội nghị Genève. Đây là trận đánh "lừng lẫy năm châu, chấn động địa cầu", chấm dứt gần 100 năm ách thống trị của thực dân Pháp tại Đông Dương và mở ra kỷ nguyên mới cho các dân tộc thuộc địa đấu tranh giành độc lập. Hình ảnh chiếc xe tăng được trang trí lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh đã trở thành biểu tượng bất hủ của chiến thắng lịch sử này.',
   "bo-doi-hanh-quan.webp":
-    "Hình ảnh bộ đội Việt Nam hành quân qua những địa hình núi rừng hiểm trở để tiến vào chiến dịch Điện Biên Phủ. Với tinh thần kiên cường và ý chí quyết tâm cao, các chiến sĩ đã vượt qua mọi khó khăn, thử thách của thiên nhiên để tham gia vào trận đánh lịch sử này, thể hiện tinh thần bất khuất và lòng yêu nước thiết tha của dân tộc Việt Nam.",
-  "keo-phao.jpg":
-    "Cảnh tượng hùng tráng và cảm động của bộ đội và dân công kéo những khẩu pháo nặng lên những sườn đồi dựng đứng quanh thung lũng Điện Biên Phủ. Với tinh thần 'không có gì khó, chỉ sợ lòng không bền', họ đã vượt qua địa hình hiểm trở để tạo nên thế trận bao vây địch từ trên cao xuống, tạo điều kiện cho chiến thắng cuối cùng.",
-  "dao-hao.jpg":
-    "Hệ thống hào giao thông dài hàng chục kilomet được các chiến sĩ đào xuyên đêm trong im lặng, từng xẻng đất một. Những con hào này không chỉ giúp bộ đội tiến sát đến từng cứ điểm của địch một cách an toàn mà còn thể hiện trí tuệ, sự kiên nhẫn và nghệ thuật tác chiến độc đáo của quân đội Việt Nam trong chiến dịch Điện Biên Phủ.",
-  "doan_xe_dap_tho.webp":
-    "Đoàn xe đạp thồ - biểu tượng bất hủ của chiến dịch Điện Biên Phủ. Những chiếc xe đạp chở lương thực, đạn dược, vật dụng y tế... lăn bánh qua những con đường rừng núi hiểm trở, thể hiện sức mạnh hậu cần đồng thời là biểu tượng của ý chí chiến thắng và tinh thần đoàn kết của cả dân tộc trong cuộc kháng chiến chống thực dân Pháp.",
-  "geneve.jpg":
-    "Lễ ký kết Hiệp định Genève ngày 21/7/1954 - thành quả chính trị to lớn của chiến thắng Điện Biên Phủ. Hiệp định này chính thức công nhận độc lập, chủ quyền của Việt Nam, chấm dứt chiến tranh Đông Dương lần thứ nhất và mở ra một trang sử mới cho khu vực Đông Nam Á. Đây là minh chứng cho sức mạnh của đàm phán trên cơ sở thắng lợi quân sự.",
+    'Hình ảnh bộ đội Việt Nam hành quân qua những địa hình núi rừng hiểm trở để tiến vào chiến dịch Điện Biên Phủ thể hiện sức mạnh to lớn của ý chí con người. Với tinh thần kiên cường và quyết tâm cao độ, các chiến sĩ đã vượt qua vô vàn khó khăn, thử thách của thiên nhiên - những con đường rừng núi hiểm trở, sương mù dày đặc, địa hình quanh co - để vận chuyển vũ khí, lương thực và tiến vào vị trí chiến đấu. Họ đã biến "không thể thành có thể", thể hiện tinh thần bất khuất, lòng yêu nước thiết tha và niềm tin vững chắc vào chiến thắng của dân tộc Việt Nam. Mỗi bước chân của bộ đội trên những con đường hành quân ấy đều là minh chứng cho sức mạnh vô địch của chủ nghĩa anh hùng cách mạng.',
+  "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê.jpg":
+    "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê trong Chiến dịch Biên giới Thu-Đông 1950, đánh dấu bước ngoặt quan trọng khi quân ta chuyển từ thế phòng thủ sang tổng phản công trên chiến trường. Chiến thắng Đông Khê (16-18/9/1950) không chỉ giải phóng thị trấn chiến lược này mà còn mở đầu cho chuỗi thắng lợi liên tiếp trong chiến dịch Biên giới, tạo thế chủ động cho ta trên toàn mặt trận Đông Bắc. Đây là lần đầu tiên quân ta tiến công và tiêu diệt hoàn toàn một cứ điểm kiên cố của địch, chứng tỏ sự trưởng thành vượt bậc về chiến lược, chiến thuật và khả năng tác chiến của quân đội ta. Chiến thắng này đã tạo điều kiện để mở rộng căn cứ địa Việt Bắc và chuẩn bị lực lượng cho những chiến dịch lớn sau này.",
+  "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947.jpg":
+    'Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947, một trong những chiến dịch quan trọng để bảo vệ căn cứ địa kháng chiến và đánh bại âm mưu "đánh nhanh thắng nhanh" của thực dân Pháp. Chiến dịch diễn ra từ ngày 7/10 đến 22/12/1947, khi địch huy động gần 20.000 quân tinh nhuệ với vũ khí hiện đại tấn công vào vùng căn cứ Việt Bắc nhằm tiêu diệt bộ chỉ huy kháng chiến. Với chiến lược "địch tiến ta lùi, địch đóng ta quấy, địch mỏi ta đánh, địch chạy ta đuổi", quân và dân ta đã kiên cường chiến đấu, tiêu diệt và làm tiêu hao sinh lực địch, buộc chúng phải rút lui trong thất bại. Chiến thắng này đã bảo vệ vững chắc căn cứ địa kháng chiến, giữ vững bộ máy lãnh đạo kháng chiến và chứng minh sức mạnh của chiến tranh du kích kết hợp với chiến tranh vận động.',
+  "Chủ tịch Hồ Chí Minh và Đại tướng, Tổng tư lệnh Võ Nguyên Giáp bàn kế hoạch tác chiến Chiến dịch Biên giới năm 1950.jpg":
+    "Chủ tịch Hồ Chí Minh và Đại tướng Võ Nguyên Giáp bàn kế hoạch tác chiến Chiến dịch Biên giới năm 1950 - chiến dịch đánh dấu bước ngoặt lịch sử trong cuộc kháng chiến chống thực dân Pháp. Hình ảnh này thể hiện sự lãnh đạo tài tình của lãnh tụ Hồ Chí Minh và tài năng quân sự xuất chúng của Đại tướng Võ Nguyên Giáp trong việc hoạch định chiến lược và chỉ đạo tác chiến. Chiến dịch Biên giới (từ 16/9 đến 17/10/1950) là chiến dịch tiến công chiến lược đầu tiên của quân ta, tiêu diệt hàng loạt cứ điểm của địch dọc biên giới Việt-Trung, giải phóng toàn bộ tỉnh Cao Bằng và mở rộng vùng giải phóng ở Đông Bắc. Đây là minh chứng cho sự kết hợp hoàn hảo giữa tư tưởng chiến lược sáng suốt và nghệ thuật chỉ huy tác chiến tài giỏi, tạo tiền đề quan trọng cho những thắng lợi sau này.",
+  "Hội nghị Geneve 1954 bàn về lập lại hòa bình ở Đông Dương.jpg":
+    "Hội nghị Genève 1954 (từ 26/4 đến 21/7/1954) bàn về lập lại hòa bình ở Đông Dương là thành quả chính trị - ngoại giao to lớn của chiến thắng Điện Biên Phủ. Đây là lần đầu tiên một quốc gia thuộc địa vừa mới giành độc lập tham gia một hội nghị quốc tế quan trọng với tư cách ngang hàng, thể hiện vị thế mới của Việt Nam trên trường quốc tế. Hiệp định Genève đã chính thức công nhận độc lập, chủ quyền, thống nhất và toàn vẹn lãnh thổ của ba nước Việt Nam, Lào, Campuchia; chấm dứt chiến tranh Đông Dương lần thứ nhất và mở ra một trang sử mới cho khu vực. Thành công tại Genève là minh chứng cho đường lối kháng chiến đúng đắn của Đảng và Chủ tịch Hồ Chí Minh, khẳng định sức mạnh của dân tộc Việt Nam trong đấu tranh giải phóng dân tộc, đồng thời cổ vũ phong trào giải phóng dân tộc trên toàn thế giới.",
+  "Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945.jpg":
+    'Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội ngày 2-9-1945, tuyên bố nước Việt Nam Dân chủ Cộng hòa ra đời trước hàng vạn đồng bào và đại biểu các nước. Đây là sự kiện lịch sử trọng đại, đánh dấu bước ngoặt vĩ đại trong lịch sử dân tộc - kết thúc gần một thế kỷ đô hộ của thực dân Pháp và mở ra kỷ nguyên mới của độc lập, tự do. Bản Tuyên ngôn Độc lập khẳng định những quyền bất khả xâm phạm của con người và dân tộc, tuyên bố "nước Việt Nam có quyền hưởng tự do và độc lập, và sự thật đã thành một nước tự do độc lập". Lời tuyên bố chấn động của Bác Hồ đã khẳng định quyền tự quyết của dân tộc, mở đầu cho thời kỳ xây dựng và bảo vệ chính quyền cách mạng non trẻ, truyền cảm hứng cho các dân tộc bị áp bức trên thế giới đứng lên đấu tranh giành độc lập.',
+  "Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945.jpg":
+    "Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945, biển người hưởng ứng và tham gia Tổng khởi nghĩa Tháng Tám giành chính quyền. Đây là đỉnh cao của cuộc cách mạng Tháng Tám 1945 - cuộc tổng khởi nghĩa thành công ngoạn mục của nhân dân ta dưới sự lãnh đạo của Đảng Cộng sản Đông Dương và Chủ tịch Hồ Chí Minh. Trong không khí sôi sục, hàng chục vạn quần chúng nhân dân từ khắp nơi đổ về, vẫy cờ, hô khẩu hiệu đòi độc lập, tự do. Thắng lợi của Tổng khởi nghĩa Tháng Tám đã lật đổ chế độ thực dân - phong kiến, giành chính quyền về tay nhân dân, thể hiện sức mạnh đoàn kết to lớn của toàn dân tộc khi được tổ chức và lãnh đạo đúng đắn. Đây là thắng lợi của đường lối cách mạng sáng suốt, là kết quả của sự chuẩn bị chu đáo về chính trị, tư tưởng và tổ chức, đồng thời là bài học quý báu về nghệ thuật nắm bắt thời cơ trong cách mạng.",
+  "Chủ tịch Hồ Chí Minh và Hội đồng Chính phủ nghe Đại tướng Võ Nguyên Giáp báo cáo tình hình Chiến dịch Việt Bắc Thu - Đông 1947.jpg":
+    "Chủ tịch Hồ Chí Minh và Hội đồng Chính phủ nghe Đại tướng Võ Nguyên Giáp báo cáo tình hình Chiến dịch Việt Bắc Thu-Đông 1947 tại căn cứ địa kháng chiến. Hình ảnh này thể hiện phương thức lãnh đạo tập thể, dân chủ của Đảng và Chính phủ trong những năm đầu kháng chiến, khi điều kiện vô cùng khó khăn, thiếu thốn. Chiến dịch Việt Bắc là trận đánh bảo vệ căn cứ địa quan trọng, nơi tập trung bộ máy lãnh đạo kháng chiến toàn quốc. Mặc dù địch tấn công với lực lượng hùng hậu, vũ khí hiện đại, nhưng nhờ sự lãnh đạo sáng suốt, chiến lược đúng đắn và sức mạnh của nhân dân, ta đã giữ vững căn cứ địa, bảo vệ an toàn bộ máy lãnh đạo kháng chiến. Hình ảnh Bác Hồ và các đồng chí lãnh đạo họp bàn trong túp lều đơn sơ giữa rừng núi Việt Bắc là minh chứng cho tinh thần kiên cường, lạc quan cách mạng và quyết tâm chiến thắng không gì lay chuyển được của thế hệ cha anh ta.",
+  "Quân dân Hà Nội sẵn sàng chiến đấu, tháng 12-1946.jpg":
+    'Quân dân Hà Nội sẵn sàng chiến đấu tháng 12-1946, chuẩn bị cho cuộc kháng chiến trường kỳ, gian khổ chống thực dân Pháp xâm lược. Sau khi thực dân Pháp gây hấn ngày 19-12-1946 tại Hà Nội, theo lời kêu gọi "Hỡi đồng bào cả nước, hễ ai còn một tấc sắt thì dùng một tấc sắt, hễ ai còn một gang thép thì dùng một gang thép..." của Chủ tịch Hồ Chí Minh, toàn thể quân và dân Thủ đô Hà Nội đã vùng lên với tinh thần "quyết tử cho Tổ quốc quyết sinh". Hình ảnh này ghi lại khoảnh khắc lịch sử khi nhân dân Thủ đô, từ già đến trẻ, từ công nhân, nông dân đến trí thức, tất cả đều sẵn sàng cầm vũ khí chiến đấu bảo vệ Tổ quốc. 60 ngày đêm kháng chiến của quân dân Hà Nội đã làm nên trang sử vàng chói lọi, thể hiện ý chí quyết chiến quyết thắng và tinh thần yêu nước nồng nàn của nhân dân Thủ đô anh hùng.',
+  "Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ.jpg":
+    'Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ, thể hiện tấm lòng của Người với sự nghiệp giáo dục và con người lao động. Phong trào Bình dân học vụ được phát động ngay sau Cách mạng Tháng Tám 1945 nhằm xóa nạn mù chữ, nâng cao dân trí phục vụ sự nghiệp kháng chiến và kiến quốc. Trong điều kiện chiến tranh gian khổ, thiếu thốn về mọi mặt, Đảng và Chính phủ vẫn coi trọng công tác giáo dục, đào tạo con người mới. Bác Hồ không chỉ là người khởi xướng mà còn trực tiếp tham gia giảng dạy, cầm bút viết từng chữ một cho bà con nông dân, công nhân, chiến sĩ. Hình ảnh giản dị này đã trở thành biểu tượng cao đẹp về tình yêu thương của Bác đối với nhân dân, về quyết tâm "dạy cho dân biết chữ" để xây dựng một nước Việt Nam độc lập, tự do, dân giàu nước mạnh. Phong trào Bình dân học vụ đã góp phần quan trọng nâng cao nhận thức chính trị, văn hóa của nhân dân, tạo nguồn nhân lực cho công cuộc kháng chiến và xây dựng đất nước.',
+  "Toàn cảnh Đại hội lần thứ II của Đảng.jpg":
+    'Toàn cảnh Đại hội lần thứ II của Đảng Lao động Việt Nam (từ 11 đến 19-2-1951) tại chiến khu Việt Bắc, trong hoàn cảnh cuộc kháng chiến chống thực dân Pháp đang diễn ra quyết liệt. Đại hội đã xác định rõ đường lối kháng chiến kiến quốc, nhiệm vụ kép "vừa kháng chiến, vừa kiến quốc", đồng thời quyết định chính thức lấy tên Đảng Lao động Việt Nam thay cho tên Đảng Cộng sản Đông Dương. Trong bối cảnh chiến tranh khốc liệt, việc tổ chức thành công Đại hội ở căn cứ địa Việt Bắc thể hiện sức mạnh tổ chức vững chắc, tinh thần đoàn kết cao độ và quyết tâm chiến thắng của toàn Đảng. Đại hội đã thảo luận và thông qua nhiều nghị quyết quan trọng về chính trị, quân sự, kinh tế, văn hóa, khẳng định vai trò lãnh đạo tuyệt đối của Đảng đối với cách mạng Việt Nam. Những quyết nghị của Đại hội đã định hướng cho sự phát triển của cách mạng Việt Nam trong những năm tiếp theo, dẫn đến những thắng lợi vĩ đại như chiến thắng Điện Biên Phủ năm 1954.',
 };
 
 export default function PuzzleGame() {
@@ -39,9 +51,16 @@ export default function PuzzleGame() {
       : Array.isArray(params.img)
       ? params.img[0]
       : "header.png";
-  const imgUrl = `/image/${img}`;
+  const imgUrl = `/images/${img}`;
+
+  // Decode URL để tìm description chính xác
+  const decodedImg = decodeURIComponent(img);
+
+  // Fallback description nếu không tìm thấy
   const description =
-    imageDescriptions[img] || "Hình ảnh mô tả cho game xếp hình.";
+    imageDescriptions[img] ||
+    imageDescriptions[decodedImg] ||
+    "Hình ảnh lịch sử quý giá trong cuộc kháng chiến chống thực dân Pháp (1945-1954), thể hiện tinh thần bất khuất và ý chí quyết tâm giành độc lập của dân tộc Việt Nam.";
 
   // Tất cả hook phải ở đầu hàm
   const [pieces, setPieces] = useState<PuzzlePiece[]>([]);
@@ -183,52 +202,135 @@ export default function PuzzleGame() {
   if (isComplete && showDescription) {
     return (
       <div className="min-h-screen w-screen bg-gradient-to-br from-red-50 via-yellow-50 to-red-100 flex flex-col overflow-hidden">
+        {/* Header */}
         <div className="flex items-center justify-between w-full px-4 py-4 md:py-6">
           <Link
             href="/game"
-            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg transition-colors duration-300 font-medium flex items-center gap-2"
+            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg transition-colors duration-300 font-medium flex items-center gap-2 shadow-lg"
           >
             <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
             <span className="hidden sm:inline">Quay lại</span>
           </Link>
-          <h1 className="text-lg md:text-2xl lg:text-4xl font-bold text-red-700 text-center flex-1 px-4">
-            Chúc mừng! Bạn đã hoàn thành!
+          <h1 className="text-lg md:text-2xl lg:text-3xl font-bold text-red-700 text-center flex-1 px-4">
+            🎉 Chúc mừng! Bạn đã hoàn thành!
           </h1>
           <div className="w-16 md:w-24"></div>
         </div>
-        <div className="flex-1 flex items-center justify-center p-4">
-          <div className="flex flex-col lg:flex-row w-full max-w-7xl gap-4 md:gap-8 items-center justify-center px-4 py-4">
+
+        {/* Main Content */}
+        <div className="flex-1 flex items-center justify-center p-4 overflow-y-auto">
+          <div className="flex flex-col lg:flex-row w-full max-w-7xl gap-6 md:gap-8 items-stretch justify-center px-4 py-4">
             {/* Hình hoàn chỉnh */}
             <div className="w-full lg:flex-1 flex items-center justify-center">
-              <div className="w-full max-w-md lg:max-w-none h-auto lg:h-full flex items-center justify-center">
-                <div className="w-full aspect-square max-w-[80vw] lg:max-w-[50vw] lg:max-h-[60vh] rounded-2xl lg:rounded-3xl shadow-2xl overflow-hidden bg-white/90 flex items-center justify-center">
-                  <img
-                    src={imgUrl}
-                    alt="Hình hoàn chỉnh"
-                    className="w-full h-full object-cover object-center"
-                  />
-                </div>
+              <div className="w-full max-w-2xl aspect-square rounded-3xl shadow-2xl overflow-hidden bg-white border-4 border-red-200 hover:border-red-300 transition-all duration-300">
+                <img
+                  src={imgUrl}
+                  alt="Hình ảnh lịch sử hoàn chỉnh"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
             </div>
-            {/* Description */}
-            <div className="w-full lg:max-w-[400px] flex flex-col justify-center bg-white/90 rounded-2xl shadow-xl p-4 md:p-6 lg:p-8 lg:h-full">
-              <h2 className="text-xl md:text-2xl font-bold text-red-700 mb-3 md:mb-4 text-center lg:text-left">
-                Mô tả về hình
-              </h2>
-              <p className="text-base md:text-lg text-gray-700 mb-3 md:mb-4 text-center lg:text-left leading-relaxed">
-                {description}
-              </p>
-              <div className="text-gray-500 mb-4 text-center lg:text-left">
-                Bạn đã hoàn thành trong{" "}
-                <span className="font-semibold text-red-700">{moves}</span> nước
-                đi!
+
+            {/* Phần mô tả */}
+            <div className="w-full lg:max-w-xl flex flex-col justify-center">
+              <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 space-y-6">
+                {/* Thông tin số nước đi */}
+                <div className="bg-gradient-to-r from-red-50 to-yellow-50 rounded-2xl p-6 border-2 border-red-200">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-gray-600 text-lg font-medium">
+                      Số nước đi:
+                    </span>
+                    <span className="text-4xl font-bold text-red-600">
+                      {moves}
+                    </span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2 mt-3">
+                    <div
+                      className="bg-gradient-to-r from-red-500 to-yellow-500 h-2 rounded-full transition-all duration-500"
+                      style={{
+                        width:
+                          moves < 50
+                            ? "100%"
+                            : moves < 100
+                            ? "75%"
+                            : moves < 150
+                            ? "50%"
+                            : "25%",
+                      }}
+                    ></div>
+                  </div>
+                  <p className="text-sm text-gray-500 mt-2 text-center">
+                    {moves < 50 && "🌟 Xuất sắc! Bạn là bậc thầy xếp hình!"}
+                    {moves >= 50 &&
+                      moves < 100 &&
+                      "Rất tốt! Bạn có tư duy logic tuyệt vời!"}
+                    {moves >= 100 &&
+                      moves < 150 &&
+                      "Tốt lắm! Tiếp tục cố gắng!"}
+                    {moves >= 150 &&
+                      "Hoàn thành! Thử thách lại để cải thiện nhé!"}
+                  </p>
+                </div>
+
+                {/* Tiêu đề mô tả */}
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-4 flex items-center gap-2">
+                    <span className="text-3xl">📜</span>
+                    <span>Ý nghĩa lịch sử</span>
+                  </h2>
+
+                  {/* Nội dung mô tả */}
+                  <div className="bg-gray-50 rounded-xl p-5 border-l-4 border-red-500">
+                    <p className="text-base md:text-lg text-gray-700 leading-relaxed text-justify">
+                      {description}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Nút hành động */}
+                <div className="flex gap-3 pt-4">
+                  <button
+                    onClick={shufflePuzzle}
+                    className="flex-1 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-6 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                      />
+                    </svg>
+                    Chơi lại
+                  </button>
+                  <Link
+                    href="/game"
+                    className="flex-1 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                      />
+                    </svg>
+                    Chọn ảnh khác
+                  </Link>
+                </div>
               </div>
-              <button
-                onClick={shufflePuzzle}
-                className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 w-full lg:w-auto"
-              >
-                Chơi lại
-              </button>
             </div>
           </div>
         </div>

@@ -283,7 +283,7 @@ export default function DienBienPhuPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 hero-bg"
             style={{
-              backgroundImage: "url('/image/header-image.png')",
+              backgroundImage: "url('/images/header-image.png')",
               backgroundPosition: "center center",
               backgroundSize: "cover",
             }}
@@ -333,7 +333,7 @@ export default function DienBienPhuPage() {
       {/* Timeline Section */}
       <section
         className="timeline-container relative py-16 md:py-24 px-4 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/image/bo-doi-hanh-quan.webp')" }}
+        style={{ backgroundImage: "url('/images/bo-doi-hanh-quan.webp')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/30 to-white/40"></div>
         <div className="max-w-7xl mx-auto relative z-10">
