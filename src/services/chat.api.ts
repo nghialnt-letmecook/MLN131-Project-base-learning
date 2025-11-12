@@ -7,7 +7,7 @@ export const createChatSession = async (data: ChatSession) => {
   const maxRetries = 1;
   while (retryCount <= maxRetries) {
     try {
-      const response = await api.post("/chat", data, {
+      const response = await api.post("/haokhikhangchien/chat", data, {
         responseType: "arraybuffer", // hoặc "blob"
         headers: {
           ...(getToken() ? { Authorization: `Bearer ${getToken()}` } : {}),

@@ -308,14 +308,14 @@ export default function DienBienPhuPage() {
 
         <div className="max-w-7xl mx-auto relative z-20 px-4">
           <div className="hero-content mb-12">
-            <h1 className="hero-title text-5xl md:text-7xl lg:text-[7rem] font-bold mb-8 text-balance leading-[0.9] tracking-tight font-sans">
+            <h1 className="hero-title text-5xl md:text-7xl lg:text-[7rem] font-extrabold mb-8 text-balance leading-[0.9] tracking-wide font-[family-name:var(--font-be-vietnam)]">
               <div className="title-line text-center">
-                <span className="text-red-700/80 drop-shadow-2xl inline-block font-bold">
+                <span className="text-red-700/80 drop-shadow-2xl inline-block font-extrabold">
                   HÀO KHÍ
                 </span>
               </div>
-              <div className="title-line mt-1 text-center">
-                <span className="text-yellow-500/80 drop-shadow-2xl inline-block font-bold whitespace-nowrap">
+              <div className="title-line mt-6 text-center">
+                <span className="text-yellow-500/80 drop-shadow-2xl inline-block font-extrabold">
                   KHÁNG CHIẾN
                 </span>
               </div>
@@ -324,7 +324,7 @@ export default function DienBienPhuPage() {
 
           <div className="max-w-4xl mx-auto">
             <p className="hero-quote text-3xl md:text-4xl text-yellow-500 mb-6 text-pretty leading-relaxed italic drop-shadow-lg font-normal">
-              "Từ Cách Mạng Tháng Tám Đến Điện Biên Phủ (1945–1954)"
+              Từ Cách Mạng Tháng Tám Đến Điện Biên Phủ (1945–1954)
             </p>
           </div>
         </div>
