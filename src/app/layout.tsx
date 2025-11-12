@@ -5,6 +5,7 @@ import {
   Playfair_Display,
   Inter,
   Crimson_Text,
+  Be_Vietnam_Pro,
 } from "next/font/google";
 import "./globals.css";
 import ConditionalNavbar from "@/components/ui/conditional-navbar";
@@ -17,6 +18,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// Font tiếng Việt đẹp cho tiêu đề chính
+const beVietnamPro = Be_Vietnam_Pro({
+  variable: "--font-be-vietnam",
+  subsets: ["latin", "vietnamese"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 // Font sang trọng cho tiêu đề
@@ -103,7 +111,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${inter.variable} ${crimsonText.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${beVietnamPro.variable} ${playfairDisplay.variable} ${inter.variable} ${crimsonText.variable} antialiased`}
       >
         <ConditionalNavbar />
         {children}
