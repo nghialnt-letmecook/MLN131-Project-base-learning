@@ -290,7 +290,7 @@ export default function Chatbox({ isOpen, onClose }: ChatboxProps) {
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                placeholder="Hỏi về Bác Hồ..."
+                placeholder="Chat với AI..."
                 className="flex-1 px-3 py-2 border border-[#D2B48C] rounded-full focus:outline-none focus:ring-2 focus:ring-[#B22222] focus:border-transparent text-sm"
                 disabled={isTyping}
                 autoFocus
