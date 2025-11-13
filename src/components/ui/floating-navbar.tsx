@@ -510,7 +510,7 @@ export default function FloatingNavbar() {
                   {
                     icon: ImageIcon,
                     label: "Gallery",
-                    href: "https://dienbienphu-3d-gallery.vercel.app/",
+                    href: "https://haokhikhangchien-3d.aizy.vn",
                     available: true,
                   },
                 ].map((item, index) => (
