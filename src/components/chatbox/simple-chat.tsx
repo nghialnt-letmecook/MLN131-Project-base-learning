@@ -236,7 +236,7 @@ export default function SimpleChat({ isOpen, onClose }: SimpleChatProps) {
         >
           {/* Modal Container */}
           <div
-            className="bg-gradient-to-br from-white via-red-50/30 to-yellow-50/30 rounded-3xl shadow-2xl w-full max-w-3xl h-[80vh] max-h-[700px] flex flex-col overflow-hidden animate-in zoom-in-95 duration-300 border-4 border-red-200"
+            className="bg-white rounded-3xl shadow-2xl w-full max-w-3xl h-[80vh] max-h-[700px] flex flex-col overflow-hidden animate-in zoom-in-95 duration-300 border-2 border-gray-200"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header */}
