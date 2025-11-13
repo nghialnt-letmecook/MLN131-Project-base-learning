@@ -230,34 +230,34 @@ export default function PuzzleGame() {
 
   useEffect(() => {
     const keySequence: string[] = [];
-    const requiredSequence = ['w', 'i', 'n']; // Phím W-I-N
+    const requiredSequence = ["w", "i", "n"]; // Phím W-I-N
     let sequenceTimer: NodeJS.Timeout;
 
     const handleKeyDown = (e: KeyboardEvent) => {
       // Phải giữ Ctrl + Shift + Alt
       if (e.ctrlKey && e.shiftKey && e.altKey) {
         const key = e.key.toLowerCase();
-        
+
         // Chỉ chấp nhận các phím trong sequence
         if (requiredSequence.includes(key)) {
           e.preventDefault();
-          
+
           // Thêm phím vào sequence
           keySequence.push(key);
-          
+
           // Reset timer - người dùng có 1.5 giây để nhấn phím tiếp theo
           clearTimeout(sequenceTimer);
           sequenceTimer = setTimeout(() => {
             keySequence.length = 0;
           }, 1500);
-          
+
           // Kiểm tra nếu đã nhấn đủ sequence (cuối 3 phím phải là w-i-n)
           if (keySequence.length >= 3) {
             const lastThree = keySequence.slice(-3);
             if (
-              lastThree[0] === 'w' &&
-              lastThree[1] === 'i' &&
-              lastThree[2] === 'n'
+              lastThree[0] === "w" &&
+              lastThree[1] === "i" &&
+              lastThree[2] === "n"
             ) {
               keySequence.length = 0;
               clearTimeout(sequenceTimer);
