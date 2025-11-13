@@ -833,7 +833,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Hội nghị Geneve 1954 bàn về lập lại hòa bình ở Đông Dương.jpg",
+        src: "/images/hoi-nghi-geneve-1954-hoa-binh-dong-duong.jpg",
         alt: "Hội nghị Genève 1954",
         caption: "Hội nghị Genève 1954 bàn về lập lại hòa bình ở Đông Dương",
         layout: "wide",
