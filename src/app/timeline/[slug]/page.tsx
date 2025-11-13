@@ -101,14 +101,14 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/nạn đói 1945.jpg",
+        src: "/images/nan-doi-1945.jpg",
         alt: "Nạn đói năm 1945",
         caption:
           "Nạn đói năm 1945 - một trong những thách thức lớn nhất mà chính quyền cách mạng phải đối mặt",
       },
       {
         type: "image",
-        src: "/images/nạn đói 1945 (1).jpg",
+        src: "/images/nan-doi-1945-1.jpg",
         alt: "Nạn đói năm 1945",
         caption: "Cảnh đói khổ của nhân dân trong nạn đói năm 1945",
       },
@@ -144,21 +144,21 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945.jpg",
+        src: "/images/mit-tinh-nha-hat-lon-ha-noi-19-8-1945.jpg",
         alt: "Mít tinh tại Quảng trường Nhà hát Lớn Hà Nội",
         caption:
           "Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945",
       },
       {
         type: "image",
-        src: "/images/Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945 (1).jpg",
+        src: "/images/mit-tinh-nha-hat-lon-ha-noi-19-8-1945-1.jpg",
         alt: "Mít tinh tại Hà Nội",
         caption:
           "Quần chúng cách mạng tham gia mít tinh tại Quảng trường Nhà hát Lớn Hà Nội",
       },
       {
         type: "image",
-        src: "/images/Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945 (2).jpg",
+        src: "/images/mit-tinh-nha-hat-lon-ha-noi-19-8-1945-2.jpg",
         alt: "Biểu tình vũ trang tại Hà Nội",
         caption:
           "Cuộc biểu tình vũ trang tại Hà Nội chuyển thành khởi nghĩa giành chính quyền",
@@ -238,7 +238,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Chủ tịch Hồ Chí Minh và Chính phủ lâm thời ra mắt ngày 3-9-1945.jpg",
+        src: "/images/chu-tich-ho-chi-minh-chinh-phu-lam-thoi-3-9-1945.jpg",
         alt: "Chủ tịch Hồ Chí Minh và Chính phủ lâm thời",
         caption:
           "Chủ tịch Hồ Chí Minh và Chính phủ lâm thời ra mắt ngày 3-9-1945",
@@ -260,7 +260,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945.jpg",
+        src: "/images/tuyen-ngon-doc-lap-2-9-1945.jpg",
         alt: "Hồ Chí Minh đọc Tuyên ngôn Độc lập",
         caption:
           "Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945",
@@ -298,7 +298,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Quân đội Anh tiếp nhận khí giới đầu hàng của binh lính Nhật Bản tại Sài Gòn, tháng 9-1945.png",
+        src: "/images/quan-doi-anh-tiep-nhan-khi-gioi-nhat-ban-sai-gon-9-1945.png",
         alt: "Quân đội Anh tại Sài Gòn",
         caption:
           "Quân đội Anh tiếp nhận khí giới đầu hàng của binh lính Nhật Bản tại Sài Gòn, tháng 9-1945",
@@ -310,14 +310,14 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Chợ Bến Thành trong ngày đầu kháng chiến chống thực dân Pháp xâm lược, ngày 23-9-1945.jpg",
+        src: "/images/cho-ben-thanh-ngay-dau-khang-chien-23-9-1945.jpg",
         alt: "Chợ Bến Thành ngày đầu kháng chiến",
         caption:
           "Chợ Bến Thành trong ngày đầu kháng chiến chống thực dân Pháp xâm lược, ngày 23-9-1945",
       },
       {
         type: "image",
-        src: "/images/Mít tinh phản đối phái bộ Anh tại Quảng trường Nhà hát Lớn, 24-9-1945.jpg",
+        src: "/images/mit-tinh-phan-doi-phai-bo-anh-24-9-1945.jpg",
         alt: "Mít tinh phản đối phái bộ Anh",
         caption:
           "Mít tinh phản đối phái bộ Anh tại Quảng trường Nhà hát Lớn, 24-9-1945",
@@ -358,7 +358,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ.jpg",
+        src: "/images/bac-ho-day-chu-binh-dan-hoc-vu.jpg",
         alt: "Bác Hồ dạy Bình dân học vụ",
         caption: "Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ",
       },
@@ -383,7 +383,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Chủ tịch Hồ Chí Minh đến bầu cử tại nhà số 10, phố Hàng Vôi, Hà Nội.png",
+        src: "/images/chu-tich-ho-chi-minh-den-bau-cu-pho-hang-voi.png",
         alt: "Chủ tịch Hồ Chí Minh đi bầu cử",
         caption:
           "Chủ tịch Hồ Chí Minh đến bầu cử tại nhà số 10, phố Hàng Vôi, Hà Nội",
@@ -395,7 +395,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Bác Hồ luôn coi trọng công tác tuyên truyền.png",
+        src: "/images/bac-ho-coi-trong-cong-tac-tuyen-truyen.png",
         alt: "Bác Hồ và công tác tuyên truyền",
         caption: "Bác Hồ luôn coi trọng công tác tuyên truyền cách mạng",
       },
@@ -423,14 +423,14 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Chủ tịch Hồ Chí Minh và đại diện nước Pháp ký Hiệp định sơ bộ 6-3-1946.jpg",
+        src: "/images/chu-tich-ho-chi-minh-ky-hiep-dinh-so-bo-6-3-1946.jpg",
         alt: "Ký Hiệp định sơ bộ 6-3-1946",
         caption:
           "Chủ tịch Hồ Chí Minh và đại diện nước Pháp ký Hiệp định sơ bộ 6-3-1946",
       },
       {
         type: "image",
-        src: "/images/Hồ Chủ tịch và Jean Sainteny cùng các vị dự lễ ký Hiệp định sơ bộ 6-3-1946 tại 38 Lý Thái Tổ, Hà Nội.jpg",
+        src: "/images/ho-chu-tich-jean-sainteny-le-ky-hiep-dinh-so-bo-6-3-1946.jpg",
         alt: "Lễ ký Hiệp định sơ bộ",
         caption:
           "Hồ Chủ tịch và Jean Sainteny cùng các vị dự lễ ký Hiệp định sơ bộ 6-3-1946 tại 38 Lý Thái Tổ, Hà Nội",
@@ -449,7 +449,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ (1).jpg",
+        src: "/images/bac-ho-day-chu-binh-dan-hoc-vu-1.jpg",
         alt: "Bác Hồ dạy Bình dân học vụ",
         caption: "Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ",
       },
@@ -483,7 +483,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Lời kêu gọi toàn quốc kháng chiến của Chủ tịch Hồ Chí Minh.jpg",
+        src: "/images/loi-keu-goi-toan-quoc-khang-chien.jpg",
         alt: "Lời kêu gọi toàn quốc kháng chiến",
         caption: "Lời kêu gọi toàn quốc kháng chiến của Chủ tịch Hồ Chí Minh",
       },
@@ -495,14 +495,14 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Phát lệnh toàn quốc khác chiến tại các của ngõ Thủ đô Hà Nội.jpg",
+        src: "/images/phat-lenh-toan-quoc-khang-chien-ha-noi.jpg",
         alt: "Phát lệnh toàn quốc kháng chiến",
         caption:
           "Phát lệnh toàn quốc kháng chiến tại các cửa ngõ Thủ đô Hà Nội",
       },
       {
         type: "image",
-        src: "/images/Quân dân Hà Nội sẵn sàng chiến đấu, tháng 12-1946.jpg",
+        src: "/images/quan-dan-ha-noi-san-sang-chien-dau-12-1946.jpg",
         alt: "Quân dân Hà Nội sẵn sàng chiến đấu",
         caption: "Quân dân Hà Nội sẵn sàng chiến đấu, tháng 12-1946",
       },
@@ -554,21 +554,21 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947.jpg",
+        src: "/images/bo-doi-qua-song-lo-chien-dich-viet-bac-1947.jpg",
         alt: "Bộ đội qua sông Lô",
         caption:
           "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947",
       },
       {
         type: "image",
-        src: "/images/Các chiến sĩ pháo binh trong Chiến dịch Việt Bắc Thu-Đông, năm 1947.jpg",
+        src: "/images/chien-si-phao-binh-chien-dich-viet-bac-1947.jpg",
         alt: "Chiến sĩ pháo binh",
         caption:
           "Các chiến sĩ pháo binh trong Chiến dịch Việt Bắc Thu-Đông, năm 1947",
       },
       {
         type: "image",
-        src: "/images/Chủ tịch Hồ Chí Minh và Hội đồng Chính phủ nghe Đại tướng Võ Nguyên Giáp báo cáo tình hình Chiến dịch Việt Bắc Thu - Đông 1947.jpg",
+        src: "/images/chu-tich-ho-chi-minh-nghe-bao-cao-chien-dich-viet-bac-1947.jpg",
         alt: "Bác Hồ nghe báo cáo Chiến dịch Việt Bắc",
         caption:
           "Chủ tịch Hồ Chí Minh và Hội đồng Chính phủ nghe Đại tướng Võ Nguyên Giáp báo cáo tình hình Chiến dịch Việt Bắc Thu - Đông 1947",
@@ -597,13 +597,13 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Bác Hồ cùng các chiến sĩ cách mạng tại căn cứ địa Việt Bắc.jpg",
+        src: "/images/bac-ho-cung-chien-si-cach-mang-viet-bac.jpg",
         alt: "Bác Hồ tại căn cứ địa Việt Bắc",
         caption: "Bác Hồ cùng các chiến sĩ cách mạng tại căn cứ địa Việt Bắc",
       },
       {
         type: "image",
-        src: "/images/Bác chăm sóc ngô trong vườn ở chiến khu Việt Bắc.jpg",
+        src: "/images/bac-ho-cham-soc-ngo-chien-khu-viet-bac.jpg",
         alt: "Bác Hồ chăm sóc ngô",
         caption: "Bác chăm sóc ngô trong vườn ở chiến khu Việt Bắc",
       },
@@ -637,7 +637,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/6-1950, Chủ tịch Hồ Chí Minh cùng Thường vụ Trung ương Đảng chủ trương mở chiến dịch lớn đánh địch trên tuyến biên giới Việt-Trung.jpg",
+        src: "/images/chu-tich-ho-chi-minh-chu-truong-mo-chien-dich-bien-gioi-6-1950.jpg",
         alt: "Bác Hồ chủ trương mở chiến dịch Biên giới",
         caption:
           "Tháng 6-1950, Chủ tịch Hồ Chí Minh cùng Thường vụ Trung ương Đảng chủ trương mở chiến dịch lớn đánh địch trên tuyến biên giới Việt-Trung",
@@ -645,7 +645,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Chủ tịch Hồ Chí Minh và Đại tướng, Tổng tư lệnh Võ Nguyên Giáp bàn kế hoạch tác chiến Chiến dịch Biên giới năm 1950.jpg",
+        src: "/images/chu-tich-ho-chi-minh-dai-tuong-vo-nguyen-giap-ban-ke-hoach-bien-gioi-1950.jpg",
         alt: "Bác Hồ và Đại tướng Võ Nguyên Giáp",
         caption:
           "Chủ tịch Hồ Chí Minh và Đại tướng, Tổng tư lệnh Võ Nguyên Giáp bàn kế hoạch tác chiến Chiến dịch Biên giới năm 1950",
@@ -653,7 +653,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Đại tướng Võ Nguyên Giáp và Chủ tịch Hồ Chí Minh bàn kế hoạch tác chiến với các sĩ quan quân đội trong chiến dịch vào hạ tuần tháng 8-1950.jpg",
+        src: "/images/dai-tuong-vo-nguyen-giap-chu-tich-ho-chi-minh-ban-ke-hoach-8-1950.jpg",
         alt: "Bàn kế hoạch tác chiến",
         caption:
           "Đại tướng Võ Nguyên Giáp và Chủ tịch Hồ Chí Minh bàn kế hoạch tác chiến với các sĩ quan quân đội trong chiến dịch vào hạ tuần tháng 8-1950",
@@ -661,14 +661,14 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Chủ tịch Hồ Chí Minh trên đài quan sát mặt trận Đông Khê, Chiến dịch Biên giới, ngày 16-9-1950.jpg",
+        src: "/images/chu-tich-ho-chi-minh-dai-quan-sat-dong-khe-16-9-1950.jpg",
         alt: "Bác Hồ trên đài quan sát",
         caption:
           "Chủ tịch Hồ Chí Minh trên đài quan sát mặt trận Đông Khê, Chiến dịch Biên giới, ngày 16-9-1950",
       },
       {
         type: "image",
-        src: "/images/Bộ đội ta tiến vào giải phóng thị trấn Đông Khê.jpg",
+        src: "/images/bo-doi-giai-phong-dong-khe.jpg",
         alt: "Bộ đội giải phóng Đông Khê",
         caption: "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê",
       },
@@ -690,27 +690,27 @@ const timelineData: TimelineEvent[] = [
       { type: "highlight", content: "1. Đại hội Đảng lần thứ II (2-1951)" },
       {
         type: "image",
-        src: "/images/Toàn cảnh Đại hội lần thứ II của Đảng.jpg",
+        src: "/images/toan-canh-dai-hoi-lan-thu-ii-cua-dang.jpg",
         alt: "Toàn cảnh Đại hội lần thứ II",
         caption: "Toàn cảnh Đại hội lần thứ II của Đảng",
         layout: "wide",
       },
       {
         type: "image",
-        src: "/images/Các đại biểu dự Đại hội Đảng toàn quốc lần thứ II.jpg",
+        src: "/images/cac-dai-bieu-du-dai-hoi-dang-lan-thu-ii.jpg",
         alt: "Các đại biểu dự Đại hội",
         caption: "Các đại biểu dự Đại hội Đảng toàn quốc lần thứ II",
       },
       {
         type: "image",
-        src: "/images/Chủ tịch Hồ Chí Minh và Tổng Bí thư Trường Chinh trao đổi về những văn kiện Đại hội II.jpg",
+        src: "/images/chu-tich-ho-chi-minh-tong-bi-thu-truong-chinh-trao-doi-dai-hoi-ii.jpg",
         alt: "Bác Hồ và Tổng Bí thư Trường Chinh",
         caption:
           "Chủ tịch Hồ Chí Minh và Tổng Bí thư Trường Chinh trao đổi về những văn kiện Đại hội II",
       },
       {
         type: "image",
-        src: "/images/Các đại biểu mừng Đại hội thành công.jpg",
+        src: "/images/cac-dai-bieu-mung-dai-hoi-thanh-cong.jpg",
         alt: "Đại biểu mừng Đại hội",
         caption: "Các đại biểu mừng Đại hội thành công",
       },
@@ -765,7 +765,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Cải cách ruộng đất hoàn tất, nông dân đốt văn tự cũ.jpg",
+        src: "/images/cai-cach-ruong-dat-nong-dan-dot-van-tu-cu.jpg",
         alt: "Cải cách ruộng đất",
         caption: "Cải cách ruộng đất hoàn tất, nông dân đốt văn tự cũ",
       },
@@ -810,7 +810,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954.jpg",
+        src: "/images/chien-thang-dien-bien-phu-1954.jpg",
         alt: "Mừng chiến thắng Điện Biên Phủ",
         caption:
           "Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954",
@@ -840,7 +840,7 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "image",
-        src: "/images/Thứ trưởng Bộ Quốc phòng Tạ Quang Bửu (ngồi bên phải) thay mặt Chính phủ và Bộ Tổng tư lệnh QĐND Việt Nam ký Hiệp định Geneva, năm 1954.jpg",
+        src: "/images/thu-truong-ta-quang-buu-ky-hiep-dinh-geneva-1954.jpg",
         alt: "Ký Hiệp định Geneva",
         caption:
           "Thứ trưởng Bộ Quốc phòng Tạ Quang Bửu (ngồi bên phải) thay mặt Chính phủ và Bộ Tổng tư lệnh QĐND Việt Nam ký Hiệp định Geneva, năm 1954",

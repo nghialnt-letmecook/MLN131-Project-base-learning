@@ -5,40 +5,40 @@ import { ArrowLeft, Clock, Trophy, Star } from "lucide-react";
 
 const galleryImages = [
   {
-    src: "/images/Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945.jpg",
+    src: "/images/tuyen-ngon-doc-lap-2-9-1945.jpg",
     alt: "Tuyên ngôn Độc lập 2/9/1945",
     label: "Tuyên ngôn Độc lập 2/9/1945",
-    file: "Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945.jpg",
+    file: "tuyen-ngon-doc-lap-2-9-1945.jpg",
     pieces: "12 mảnh",
     period: "1945",
     description:
       "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, tuyên bố nước Việt Nam Dân chủ Cộng hòa ra đời, mở ra kỷ nguyên mới của dân tộc.",
   },
   {
-    src: "/images/Quân dân Hà Nội sẵn sàng chiến đấu, tháng 12-1946.jpg",
+    src: "/images/quan-dan-ha-noi-san-sang-chien-dau-12-1946.jpg",
     alt: "Kháng chiến toàn quốc 1946",
     label: "Quân dân Hà Nội sẵn sàng chiến đấu",
-    file: "Quân dân Hà Nội sẵn sàng chiến đấu, tháng 12-1946.jpg",
+    file: "quan-dan-ha-noi-san-sang-chien-dau-12-1946.jpg",
     pieces: "15 mảnh",
     period: "1946",
     description:
       "Quân dân Hà Nội sẵn sàng chiến đấu tháng 12-1946, chuẩn bị cho cuộc kháng chiến toàn quốc chống thực dân Pháp xâm lược.",
   },
   {
-    src: "/images/Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947.jpg",
+    src: "/images/bo-doi-qua-song-lo-chien-dich-viet-bac-1947.jpg",
     alt: "Bộ đội qua sông Lô",
     label: "Chiến dịch Việt Bắc Thu-Đông 1947",
-    file: "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947.jpg",
+    file: "bo-doi-qua-song-lo-chien-dich-viet-bac-1947.jpg",
     pieces: "18 mảnh",
     period: "1947",
     description:
       "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947, bảo vệ căn cứ địa kháng chiến và đánh bại âm mưu đánh nhanh thắng nhanh của Pháp.",
   },
   {
-    src: "/images/Bộ đội ta tiến vào giải phóng thị trấn Đông Khê.jpg",
+    src: "/images/bo-doi-giai-phong-dong-khe.jpg",
     alt: "Bộ đội giải phóng thị trấn Đông Khê",
     label: "Bộ đội giải phóng thị trấn Đông Khê",
-    file: "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê.jpg",
+    file: "bo-doi-giai-phong-dong-khe.jpg",
     pieces: "20 mảnh",
     period: "1950",
     description:
@@ -55,10 +55,10 @@ const galleryImages = [
       "Hình ảnh bộ đội Việt Nam hành quân qua những địa hình hiểm trở để tiến vào Điện Biên Phủ, thể hiện ý chí quyết tâm và tinh thần bất khuất của quân dân ta.",
   },
   {
-    src: "/images/Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954.jpg",
+    src: "/images/chien-thang-dien-bien-phu-1954.jpg",
     alt: "Chiến thắng lịch sử Điện Biên Phủ",
     label: "Chiến thắng lịch sử Điện Biên Phủ",
-    file: "Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954.jpg",
+    file: "chien-thang-dien-bien-phu-1954.jpg",
     pieces: "25 mảnh",
     period: "1954",
     description:
