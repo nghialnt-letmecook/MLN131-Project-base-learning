@@ -6,124 +6,64 @@ import { ArrowLeft, Clock, Trophy, Star } from "lucide-react";
 
 const galleryImages = [
   {
-    src: "/images/Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954.jpg",
-    alt: "Chiến thắng lịch sử Điện Biên Phủ",
-    label: "Chiến thắng lịch sử Điện Biên Phủ",
-    file: "Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954.jpg",
-    pieces: "12 mảnh",
-    period: "1954",
-    description:
-      "Chiến thắng Điện Biên Phủ là đỉnh cao của nghệ thuật quân sự Việt Nam, buộc thực dân Pháp phải ký Hiệp định Genève, chấm dứt ách thống trị của họ tại Đông Dương.",
-  },
-  {
-    src: "/images/bo-doi-hanh-quan.webp",
-    alt: "Bộ đội hành quân tại Điện Biên Phủ",
-    label: "Bộ đội hành quân tại Điện Biên Phủ",
-    file: "bo-doi-hanh-quan.webp",
-    pieces: "20 mảnh",
-    period: "1953-1954",
-    description:
-      "Hình ảnh bộ đội Việt Nam hành quân qua những địa hình hiểm trở để tiến vào Điện Biên Phủ, thể hiện ý chí quyết tâm và tinh thần bất굴 của quân dân ta.",
-  },
-  {
-    src: "/images/Bộ đội ta tiến vào giải phóng thị trấn Đông Khê.jpg",
-    alt: "Bộ đội giải phóng thị trấn Đông Khê",
-    label: "Bộ đội giải phóng thị trấn Đông Khê",
-    file: "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê.jpg",
-    pieces: "30 mảnh",
-    period: "1950",
-    description:
-      "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê trong Chiến dịch Biên giới Thu-Đông 1950, mở đầu cho giai đoạn ta chuyển sang tổng phản công.",
-  },
-  {
-    src: "/images/Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947.jpg",
-    alt: "Bộ đội qua sông Lô",
-    label: "Chiến dịch Việt Bắc Thu-Đông 1947",
-    file: "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947.jpg",
-    pieces: "25 mảnh",
-    period: "1947",
-    description:
-      "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947, bảo vệ căn cứ địa kháng chiến và đánh bại âm mưu đánh nhanh thắng nhanh của Pháp.",
-  },
-  {
-    src: "/images/Chủ tịch Hồ Chí Minh và Đại tướng, Tổng tư lệnh Võ Nguyên Giáp bàn kế hoạch tác chiến Chiến dịch Biên giới năm 1950.jpg",
-    alt: "Bác Hồ và Đại tướng Võ Nguyên Giáp",
-    label: "Bàn kế hoạch Chiến dịch Biên giới",
-    file: "Chủ tịch Hồ Chí Minh và Đại tướng, Tổng tư lệnh Võ Nguyên Giáp bàn kế hoạch tác chiến Chiến dịch Biên giới năm 1950.jpg",
-    pieces: "18 mảnh",
-    period: "1950",
-    description:
-      "Chủ tịch Hồ Chí Minh và Đại tướng Võ Nguyên Giáp bàn kế hoạch tác chiến Chiến dịch Biên giới năm 1950, chiến dịch đánh dấu bước ngoặt trong cuộc kháng chiến.",
-  },
-  {
-    src: "/images/Hội nghị Geneve 1954 bàn về lập lại hòa bình ở Đông Dương.jpg",
-    alt: "Hội nghị Genève 1954",
-    label: "Hội nghị Genève 1954",
-    file: "Hội nghị Geneve 1954 bàn về lập lại hòa bình ở Đông Dương.jpg",
-    pieces: "15 mảnh",
-    period: "1954",
-    description:
-      "Hội nghị Genève 1954 bàn về lập lại hòa bình ở Đông Dương, chính thức công nhận độc lập, chủ quyền của Việt Nam và chấm dứt chiến tranh.",
-  },
-  {
     src: "/images/Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945.jpg",
     alt: "Tuyên ngôn Độc lập 2/9/1945",
     label: "Tuyên ngôn Độc lập 2/9/1945",
     file: "Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945.jpg",
-    pieces: "20 mảnh",
+    pieces: "12 mảnh",
     period: "1945",
     description:
       "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, tuyên bố nước Việt Nam Dân chủ Cộng hòa ra đời, mở ra kỷ nguyên mới của dân tộc.",
-  },
-  {
-    src: "/images/Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945.jpg",
-    alt: "Tổng khởi nghĩa Tháng Tám",
-    label: "Tổng khởi nghĩa Tháng Tám 1945",
-    file: "Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945.jpg",
-    pieces: "18 mảnh",
-    period: "1945",
-    description:
-      "Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945, biển người tham gia Tổng khởi nghĩa Tháng Tám, cuộc cách mạng thành công giành chính quyền.",
-  },
-  {
-    src: "/images/Chủ tịch Hồ Chí Minh và Hội đồng Chính phủ nghe Đại tướng Võ Nguyên Giáp báo cáo tình hình Chiến dịch Việt Bắc Thu - Đông 1947.jpg",
-    alt: "Chiến dịch Việt Bắc Thu-Đông 1947",
-    label: "Báo cáo Chiến dịch Việt Bắc 1947",
-    file: "Chủ tịch Hồ Chí Minh và Hội đồng Chính phủ nghe Đại tướng Võ Nguyên Giáp báo cáo tình hình Chiến dịch Việt Bắc Thu - Đông 1947.jpg",
-    pieces: "25 mảnh",
-    period: "1947",
-    description:
-      "Chủ tịch Hồ Chí Minh và Hội đồng Chính phủ nghe Đại tướng Võ Nguyên Giáp báo cáo tình hình Chiến dịch Việt Bắc, chiến dịch bảo vệ căn cứ địa kháng chiến.",
   },
   {
     src: "/images/Quân dân Hà Nội sẵn sàng chiến đấu, tháng 12-1946.jpg",
     alt: "Kháng chiến toàn quốc 1946",
     label: "Quân dân Hà Nội sẵn sàng chiến đấu",
     file: "Quân dân Hà Nội sẵn sàng chiến đấu, tháng 12-1946.jpg",
-    pieces: "22 mảnh",
+    pieces: "15 mảnh",
     period: "1946",
     description:
       "Quân dân Hà Nội sẵn sàng chiến đấu tháng 12-1946, chuẩn bị cho cuộc kháng chiến toàn quốc chống thực dân Pháp xâm lược.",
   },
   {
-    src: "/images/Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ.jpg",
-    alt: "Phong trào Bình dân học vụ",
-    label: "Phong trào Bình dân học vụ",
-    file: "Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ.jpg",
-    pieces: "15 mảnh",
-    period: "1945-1946",
+    src: "/images/Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947.jpg",
+    alt: "Bộ đội qua sông Lô",
+    label: "Chiến dịch Việt Bắc Thu-Đông 1947",
+    file: "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947.jpg",
+    pieces: "18 mảnh",
+    period: "1947",
     description:
-      "Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ, phong trào xóa mù chữ giúp nhân dân nâng cao dân trí phục vụ kháng chiến và kiến quốc.",
+      "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947, bảo vệ căn cứ địa kháng chiến và đánh bại âm mưu đánh nhanh thắng nhanh của Pháp.",
   },
   {
-    src: "/images/Toàn cảnh Đại hội lần thứ II của Đảng.jpg",
-    alt: "Đại hội Đảng lần thứ II",
-    label: "Đại hội Đảng lần thứ II năm 1951",
-    file: "Toàn cảnh Đại hội lần thứ II của Đảng.jpg",
+    src: "/images/Bộ đội ta tiến vào giải phóng thị trấn Đông Khê.jpg",
+    alt: "Bộ đội giải phóng thị trấn Đông Khê",
+    label: "Bộ đội giải phóng thị trấn Đông Khê",
+    file: "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê.jpg",
     pieces: "20 mảnh",
-    period: "1951",
+    period: "1950",
     description:
-      "Toàn cảnh Đại hội lần thứ II của Đảng tại chiến khu Việt Bắc năm 1951, xác định đường lối kháng chiến kiến quốc, Đảng chính thức lấy tên Đảng Lao động Việt Nam.",
+      "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê trong Chiến dịch Biên giới Thu-Đông 1950, mở đầu cho giai đoạn ta chuyển sang tổng phản công.",
+  },
+  {
+    src: "/images/bo-doi-hanh-quan.webp",
+    alt: "Bộ đội hành quân tại Điện Biên Phủ",
+    label: "Bộ đội hành quân tại Điện Biên Phủ",
+    file: "bo-doi-hanh-quan.webp",
+    pieces: "22 mảnh",
+    period: "1953-1954",
+    description:
+      "Hình ảnh bộ đội Việt Nam hành quân qua những địa hình hiểm trở để tiến vào Điện Biên Phủ, thể hiện ý chí quyết tâm và tinh thần bất khuất của quân dân ta.",
+  },
+  {
+    src: "/images/Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954.jpg",
+    alt: "Chiến thắng lịch sử Điện Biên Phủ",
+    label: "Chiến thắng lịch sử Điện Biên Phủ",
+    file: "Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954.jpg",
+    pieces: "25 mảnh",
+    period: "1954",
+    description:
+      "Chiến thắng Điện Biên Phủ là đỉnh cao của nghệ thuật quân sự Việt Nam, buộc thực dân Pháp phải ký Hiệp định Genève, chấm dứt ách thống trị của họ tại Đông Dương.",
   },
 ];
 

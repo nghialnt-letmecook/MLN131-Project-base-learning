@@ -348,7 +348,7 @@ export default function FloatingNavbar() {
           {/* Gallery */}
           <motion.div custom={5} variants={itemVariants}>
             <Link
-              href="https://dienbienphu-3d-gallery.vercel.app/"
+              href="https://haokhikhangchien-3d.aizy.vn/"
               target="_blank"
               rel="noopener noreferrer"
             >
