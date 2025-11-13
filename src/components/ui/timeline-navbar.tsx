@@ -21,49 +21,34 @@ import {
 // Timeline data for dropdown
 const timelineData = [
   {
-    year: "1945 - 1953",
-    title: "Từ cách mạng đến kháng chiến trường kỳ",
-    slug: "cach-mang-den-khang-chien",
+    year: "Tháng 8 - 9 năm 1945",
+    title: "Giành Độc lập và Thành lập Chính quyền",
+    slug: "gianh-doc-lap-thanh-lap-chinh-quyen",
   },
   {
-    year: "11/1953",
-    title: 'Kế hoạch Navarre – "Pháo đài bất khả xâm phạm"',
-    slug: "ke-hoach-navarre",
+    year: "Cuối 1945 – Cuối 1946",
+    title: "Củng cố Chính quyền và Đối phó với Thù trong, Giặc ngoài",
+    slug: "cung-co-chinh-quyen",
   },
   {
-    year: "12/1953 – 2/1954",
-    title: 'Chuẩn bị chiến dịch – "Tất cả cho Điện Biên Phủ"',
-    slug: "chuan-bi-chien-dich",
+    year: "Cuối 1946 – 1947",
+    title: "Kháng chiến Toàn quốc Bùng nổ",
+    slug: "khang-chien-bung-no",
   },
   {
-    year: "25/1/1954",
-    title: 'Quyết định lịch sử – "Đánh chắc, tiến chắc"',
-    slug: "danh-chac-tien-chac",
+    year: "1948 – 1950",
+    title: "Xây dựng Lực lượng và Mở đầu Tổng phản công",
+    slug: "xay-dung-luc-luong",
   },
   {
-    year: "13–17/3/1954",
-    title: "Đợt 1 – Tiêu diệt phân khu Bắc",
-    slug: "dot-1",
+    year: "1951 – 1953",
+    title: "Củng cố Đường lối và Đẩy mạnh Kháng chiến",
+    slug: "cung-co-duong-loi",
   },
   {
-    year: "30/3 – 30/4/1954",
-    title: "Đợt 2 – Vây lấn phân khu Đông",
-    slug: "dot-2",
-  },
-  {
-    year: "1–7/5/1954",
-    title: "Đợt 3 – Tổng tấn công và toàn thắng",
-    slug: "dot-3",
-  },
-  {
-    year: "Khi trận chiến kết thúc",
-    title: "Nhìn lại cuộc chiến",
-    slug: "nhin-lai-cuoc-chien",
-  },
-  {
-    year: "7/1954 - nay",
-    title: "Sau chiến dịch | Hiệp định Genève và âm vang Điện Biên",
-    slug: "sau-chien-dich",
+    year: "1954",
+    title: "Chiến thắng Quyết định và Ký kết Hiệp định",
+    slug: "chien-thang",
   },
 ];
 
@@ -197,7 +182,7 @@ export default function TimelineNavbar(props: TimelineNavbarProps) {
                 className="flex items-center space-x-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 text-red-700 hover:bg-red-50 hover:text-red-800"
               >
                 <Calendar className="w-4 h-4" />
-                <span className="text-sm font-medium">Chuyển tập</span>
+                <span className="text-sm font-medium">Giai đoạn khác</span>
                 <motion.div
                   animate={{ rotate: isTimelineOpen ? 180 : 0 }}
                   transition={{ duration: 0.3, type: "spring", stiffness: 200 }}
@@ -454,7 +439,7 @@ export default function TimelineNavbar(props: TimelineNavbarProps) {
             >
               <div className="p-4 space-y-3">
                 <h3 className="font-semibold text-red-800 mb-3">
-                  Các tập khác
+                  Giai đoạn khác
                 </h3>
                 <div className="space-y-1 max-h-96 overflow-y-auto">
                   {timelineData.map((item) => (

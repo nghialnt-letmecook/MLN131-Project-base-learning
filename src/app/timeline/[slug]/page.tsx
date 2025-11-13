@@ -79,263 +79,675 @@ interface TimelineEvent {
 const timelineData: TimelineEvent[] = [
   {
     year: "Tháng 8 - 9 năm 1945",
-    title: "Giành Độc lập và Thành lập Chính quyền",
+    title: "Giành chính quyền và tình thế 'Ngàn cân treo sợi tóc'",
     slug: "gianh-doc-lap-thanh-lap-chinh-quyen",
     description:
-      "Đảng lãnh đạo tổng khởi nghĩa giành chính quyền và tuyên bố thành lập Nhà nước.",
+      "Giai đoạn này là đỉnh cao của 15 năm đấu tranh dưới sự lãnh đạo của Đảng, mở ra thời kỳ phát triển mới của dân tộc.",
     richContent: [
-      { type: "highlight-normal", content: "Tháng 8 năm 1945" },
+      {
+        type: "highlight",
+        content: "1. Tổng khởi nghĩa Tháng Tám (Giữa tháng 8-1945)",
+      },
+      { type: "highlight-normal", content: "Thời cơ" },
       {
         type: "paragraph",
         content:
-          "Sau khi phát xít Nhật đầu hàng Đồng minh (15-8-1945), Đảng lãnh đạo thành công Cách mạng Tháng Tám, giành độc lập, mở ra một thời đại mới.",
+          "Sau khi Phát xít Đức đầu hàng Đồng minh, và Nhật tuyên bố đầu hàng Đồng minh vô điều kiện (15-8-1945), quân Nhật ở Đông Dương mất hết tinh thần chiến đấu, chính quyền thân Nhật hoang mang cực độ. Đảng nhận định đây là thời cơ cách mạng.",
       },
-      { type: "highlight-normal", content: "13-8-1945" },
+      {
+        type: "image",
+        src: "/images/nạn đói 1945.jpg",
+        alt: "Nạn đói năm 1945",
+        caption:
+          "Nạn đói năm 1945 - một trong những thách thức lớn nhất mà chính quyền cách mạng phải đối mặt",
+      },
+      {
+        type: "image",
+        src: "/images/nạn đói 1945 (1).jpg",
+        alt: "Nạn đói năm 1945",
+        caption: "Cảnh đói khổ của nhân dân trong nạn đói năm 1945",
+      },
+      { type: "highlight-normal", content: "Quyết định Khởi nghĩa" },
       {
         type: "paragraph",
         content:
-          "Ủy ban Khởi nghĩa toàn quốc được thành lập và ban bố 'Quân lệnh số 1', phát lệnh tổng khởi nghĩa.",
+          "Ngày 12-8-1945, Ủy ban lâm thời khu giải phóng hạ lệnh khởi nghĩa trong khu. 23 giờ ngày 13-8-1945, Trung ương Đảng và Tổng bộ Việt Minh thành lập Ủy ban Khởi nghĩa toàn quốc và ban bố 'Quân lệnh số 1', phát đi lệnh tổng khởi nghĩa trong toàn quốc. Ngày 14 và 15-8-1945, Hội nghị toàn quốc của Đảng họp ở Tân Trào, quyết định phát động toàn dân nổi dậy tổng khởi nghĩa giành chính quyền từ tay phát xít Nhật trước khi quân Đồng minh vào Đông Dương.",
       },
-      { type: "highlight-normal", content: "16-8-1945" },
+      { type: "highlight-normal", content: "Chủ trương hành động" },
       {
         type: "paragraph",
         content:
-          "Đại hội quốc dân họp tại Tân Trào tán thành tổng khởi nghĩa, thông qua 10 chính sách lớn của Việt Minh và thành lập Ủy ban Giải phóng dân tộc Việt Nam.",
+          "Hội nghị xác định ba nguyên tắc chỉ đạo khởi nghĩa là tập trung, thống nhất và kịp thời. Phương hướng hành động là đánh chiếm ngay những nơi chắc thắng (không kể thành phố hay nông thôn), phối hợp quân sự và chính trị, làm tan rã tinh thần quân địch.",
       },
-      { type: "highlight-normal", content: "19-8-1945" },
-      {
-        type: "paragraph",
-        content: "Khởi nghĩa giành chính quyền thắng lợi ở Thủ đô Hà Nội.",
-      },
-      { type: "highlight-normal", content: "2-9-1945" },
+      { type: "highlight-normal", content: "Thắng lợi ở các đô thị lớn" },
       {
         type: "paragraph",
         content:
-          "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, tuyên bố thành lập Nước Việt Nam Dân chủ Cộng hòa.",
+          "Ngày 19-8, Thủ đô Hà Nội tràn ngập cờ đỏ sao vàng, quần chúng cách mạng kéo đến Quảng trường Nhà hát thành phố. Cuộc mít tinh chuyển thành biểu tình vũ trang, tiến chiếm Phủ Khâm sai, Tòa Thị chính và các công sở.",
       },
-      { type: "highlight-normal", content: "3-9-1945" },
+      {
+        type: "image",
+        src: "/images/Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945.jpg",
+        alt: "Mít tinh tại Quảng trường Nhà hát Lớn Hà Nội",
+        caption:
+          "Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945",
+      },
+      {
+        type: "image",
+        src: "/images/Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945 (1).jpg",
+        alt: "Mít tinh tại Hà Nội",
+        caption:
+          "Quần chúng cách mạng tham gia mít tinh tại Quảng trường Nhà hát Lớn Hà Nội",
+      },
+      {
+        type: "image",
+        src: "/images/Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945 (2).jpg",
+        alt: "Biểu tình vũ trang tại Hà Nội",
+        caption:
+          "Cuộc biểu tình vũ trang tại Hà Nội chuyển thành khởi nghĩa giành chính quyền",
+      },
       {
         type: "paragraph",
         content:
-          "Chính phủ lâm thời họp phiên đầu tiên, xác định ba nhiệm vụ lớn cấp bách: diệt giặc đói, diệt giặc dốt và diệt giặc ngoại xâm.",
+          "Ngày 23-8, Ủy ban khởi nghĩa Thừa Thiên-Huế huy động quần chúng biểu dương lực lượng và chiếm các công sở. Sáng 25-8, hơn 1 triệu người biểu tình tuần hành thị uy, chiếm các công sở ở Sài Gòn. Cuộc khởi nghĩa thành công nhanh chóng.",
       },
-      { type: "highlight-normal", content: "23-9-1945" },
+      { type: "highlight-normal", content: "Ý nghĩa" },
       {
         type: "paragraph",
         content:
-          "Quân đội Pháp nổ súng gây hấn đánh chiếm Sài Gòn–Chợ Lớn, mở đầu cuộc chiến tranh xâm lược lần thứ hai.",
+          "Những cuộc khởi nghĩa ở Hà Nội, Huế, Sài Gòn có ý nghĩa quyết định thắng lợi trong cả nước.",
+      },
+      {
+        type: "highlight",
+        content: "2. Thành lập Nhà nước VNDCCH và Thách thức (Tháng 9-1945)",
+      },
+      { type: "highlight-normal", content: "Thành lập Chính phủ" },
+      {
+        type: "paragraph",
+        content:
+          "Ngày 27-8-1945, Ủy ban dân tộc giải phóng cải tổ thành Chính phủ lâm thời nước Việt Nam Dân chủ Cộng hòa do Hồ Chí Minh làm Chủ tịch.",
+      },
+      {
+        type: "image",
+        src: "/images/Chủ tịch Hồ Chí Minh và Chính phủ lâm thời ra mắt ngày 3-9-1945.jpg",
+        alt: "Chủ tịch Hồ Chí Minh và Chính phủ lâm thời",
+        caption:
+          "Chủ tịch Hồ Chí Minh và Chính phủ lâm thời ra mắt ngày 3-9-1945",
+      },
+      { type: "highlight-normal", content: "Tuyên ngôn Độc lập (2-9-1945)" },
+      {
+        type: "paragraph",
+        content:
+          "Hồ Chí Minh quyết định sớm tổ chức lễ Tuyên bố độc lập để xác lập vị thế người chủ đất nước của nhân dân Việt Nam trước khi quân Đồng minh đến. Bản Tuyên ngôn Độc lập được coi là hoa, là quả của bao nhiêu máu đã đổ và tính mạng đã hy sinh của những người con anh dũng của Việt Nam.",
+      },
+      {
+        type: "image",
+        src: "/images/Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945.jpg",
+        alt: "Hồ Chí Minh đọc Tuyên ngôn Độc lập",
+        caption:
+          "Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945",
+        layout: "wide",
+      },
+      { type: "highlight-normal", content: "Tình hình khó khăn" },
+      {
+        type: "paragraph",
+        content:
+          "Ngay sau tuyên bố độc lập, chính quyền cách mạng non trẻ đứng trước tình thế 'như ngàn cân treo sợi tóc' do phải đối phó cùng lúc với nạn đói, nạn dốt và bọn thù trong, giặc ngoài. Giặc ngoại xâm: Quân Trung Hoa Dân quốc (Tưởng Giới Thạch) tràn vào miền Bắc, quân Anh-Ấn đổ bộ vào miền Nam, cùng với âm mưu phá hoại của các phe phái phản động (Việt Nam Quốc dân Đảng, Trốtxkit, Đại Việt).",
+      },
+      {
+        type: "image",
+        src: "/images/Quân đội Anh tiếp nhận khí giới đầu hàng của binh lính Nhật Bản tại Sài Gòn, tháng 9-1945.png",
+        alt: "Quân đội Anh tại Sài Gòn",
+        caption:
+          "Quân đội Anh tiếp nhận khí giới đầu hàng của binh lính Nhật Bản tại Sài Gòn, tháng 9-1945",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Thực dân Pháp bắt đầu gây hấn trở lại, nổ súng đánh chiếm Sài Gòn-Chợ Lớn ngày 23-9-1945.",
+      },
+      {
+        type: "image",
+        src: "/images/Chợ Bến Thành trong ngày đầu kháng chiến chống thực dân Pháp xâm lược, ngày 23-9-1945.jpg",
+        alt: "Chợ Bến Thành ngày đầu kháng chiến",
+        caption:
+          "Chợ Bến Thành trong ngày đầu kháng chiến chống thực dân Pháp xâm lược, ngày 23-9-1945",
+      },
+      {
+        type: "image",
+        src: "/images/Mít tinh phản đối phái bộ Anh tại Quảng trường Nhà hát Lớn, 24-9-1945.jpg",
+        alt: "Mít tinh phản đối phái bộ Anh",
+        caption:
+          "Mít tinh phản đối phái bộ Anh tại Quảng trường Nhà hát Lớn, 24-9-1945",
       },
     ],
   },
   {
     year: "Cuối 1945 – Cuối 1946",
-    title: "Củng cố Chính quyền và Đối phó với Thù trong, Giặc ngoài",
+    title: "Vừa kháng chiến vừa kiến quốc",
     slug: "cung-co-chinh-quyen",
     description:
-      "Chính quyền non trẻ phải đối mặt với nhiều khó khăn (giặc đói, giặc dốt, giặc ngoại xâm) và thách thức lớn nhất là âm mưu quay lại thống trị của Pháp",
+      "Đây là giai đoạn Đảng lãnh đạo 'Xây dựng và bảo vệ chính quyền cách mạng'.",
     richContent: [
-      { type: "highlight-normal", content: "25-11-1945" },
       {
-        type: "paragraph",
-        content:
-          "Ban Chấp hành Trung ương Đảng ra Chỉ thị Kháng chiến kiến quốc, xác định kẻ thù chính là thực dân Pháp xâm lược và nhiệm vụ chủ yếu là củng cố chính quyền, chống Pháp, cải thiện đời sống nhân dân.",
+        type: "highlight",
+        content: "1. Giải quyết nhiệm vụ cấp bách (Diệt Giặc đói, giặc dốt)",
       },
-      { type: "highlight-normal", content: "11-11-1945" },
       {
-        type: "paragraph",
-        content:
-          "Đảng Cộng sản Đông Dương tuyên bố tự giải tán để tránh mũi nhọn tấn công của kẻ thù và thực hiện chiến lược quân sự, chính trị linh hoạt.",
+        type: "highlight-normal",
+        content: "Ba nhiệm vụ cấp bách (3-9-1945)",
       },
-      { type: "highlight-normal", content: "6-1-1946" },
       {
         type: "paragraph",
         content:
-          "Cả nước tổ chức thành công cuộc bầu cử toàn quốc theo phổ thông đầu phiếu để bầu ra Quốc hội, với hơn 89% cử tri tham gia.",
+          "Chính phủ lâm thời xác định ba nhiệm vụ lớn trước mắt là: diệt giặc đói, diệt giặc dốt và diệt giặc ngoại xâm.",
       },
-      { type: "highlight-normal", content: "2-3-1946" },
+      { type: "highlight-normal", content: "Chống giặc đói" },
       {
         type: "paragraph",
         content:
-          "Quốc hội khóa I họp phiên đầu tiên, thành lập Chính phủ chính thức do Hồ Chí Minh làm Chủ tịch.",
+          "Phát động phong trào tăng gia sản xuất (với khẩu hiệu tăng gia sản xuất ngay, tăng gia sản xuất nữa), lập Hũ gạo tiết kiệm, tổ chức Tuần lễ vàng, Quỹ độc lập. Chính phủ bãi bỏ thuế thân, thực hiện giảm tô 25%. Nạn đói cơ bản được đẩy lùi vào đầu năm 1946.",
       },
-      { type: "highlight-normal", content: "6-3-1946" },
+      { type: "highlight-normal", content: "Chống giặc dốt" },
       {
         type: "paragraph",
         content:
-          "Chủ tịch Hồ Chí Minh ký Hiệp định sơ bộ với Pháp, công nhận Việt Nam là một quốc gia tự do — một nỗ lực nhằm trì hoãn xung đột và bảo toàn lực lượng trong giai đoạn nhạy cảm.",
+          "Phát động phong trào 'Bình dân học vụ' để xóa nạn mù chữ; vận động xây dựng nếp sống mới. Đến cuối năm 1946, hơn 2,5 triệu người biết đọc, biết viết chữ Quốc ngữ.",
       },
-      { type: "highlight-normal", content: "9-3-1946" },
       {
-        type: "paragraph",
-        content:
-          "Thường vụ Trung ương Đảng ra Chỉ thị 'Hòa để tiến', phân tích chủ trương hòa hoãn và chuẩn bị sẵn sàng kháng chiến khi cần.",
+        type: "image",
+        src: "/images/Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ.jpg",
+        alt: "Bác Hồ dạy Bình dân học vụ",
+        caption: "Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ",
       },
-      { type: "highlight-normal", content: "14-9-1946" },
       {
-        type: "paragraph",
-        content:
-          "Chủ tịch Hồ Chí Minh ký Tạm ước 14-9 với Pháp, cam kết đình chỉ chiến sự ở Nam Bộ và tiếp tục đàm phán nhằm tránh xung đột quy mô.",
+        type: "highlight",
+        content: "2. Xây dựng chính quyền và Chỉ thị Kháng chiến kiến quốc",
       },
-      { type: "highlight-normal", content: "9-11-1946" },
+      {
+        type: "highlight-normal",
+        content: "Chỉ thị Kháng chiến kiến quốc (25-11-1945)",
+      },
       {
         type: "paragraph",
         content:
-          "Quốc hội thông qua Hiến pháp đầu tiên của Nước Việt Nam Dân chủ Cộng hòa (Hiến pháp năm 1946), đánh dấu bước chuyển quan trọng về pháp lý và tổ chức nhà nước.",
+          "Trung ương Đảng xác định rõ 'kẻ thù chính của ta lúc này là thực dân Pháp xâm lược, phải tập trung ngọn lửa đấu tranh vào chúng'. Khẩu hiệu được đề ra là 'Dân tộc trên hết, Tổ quốc trên hết'. Nhiệm vụ chủ yếu là củng cố chính quyền, chống Pháp, bài trừ nội phản, và cải thiện đời sống nhân dân.",
+      },
+      { type: "highlight-normal", content: "Xây dựng nền tảng pháp lý" },
+      {
+        type: "paragraph",
+        content:
+          "Ngày 6-1-1946, tổ chức thành công Tổng tuyển cử bầu Quốc hội khóa I theo hình thức phổ thông đầu phiếu. Bầu cử đã làm thất bại âm mưu chia rẽ, lật đổ của các kẻ thù.",
+      },
+      {
+        type: "image",
+        src: "/images/Chủ tịch Hồ Chí Minh đến bầu cử tại nhà số 10, phố Hàng Vôi, Hà Nội.png",
+        alt: "Chủ tịch Hồ Chí Minh đi bầu cử",
+        caption:
+          "Chủ tịch Hồ Chí Minh đến bầu cử tại nhà số 10, phố Hàng Vôi, Hà Nội",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Quốc hội khóa I đã thông qua bản Hiến pháp đầu tiên của Nhà nước VNDCCH (Hiến pháp năm 1946) (tại kỳ họp thứ 2, 9-11-1946).",
+      },
+      {
+        type: "image",
+        src: "/images/Bác Hồ luôn coi trọng công tác tuyên truyền.png",
+        alt: "Bác Hồ và công tác tuyên truyền",
+        caption: "Bác Hồ luôn coi trọng công tác tuyên truyền cách mạng",
+      },
+      {
+        type: "highlight",
+        content: "3. Đấu tranh ngoại giao và chuẩn bị kháng chiến",
+      },
+      { type: "highlight-normal", content: "Chiến sự ở Nam Bộ" },
+      {
+        type: "paragraph",
+        content:
+          "Quân và dân Nam Bộ đã đứng lên kháng chiến chống xâm lược Pháp ngay từ cuối tháng 9-1945, nêu cao tinh thần 'thà chết tự do còn hơn sống nô lệ'. Chính phủ Hồ Chí Minh kịp thời chi viện, và Hồ Chí Minh đã tặng nhân dân Nam Bộ danh hiệu 'Thành đồng Tổ quốc'.",
+      },
+      { type: "highlight-normal", content: "Sách lược 'Hòa để tiến'" },
+      {
+        type: "paragraph",
+        content:
+          "Trước âm mưu của Pháp và Tưởng, Thường vụ Trung ương Đảng ra Chỉ thị Tình hình và chủ trương (3-3-1946), chủ trương tạm thời 'dàn hòa với Pháp' để diệt bọn phản động tay sai Tàu trắng, thúc đẩy nhanh quân Tưởng về nước, bớt đi một kẻ thù.",
+      },
+      { type: "highlight-normal", content: "Hiệp định sơ bộ và Tạm ước" },
+      {
+        type: "paragraph",
+        content:
+          "Ngày 6-3-1946, Hồ Chí Minh ký Hiệp định sơ bộ với Pháp, Pháp công nhận Việt Nam là một quốc gia tự do trong Liên hiệp Pháp. Sau đó, Hồ Chí Minh ký Tạm ước 14-9-1946 tại Pháp, nhằm tranh thủ thời gian hòa hoãn.",
+      },
+      {
+        type: "image",
+        src: "/images/Chủ tịch Hồ Chí Minh và đại diện nước Pháp ký Hiệp định sơ bộ 6-3-1946.jpg",
+        alt: "Ký Hiệp định sơ bộ 6-3-1946",
+        caption:
+          "Chủ tịch Hồ Chí Minh và đại diện nước Pháp ký Hiệp định sơ bộ 6-3-1946",
+      },
+      {
+        type: "image",
+        src: "/images/Hồ Chủ tịch và Jean Sainteny cùng các vị dự lễ ký Hiệp định sơ bộ 6-3-1946 tại 38 Lý Thái Tổ, Hà Nội.jpg",
+        alt: "Lễ ký Hiệp định sơ bộ",
+        caption:
+          "Hồ Chủ tịch và Jean Sainteny cùng các vị dự lễ ký Hiệp định sơ bộ 6-3-1946 tại 38 Lý Thái Tổ, Hà Nội",
+      },
+      { type: "highlight-normal", content: "Chỉ thị Hòa để tiến (9-3-1946)" },
+      {
+        type: "paragraph",
+        content:
+          "Ngay sau khi ký Hiệp định sơ bộ, Đảng ra Chỉ thị, nhấn mạnh cần phải tiếp tục nêu cao tinh thần cảnh giác cách mạng, không ngừng một phút công việc sửa soạn, sẵn sàng kháng chiến bất cứ lúc nào.",
+      },
+      { type: "highlight-normal", content: "Chuẩn bị" },
+      {
+        type: "paragraph",
+        content:
+          "Đến tháng 12-1946, số lượng đảng viên tăng lên hơn 20.000 người. Sách lược đúng đắn của Đảng đã tạo thêm thời gian hòa bình, hòa hoãn, tranh thủ xây dựng thực lực, chuẩn bị sẵn sàng cho cuộc kháng chiến lâu dài.",
+      },
+      {
+        type: "image",
+        src: "/images/Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ (1).jpg",
+        alt: "Bác Hồ dạy Bình dân học vụ",
+        caption: "Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ",
       },
     ],
   },
   {
     year: "Cuối 1946 – 1947",
-    title: "Kháng chiến Toàn quốc Bùng nổ",
+    title: "Kháng chiến toàn quốc và Chiến dịch Việt Bắc",
     slug: "khang-chien-bung-no",
     description:
-      "Do Pháp tăng cường gây hấn và ý chí xâm lược, cuộc chiến tranh toàn quốc bùng nổ",
+      "Giai đoạn này mở đầu bằng sự bùng nổ của cuộc kháng chiến toàn quốc.",
     richContent: [
-      { type: "highlight-normal", content: "12-12-1946" },
+      { type: "highlight", content: "1. Bùng nổ Kháng chiến (12-1946)" },
+      { type: "highlight-normal", content: "Quyết định" },
       {
         type: "paragraph",
         content:
-          "Trung ương ra Chỉ thị Toàn dân kháng chiến, kêu gọi mọi tầng lớp nhân dân đứng lên bảo vệ Tổ quốc và chuẩn bị kháng chiến lâu dài.",
+          "Trước sự khiêu khích, gây hấn và tối hậu thư của Pháp, ngày 18-12-1946, Ban Thường vụ Trung ương Đảng quyết định phát động toàn dân kháng chiến.",
       },
-      { type: "highlight-normal", content: "19-12-1946" },
+      { type: "highlight-normal", content: "Lời kêu gọi (19-12-1946)" },
       {
-        type: "paragraph",
+        type: "quote",
         content:
-          "Chủ tịch Hồ Chí Minh phát Lời kêu gọi Toàn quốc kháng chiến, đánh dấu mốc toàn dân đồng lòng chống thực dân Pháp (đêm 19–20/12/1946, Hà Nội).",
+          "Chúng ta thà hy sinh tất cả, chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ.",
+        author: "Chủ tịch Hồ Chí Minh",
       },
-      { type: "highlight-normal", content: "1946–1947" },
       {
         type: "paragraph",
         content:
-          "Quân và dân Hà Nội cùng nhiều vùng chiến lược chiến đấu liên tục trong nhiều tháng (kéo dài hàng chục ngày đêm), bẻ gãy nhiều cuộc tấn công của Pháp và giữ vững các vùng căn cứ cách mạng.",
+          "Chủ tịch Hồ Chí Minh ra Lời kêu gọi toàn quốc kháng chiến, khẳng định quyết tâm của dân tộc.",
       },
-      { type: "highlight-normal", content: "8-1947" },
       {
-        type: "paragraph",
-        content:
-          "Trường Chinh xuất bản bài luận 'Kháng chiến nhất định thắng lợi' nhằm củng cố niềm tin và tinh thần chiến đấu của quần chúng trong giai đoạn cam go.",
+        type: "image",
+        src: "/images/Lời kêu gọi toàn quốc kháng chiến của Chủ tịch Hồ Chí Minh.jpg",
+        alt: "Lời kêu gọi toàn quốc kháng chiến",
+        caption: "Lời kêu gọi toàn quốc kháng chiến của Chủ tịch Hồ Chí Minh",
       },
-      { type: "highlight-normal", content: "Thu - Đông 1947" },
+      { type: "highlight-normal", content: "Mở đầu" },
       {
         type: "paragraph",
         content:
-          "Pháp mở các đợt tấn công quy mô vào căn cứ địa Việt Bắc; quân và dân ta tổ chức chiến tranh du kích, bảo vệ vùng căn cứ và làm thất bại nhiều mũi tiến công của địch.",
+          "Bắt đầu từ 20 giờ ngày 19-12-1946, quân và dân Hà Nội và các đô thị từ Bắc vĩ tuyến 16 trở ra đồng loạt nổ súng.",
+      },
+      {
+        type: "image",
+        src: "/images/Phát lệnh toàn quốc khác chiến tại các của ngõ Thủ đô Hà Nội.jpg",
+        alt: "Phát lệnh toàn quốc kháng chiến",
+        caption:
+          "Phát lệnh toàn quốc kháng chiến tại các cửa ngõ Thủ đô Hà Nội",
+      },
+      {
+        type: "image",
+        src: "/images/Quân dân Hà Nội sẵn sàng chiến đấu, tháng 12-1946.jpg",
+        alt: "Quân dân Hà Nội sẵn sàng chiến đấu",
+        caption: "Quân dân Hà Nội sẵn sàng chiến đấu, tháng 12-1946",
+      },
+      { type: "highlight-normal", content: "Trận chiến ở Hà Nội" },
+      {
+        type: "paragraph",
+        content:
+          "Diễn ra 60 ngày đêm khói lửa (từ 19-12-1946 đến 17-2-1947), thành công trong việc giam chân địch, bảo vệ an toàn các cơ quan đầu não và nhân dân rút ra ngoại thành, bước đầu làm thất bại kế hoạch đánh nhanh thắng nhanh của Pháp.",
+      },
+      { type: "highlight", content: "2. Đường lối Kháng chiến" },
+      {
+        type: "paragraph",
+        content:
+          "Đường lối kháng chiến được Đảng xác định là toàn dân, toàn diện, lâu dài và dựa vào sức mình là chính.",
+      },
+      { type: "highlight-normal", content: "Kháng chiến toàn dân" },
+      {
+        type: "paragraph",
+        content:
+          "Huy động toàn bộ sức dân, tài dân, lực dân, với Quân đội nhân dân làm nòng cốt.",
+      },
+      { type: "highlight-normal", content: "Kháng chiến toàn diện" },
+      {
+        type: "paragraph",
+        content:
+          "Đánh địch trên mọi lĩnh vực: quân sự, chính trị, kinh tế, văn hóa, tư tưởng, ngoại giao; trong đó, đấu tranh vũ trang giữ vai trò mũi nhọn, mang tính quyết định.",
+      },
+      {
+        type: "highlight-normal",
+        content: "Kháng chiến lâu dài (Trường kỳ kháng chiến)",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Là tư tưởng chỉ đạo chiến lược nhằm vừa đánh tiêu hao lực lượng địch vừa xây dựng, phát triển lực lượng ta; lấy thời gian để chuyển hóa yếu thành mạnh.",
+      },
+      { type: "highlight-normal", content: "Dựa vào sức mình là chính" },
+      {
+        type: "paragraph",
+        content:
+          "Lấy nguồn nội lực, sức mạnh vật chất, tinh thần của nhân dân làm chỗ dựa chủ yếu, đồng thời tranh thủ sự ủng hộ của quốc tế khi có điều kiện.",
+      },
+      { type: "highlight", content: "3. Chiến dịch Việt Bắc (Thu Đông 1947)" },
+      { type: "highlight-normal", content: "Âm mưu Pháp" },
+      {
+        type: "paragraph",
+        content:
+          "Pháp mở cuộc tấn công quy mô lớn lên vùng ATK Việt Bắc, nhằm bắt gọn Chính phủ Hồ Chí Minh và tiêu diệt cơ quan đầu não kháng chiến.",
+      },
+      {
+        type: "image",
+        src: "/images/Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947.jpg",
+        alt: "Bộ đội qua sông Lô",
+        caption:
+          "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947",
+      },
+      {
+        type: "image",
+        src: "/images/Các chiến sĩ pháo binh trong Chiến dịch Việt Bắc Thu-Đông, năm 1947.jpg",
+        alt: "Chiến sĩ pháo binh",
+        caption:
+          "Các chiến sĩ pháo binh trong Chiến dịch Việt Bắc Thu-Đông, năm 1947",
+      },
+      {
+        type: "image",
+        src: "/images/Chủ tịch Hồ Chí Minh và Hội đồng Chính phủ nghe Đại tướng Võ Nguyên Giáp báo cáo tình hình Chiến dịch Việt Bắc Thu - Đông 1947.jpg",
+        alt: "Bác Hồ nghe báo cáo Chiến dịch Việt Bắc",
+        caption:
+          "Chủ tịch Hồ Chí Minh và Hội đồng Chính phủ nghe Đại tướng Võ Nguyên Giáp báo cáo tình hình Chiến dịch Việt Bắc Thu - Đông 1947",
+        layout: "wide",
+      },
+      { type: "highlight-normal", content: "Kết quả" },
+      {
+        type: "paragraph",
+        content:
+          "Quân và dân ta đã bảo toàn được cơ quan đầu não và căn cứ địa kháng chiến, đánh bại âm mưu, kế hoạch đánh nhanh, thắng nhanh của thực dân Pháp.",
       },
     ],
   },
   {
     year: "1948 – 1950",
-    title: "Xây dựng Lực lượng và Mở đầu Tổng phản công ",
+    title: "Chuyển sang tiến công và Chiến thắng Biên giới",
     slug: "xay-dung-luc-luong",
     description:
-      "Giai đoạn đẩy mạnh kháng chiến toàn diện và giành được chiến thắng lớn mang tính bước ngoặt",
+      "Giai đoạn Đảng lãnh đạo đẩy mạnh kháng chiến toàn diện và giành chiến thắng quân sự quan trọng.",
     richContent: [
-      { type: "highlight-normal", content: "11-6-1948" },
+      { type: "highlight-normal", content: "Phát triển lực lượng" },
       {
         type: "paragraph",
         content:
-          "Chủ tịch Hồ Chí Minh ra Lời kêu gọi Thi đua ái quốc, kêu gọi nhân dân hăng hái tăng gia sản xuất, thi đua lao động và góp phần phục vụ kháng chiến.",
+          "Đầu năm 1948, Chủ tịch Hồ Chí Minh ký Sắc lệnh phong quân hàm Đại tướng cho đồng chí Võ Nguyên Giáp.",
       },
-      { type: "highlight-normal", content: "1-10-1949" },
       {
-        type: "paragraph",
-        content:
-          "Nước Cộng hòa Nhân dân Trung Hoa được thành lập, tạo bước chuyển quan hệ chính trị có lợi cho phong trào cách mạng ở khu vực và mở ra khả năng hợp tác với nước láng giềng.",
+        type: "image",
+        src: "/images/Bác Hồ cùng các chiến sĩ cách mạng tại căn cứ địa Việt Bắc.jpg",
+        alt: "Bác Hồ tại căn cứ địa Việt Bắc",
+        caption: "Bác Hồ cùng các chiến sĩ cách mạng tại căn cứ địa Việt Bắc",
       },
-      { type: "highlight-normal", content: "18-1-1950" },
       {
-        type: "paragraph",
-        content:
-          "Trung Quốc công nhận và thiết lập quan hệ ngoại giao với Việt Nam Dân chủ Cộng hòa, mở đường cho viện trợ và tiếp tế từ phía bạn bè quốc tế.",
+        type: "image",
+        src: "/images/Bác chăm sóc ngô trong vườn ở chiến khu Việt Bắc.jpg",
+        alt: "Bác Hồ chăm sóc ngô",
+        caption: "Bác chăm sóc ngô trong vườn ở chiến khu Việt Bắc",
       },
-      { type: "highlight-normal", content: "30-1-1950" },
+      { type: "highlight-normal", content: "Thi đua Ái quốc" },
       {
         type: "paragraph",
         content:
-          "Liên Xô công nhận và đặt quan hệ ngoại giao với Việt Nam Dân chủ Cộng hòa, nâng cao vị thế ngoại giao và mở rộng không gian chính trị quốc tế cho cách mạng Việt Nam.",
+          "Chủ tịch Hồ Chí Minh ra Lời kêu gọi Thi đua ái quốc (11-6-1948) để thúc đẩy sản xuất và tự cấp, tự túc hàng hóa cần thiết cho kháng chiến.",
       },
-      { type: "highlight-normal", content: "16-9 đến 17-10-1950" },
+      { type: "highlight-normal", content: "Ngoại giao và Hậu phương" },
       {
         type: "paragraph",
         content:
-          "Đảng tiến hành Chiến dịch Biên giới Thu-Đông 1950; chiến thắng này tiêu diệt sinh lực địch, mở rộng căn cứ địa Việt Bắc, và tạo thông thương với Trung Quốc, kết thúc thời kỳ chiến đấu trong vòng vây và mở ra cuộc diện mới.",
+          "Hội nghị Văn hóa toàn quốc (7-1948) nhất trí thông qua đường lối xây dựng nền văn hóa mới mang tính chất dân tộc, khoa học, đại chúng.",
+      },
+      {
+        type: "highlight",
+        content: "Biến đổi Quốc tế và sự Can thiệp của Mỹ",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Sau khi Cộng hòa Nhân dân Trung Hoa ra đời (1-10-1949), Việt Nam nhận được sự công nhận và đặt quan hệ ngoại giao từ Trung Quốc (18-1-1950), Liên Xô (30-1-1950) và các nước xã hội chủ nghĩa khác. Sự kiện này mở ra con đường liên lạc quốc tế cho Việt Nam. Mỹ bắt đầu can thiệp sâu vào chiến tranh ở Việt Nam, viện trợ cho Pháp.",
+      },
+      { type: "highlight", content: "Chiến dịch Biên giới Thu Đông 1950" },
+      { type: "highlight-normal", content: "Mục tiêu" },
+      {
+        type: "paragraph",
+        content:
+          "Tiêu diệt sinh lực địch, mở rộng căn cứ địa Việt Bắc, khai thông hành lang liên lạc quốc tế.",
+      },
+      {
+        type: "image",
+        src: "/images/6-1950, Chủ tịch Hồ Chí Minh cùng Thường vụ Trung ương Đảng chủ trương mở chiến dịch lớn đánh địch trên tuyến biên giới Việt-Trung.jpg",
+        alt: "Bác Hồ chủ trương mở chiến dịch Biên giới",
+        caption:
+          "Tháng 6-1950, Chủ tịch Hồ Chí Minh cùng Thường vụ Trung ương Đảng chủ trương mở chiến dịch lớn đánh địch trên tuyến biên giới Việt-Trung",
+        layout: "wide",
+      },
+      {
+        type: "image",
+        src: "/images/Chủ tịch Hồ Chí Minh và Đại tướng, Tổng tư lệnh Võ Nguyên Giáp bàn kế hoạch tác chiến Chiến dịch Biên giới năm 1950.jpg",
+        alt: "Bác Hồ và Đại tướng Võ Nguyên Giáp",
+        caption:
+          "Chủ tịch Hồ Chí Minh và Đại tướng, Tổng tư lệnh Võ Nguyên Giáp bàn kế hoạch tác chiến Chiến dịch Biên giới năm 1950",
+        layout: "wide",
+      },
+      {
+        type: "image",
+        src: "/images/Đại tướng Võ Nguyên Giáp và Chủ tịch Hồ Chí Minh bàn kế hoạch tác chiến với các sĩ quan quân đội trong chiến dịch vào hạ tuần tháng 8-1950.jpg",
+        alt: "Bàn kế hoạch tác chiến",
+        caption:
+          "Đại tướng Võ Nguyên Giáp và Chủ tịch Hồ Chí Minh bàn kế hoạch tác chiến với các sĩ quan quân đội trong chiến dịch vào hạ tuần tháng 8-1950",
+        layout: "wide",
+      },
+      {
+        type: "image",
+        src: "/images/Chủ tịch Hồ Chí Minh trên đài quan sát mặt trận Đông Khê, Chiến dịch Biên giới, ngày 16-9-1950.jpg",
+        alt: "Bác Hồ trên đài quan sát",
+        caption:
+          "Chủ tịch Hồ Chí Minh trên đài quan sát mặt trận Đông Khê, Chiến dịch Biên giới, ngày 16-9-1950",
+      },
+      {
+        type: "image",
+        src: "/images/Bộ đội ta tiến vào giải phóng thị trấn Đông Khê.jpg",
+        alt: "Bộ đội giải phóng Đông Khê",
+        caption: "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê",
+      },
+      { type: "highlight-normal", content: "Ý nghĩa" },
+      {
+        type: "paragraph",
+        content:
+          "Chiến thắng Biên giới giành được thắng lợi to lớn, kết thúc thời kỳ chiến đấu trong vòng vây, đánh dấu bước phát triển mới, đưa cuộc kháng chiến chuyển sang giai đoạn phát triển cao hơn.",
       },
     ],
   },
   {
     year: "1951 – 1953",
-    title: "Củng cố Đường lối và Đẩy mạnh Kháng chiến",
+    title: "Đảng ra công khai, Chính cương và Cải cách Ruộng đất",
     slug: "cung-co-duong-loi",
     description:
-      "Giai đoạn Đảng ra hoạt động công khai, hoàn thiện đường lối cách mạng dân tộc dân chủ nhân dân và tiến hành cải cách ruộng đất",
+      "Giai đoạn Đảng củng cố toàn diện cả về đường lối chính trị, tổ chức và hậu phương để chuẩn bị cho thắng lợi quyết định.",
     richContent: [
-      { type: "highlight-normal", content: "2-1951" },
+      { type: "highlight", content: "1. Đại hội Đảng lần thứ II (2-1951)" },
       {
-        type: "paragraph",
-        content:
-          "Đại hội đại biểu toàn quốc lần thứ II của Đảng họp (tại Tuyên Quang). Đại hội quyết định Đảng ra hoạt động công khai với tên gọi Đảng Lao động Việt Nam. Đại hội thông qua Cương cương (Chính cương) của Đảng Lao động Việt Nam, xác định mục tiêu là tiêu diệt thực dân Pháp và đánh bại can thiệp Mỹ, giành độc lập hoàn toàn.",
+        type: "image",
+        src: "/images/Toàn cảnh Đại hội lần thứ II của Đảng.jpg",
+        alt: "Toàn cảnh Đại hội lần thứ II",
+        caption: "Toàn cảnh Đại hội lần thứ II của Đảng",
+        layout: "wide",
       },
-      { type: "highlight-normal", content: "1951–1952" },
       {
-        type: "paragraph",
-        content:
-          "Đảng mở các chiến dịch quân sự như Chiến dịch Hòa Bình (12-1951) và các chiến dịch ở Tây Bắc (Thu‑Đông 1952), nhằm phát triển lực lượng, giành thế chủ động trên một số mặt trận trọng yếu.",
+        type: "image",
+        src: "/images/Các đại biểu dự Đại hội Đảng toàn quốc lần thứ II.jpg",
+        alt: "Các đại biểu dự Đại hội",
+        caption: "Các đại biểu dự Đại hội Đảng toàn quốc lần thứ II",
       },
-      { type: "highlight-normal", content: "5-1953" },
       {
-        type: "paragraph",
-        content:
-          "Tướng H. Navarre được bổ nhiệm làm Tổng chỉ huy quân đội Pháp ở Đông Dương và vạch ra Kế hoạch Navarre, nhằm chuyển thế trận thôn tính sang các chiến lược khoanh vùng và tiêu diệt lực lượng cách mạng.",
+        type: "image",
+        src: "/images/Chủ tịch Hồ Chí Minh và Tổng Bí thư Trường Chinh trao đổi về những văn kiện Đại hội II.jpg",
+        alt: "Bác Hồ và Tổng Bí thư Trường Chinh",
+        caption:
+          "Chủ tịch Hồ Chí Minh và Tổng Bí thư Trường Chinh trao đổi về những văn kiện Đại hội II",
       },
-      { type: "highlight-normal", content: "Cuối 9-1953" },
       {
-        type: "paragraph",
-        content:
-          "Bộ Chính trị thông qua chủ trương tác chiến chiến lược Đông‑Xuân 1953‑1954, mục tiêu tiêu diệt sinh lực địch, giữ vững thế chủ động và tạo điều kiện cho các chiến dịch bước ngoặt sau này.",
+        type: "image",
+        src: "/images/Các đại biểu mừng Đại hội thành công.jpg",
+        alt: "Đại biểu mừng Đại hội",
+        caption: "Các đại biểu mừng Đại hội thành công",
       },
-      { type: "highlight-normal", content: "11-1953" },
+      { type: "highlight-normal", content: "Tên Đảng" },
       {
         type: "paragraph",
         content:
-          "Hội nghị Trung ương Đảng lần thứ năm thông qua Cương lĩnh ruộng đất, chủ trương cải cách ruộng đất nhằm tăng cường chi viện hậu phương và củng cố cơ sở xã hội cho kháng chiến.",
+          "Đảng ra hoạt động công khai dưới tên gọi Đảng Lao động Việt Nam.",
+      },
+      {
+        type: "highlight-normal",
+        content: "Chính cương của Đảng Lao động Việt Nam",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Được thông qua, xác định tính chất xã hội Việt Nam lúc này có 3 tính chất: 'dân chủ nhân dân, một phần thuộc địa và nửa phong kiến'.",
+      },
+      { type: "highlight-normal", content: "Đối tượng đấu tranh chính" },
+      {
+        type: "paragraph",
+        content:
+          "Chủ nghĩa đế quốc xâm lược Pháp và can thiệp Mỹ, và phong kiến phản động.",
+      },
+      { type: "highlight-normal", content: "Nhiệm vụ chính" },
+      {
+        type: "paragraph",
+        content:
+          "Tập trung đấu tranh chống xâm lược, hoàn thành công cuộc giải phóng dân tộc.",
+      },
+      { type: "highlight-normal", content: "Lãnh đạo" },
+      {
+        type: "paragraph",
+        content:
+          "Hồ Chí Minh được bầu làm Chủ tịch Đảng, Trường Chinh được bầu lại làm Tổng Bí thư. Đại hội II là 'Đại hội kháng chiến kiến quốc'.",
+      },
+      {
+        type: "highlight",
+        content: "2. Củng cố hậu phương và Cải cách Ruộng đất",
+      },
+      { type: "highlight-normal", content: "Chỉnh Đảng, Chỉnh quân" },
+      {
+        type: "paragraph",
+        content:
+          "Hội nghị Trung ương lần thứ ba (4-1952) đề ra quyết sách lớn về công tác 'chỉnh Đảng, chỉnh quân', xác định đây là nhiệm vụ trọng tâm.",
+      },
+      { type: "highlight-normal", content: "Cải cách Ruộng đất" },
+      {
+        type: "paragraph",
+        content:
+          "Ngày 19-12-1953, Chủ tịch Hồ Chí Minh ký ban hành sắc lệnh Luật cải cách ruộng đất. Chủ trương này nhằm triệt để giảm tô, giảm tức và tiến hành cải cách ruộng đất, thực hiện người cầy có ruộng, nâng cao quyền lợi kinh tế và chính trị của người nông dân.",
+      },
+      {
+        type: "image",
+        src: "/images/Cải cách ruộng đất hoàn tất, nông dân đốt văn tự cũ.jpg",
+        alt: "Cải cách ruộng đất",
+        caption: "Cải cách ruộng đất hoàn tất, nông dân đốt văn tự cũ",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Chủ trương này đã tạo ra chuyển biến lớn về kinh tế, chính trị ở nông thôn, thúc đẩy sức sản xuất phát triển, và tăng thêm quyết tâm giết giặc, lập công cho bộ đội nơi tiền tuyến.",
       },
     ],
   },
   {
     year: "1954",
-    title: "Chiến thắng Quyết định và Ký kết Hiệp định",
+    title: "Chiến thắng Điện Biên Phủ và Hiệp định Genève",
     slug: "chien-thang",
     description:
-      "Đây là giai đoạn quyết định chấm dứt cuộc kháng chiến chống Pháp",
+      "Năm 1954 là năm quyết định thắng lợi của cuộc kháng chiến chống Pháp.",
     richContent: [
-      { type: "highlight-normal", content: "Đầu 12-1953" },
-      {
-        type: "paragraph",
-        content: "Bộ Chính trị quyết định mở Chiến dịch Điện Biên Phủ.",
-      },
-      { type: "highlight-normal", content: "13-3-1954" },
+      { type: "highlight", content: "Chiến dịch Điện Biên Phủ" },
+      { type: "highlight-normal", content: "Bối cảnh" },
       {
         type: "paragraph",
         content:
-          "Quân ta nổ súng tấn công địch, mở màn Chiến dịch Điện Biên Phủ.",
+          "Pháp thực hiện Kế hoạch Navarre, xây dựng Điện Biên Phủ thành tập đoàn cứ điểm mạnh nhất Đông Dương.",
       },
-      { type: "highlight-normal", content: "7-5-1954" },
+      { type: "highlight-normal", content: "Quyết định" },
       {
         type: "paragraph",
         content:
-          "Chiến dịch Điện Biên Phủ kết thúc thắng lợi, bắt sống tướng Đờ Cát-xtơ-ri, đưa cuộc kháng chiến chống Pháp đến thắng lợi vẻ vang.",
+          "Ngày 6-12-1953, Bộ Chính trị quyết định mở Chiến dịch Điện Biên Phủ.",
       },
-      { type: "highlight-normal", content: "8-5-1954" },
+      { type: "highlight-normal", content: "Chỉ đạo" },
       {
         type: "paragraph",
         content:
-          "Phái đoàn Chính phủ Việt Nam Dân chủ Cộng hòa tham gia Hội nghị Gionevơ (Thụy Sỹ).",
+          "Đại tướng Võ Nguyên Giáp được giao làm Tư lệnh. Phương châm chiến dịch là 'đánh chắc, tiến chắc'.",
       },
-      { type: "highlight-normal", content: "21-7-1954" },
+      { type: "highlight-normal", content: "Chiến thắng" },
       {
         type: "paragraph",
         content:
-          "Các nước ký kết Hiệp định Genève, cam kết tôn trọng độc lập, thống nhất và toàn vẹn lãnh thổ của Việt Nam; Hiệp định góp phần chấm dứt chiến tranh ở Đông Dương.",
+          "Sau 56 ngày đêm, ngày 7-5-1954, quân đội ta giành chiến thắng, bắt sống tướng Đờ Cátơri. Chiến thắng này buộc Pháp phải đàm phán. Chiến thắng Điện Biên Phủ được ghi nhận là một chiến công vĩ đại của dân tộc Việt Nam, báo hiệu sự sụp đổ của chủ nghĩa thực dân.",
+      },
+      {
+        type: "image",
+        src: "/images/Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954.jpg",
+        alt: "Mừng chiến thắng Điện Biên Phủ",
+        caption:
+          "Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954",
+        layout: "wide",
+      },
+      { type: "highlight", content: "Hiệp định Genève (21-7-1954)" },
+      {
+        type: "paragraph",
+        content: "Hội nghị được tiến hành từ ngày 8-5-1954.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Hiệp định chính thức chấm dứt chiến tranh, công nhận độc lập, chủ quyền, thống nhất và toàn vẹn lãnh thổ của Việt Nam, Lào, và Campuchia.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Hiệp định đánh dấu kết thúc thắng lợi cuộc kháng chiến chống Pháp xâm lược và dẫn đến việc giải phóng hoàn toàn miền Bắc, tạo tiền đề cho miền Bắc quá độ lên chủ nghĩa xã hội, xây dựng miền Bắc thành hậu phương lớn.",
+      },
+      {
+        type: "image",
+        src: "/images/Hội nghị Geneve 1954 bàn về lập lại hòa bình ở Đông Dương.jpg",
+        alt: "Hội nghị Genève 1954",
+        caption: "Hội nghị Genève 1954 bàn về lập lại hòa bình ở Đông Dương",
+        layout: "wide",
+      },
+      {
+        type: "image",
+        src: "/images/Thứ trưởng Bộ Quốc phòng Tạ Quang Bửu (ngồi bên phải) thay mặt Chính phủ và Bộ Tổng tư lệnh QĐND Việt Nam ký Hiệp định Geneva, năm 1954.jpg",
+        alt: "Ký Hiệp định Geneva",
+        caption:
+          "Thứ trưởng Bộ Quốc phòng Tạ Quang Bửu (ngồi bên phải) thay mặt Chính phủ và Bộ Tổng tư lệnh QĐND Việt Nam ký Hiệp định Geneva, năm 1954",
+      },
+      { type: "highlight", content: "Kinh nghiệm giai đoạn 1945–1954" },
+      {
+        type: "paragraph",
+        content:
+          "Giai đoạn 1945–1954 cho thấy kinh nghiệm nổi bật của Đảng là đề ra đường lối đúng đắn, sáng tạo ngay từ đầu (đường lối 'kháng chiến và kiến quốc'), kết hợp chặt chẽ hai nhiệm vụ cơ bản vừa kháng chiến vừa kiến quốc, chống đế quốc và chống phong kiến, và phát huy loại hình chiến tranh nhân dân, toàn dân, toàn diện.",
       },
     ],
   },
@@ -699,33 +1111,6 @@ export default function TimelineDetail() {
                         </cite>
                       )}
                     </blockquote>
-                  );
-                }
-
-                if (item.type === "list") {
-                  const listItem = item as RichContentItem;
-                  return (
-                    <div
-                      key={index}
-                      className="my-8 p-6 bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-blue-600 rounded-r-lg"
-                    >
-                      <ul className="space-y-3">
-                        {listItem.items?.map((listItemText, listIndex) => (
-                          <li
-                            key={listIndex}
-                            className="flex items-start gap-3 text-lg text-gray-800 leading-relaxed"
-                            style={{
-                              lineHeight: "1.8",
-                              wordSpacing: "0.1em",
-                              fontFeatureSettings: '"liga", "kern"',
-                            }}
-                          >
-                            <span className="flex-shrink-0 w-2 h-2 bg-blue-600 rounded-full mt-3"></span>
-                            <span className="text-justify">{listItemText}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
                   );
                 }
 
