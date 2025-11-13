@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Clock, Trophy, Star } from "lucide-react";
 
@@ -134,14 +133,10 @@ export default function GameGallery() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-red-200 hover:border-red-500 hover:-translate-y-2">
                 {/* Image Section */}
                 <div className="relative h-64 overflow-hidden">
-                  <Image
+                  <img
                     src={img.src}
                     alt={img.alt}
-                    fill
-                    className="object-cover object-center group-hover:scale-110 transition-transform duration-700"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    priority={idx < 3}
-                    unoptimized
+                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
                   />
 
                   {/* Overlay with period */}

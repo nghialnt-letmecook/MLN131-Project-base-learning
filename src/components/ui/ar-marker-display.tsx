@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Camera, X, Smartphone } from "lucide-react";
-import Image from "next/image";
 
 export default function ARMarkerDisplay() {
   const [isVisible, setIsVisible] = useState(false);
