@@ -248,118 +248,6 @@ export default function TimelineNavbar(props: TimelineNavbarProps) {
               </motion.div>
             </Link>
           </div>
-
-          {/* Right side - Audio Player */}
-          <div className="flex items-center gap-2 bg-red-50 rounded-lg px-3 py-2 border border-red-200 shadow-sm">
-            {/* Play/Pause */}
-            <motion.button
-              onClick={onToggleAudio}
-              className="flex items-center justify-center w-8 h-8 bg-red-600 hover:bg-red-700 text-white rounded-full transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {isPlaying ? (
-                <Pause className="w-4 h-4" />
-              ) : (
-                <Play className="w-4 h-4 ml-0.5" />
-              )}
-            </motion.button>
-
-            {/* Progress bar */}
-            <div className="flex items-center gap-2 text-xs text-red-600 min-w-0">
-              <span className="whitespace-nowrap text-xs">
-                {formatTime((audioProgress * audioDuration) / 100 || 0)}
-              </span>
-
-              <div
-                className="w-20 h-2 bg-red-200 rounded-full overflow-hidden cursor-pointer relative group"
-                onClick={onProgressClick}
-                title="Click để chuyển đến vị trí"
-              >
-                <div
-                  className="h-full bg-red-600 transition-all duration-150 rounded-full"
-                  style={{ width: `${audioProgress}%` }}
-                ></div>
-              </div>
-
-              <span className="whitespace-nowrap text-xs">
-                {formatTime(audioDuration)}
-              </span>
-            </div>
-
-            {/* Volume control */}
-            <div className="relative">
-              <motion.button
-                onClick={onToggleMute}
-                onMouseEnter={() => onSetShowVolumeSlider(true)}
-                className="text-red-600 hover:text-red-700 transition-colors p-1 rounded"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                {isMuted || volume === 0 ? (
-                  <VolumeX className="w-4 h-4" />
-                ) : (
-                  <Volume2 className="w-4 h-4" />
-                )}
-              </motion.button>
-
-              {/* Volume slider */}
-              <AnimatePresence>
-                {showVolumeSlider && (
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.8, y: 10 }}
-                    animate={{ opacity: 1, scale: 1, y: 0 }}
-                    exit={{ opacity: 0, scale: 0.8, y: 10 }}
-                    className="absolute -bottom-12 right-0 bg-white border border-red-200 rounded-lg p-2 shadow-lg"
-                    onMouseLeave={() => onSetShowVolumeSlider(false)}
-                  >
-                    <div className="flex flex-col items-center gap-1">
-                      <input
-                        type="range"
-                        min="0"
-                        max="1"
-                        step="0.1"
-                        value={volume}
-                        onChange={(e) =>
-                          onVolumeChange(parseFloat(e.target.value))
-                        }
-                        className="w-16 h-1 bg-red-200 rounded-lg appearance-none cursor-pointer"
-                      />
-                      <span className="text-xs text-red-600">
-                        {Math.round(volume * 100)}%
-                      </span>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-
-            {/* Speed control */}
-            <div className="relative group">
-              <button className="text-xs text-red-600 hover:text-red-700 transition-colors px-2 py-1 rounded border border-red-300 min-w-[2.5rem]">
-                {playbackRate}x
-              </button>
-
-              {/* Speed options */}
-              <div className="absolute -bottom-24 -right-2 bg-white border border-red-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto">
-                <div className="p-1">
-                  {[0.5, 0.75, 1, 1.25, 1.5, 2].map((rate) => (
-                    <button
-                      key={rate}
-                      onClick={() => onPlaybackRateChange(rate)}
-                      className={`block w-full text-left px-2 py-1 text-xs rounded transition-colors ${
-                        playbackRate === rate
-                          ? "bg-red-100 text-red-700"
-                          : "text-red-600 hover:bg-red-50"
-                      }`}
-                    >
-                      {rate}x
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -377,45 +265,18 @@ export default function TimelineNavbar(props: TimelineNavbarProps) {
             </motion.div>
           </Link>
 
-          {/* Mobile Audio controls */}
-          <div className="flex items-center gap-2">
-            <motion.button
-              onClick={onToggleAudio}
-              className="flex items-center justify-center w-8 h-8 bg-red-600 text-white rounded-full"
-              whileTap={{ scale: 0.95 }}
-            >
-              {isPlaying ? (
-                <Pause className="w-3 h-3" />
-              ) : (
-                <Play className="w-3 h-3 ml-0.5" />
-              )}
-            </motion.button>
-
-            <motion.button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 text-red-700"
-              whileTap={{ scale: 0.95 }}
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-5 h-5" />
-              ) : (
-                <Menu className="w-5 h-5" />
-              )}
-            </motion.button>
-          </div>
-        </div>
-
-        {/* Mobile progress bar */}
-        <div className="px-4 pb-2">
-          <div
-            className="w-full h-1 bg-red-200 rounded-full overflow-hidden cursor-pointer"
-            onClick={onProgressClick}
+          {/* Mobile Menu Button */}
+          <motion.button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="p-2 text-red-700"
+            whileTap={{ scale: 0.95 }}
           >
-            <div
-              className="h-full bg-red-600 transition-all duration-150 rounded-full"
-              style={{ width: `${audioProgress}%` }}
-            ></div>
-          </div>
+            {isMobileMenuOpen ? (
+              <X className="w-5 h-5" />
+            ) : (
+              <Menu className="w-5 h-5" />
+            )}
+          </motion.button>
         </div>
       </div>
 

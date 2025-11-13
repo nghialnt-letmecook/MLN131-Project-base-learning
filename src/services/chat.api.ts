@@ -19,9 +19,13 @@ export const createChatSession = async (data: ChatSession) => {
 
       const audioUrl = URL.createObjectURL(audioBlob);
 
-      // phát audio
+      // phát audio với tốc độ nhanh hơn
       const audio = new Audio(audioUrl);
+      audio.playbackRate = 1.3; // Tăng tốc độ lên 1.3x (có thể điều chỉnh: 1.0 = normal, 1.5 = rất nhanh)
       audio.play();
+      
+      // Return audio object để component có thể lắng nghe events
+      return audio;
       // Nếu response là JSON và báo token expired thì retry
       let resData = response.data;
       try {

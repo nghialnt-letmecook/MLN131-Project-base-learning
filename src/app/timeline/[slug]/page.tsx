@@ -88,11 +88,16 @@ const timelineData: TimelineEvent[] = [
         type: "highlight",
         content: "1. Tổng khởi nghĩa Tháng Tám (Giữa tháng 8-1945)",
       },
-      { type: "highlight-normal", content: "Thời cơ" },
+      { type: "highlight-normal", content: "Bối cảnh và thời cơ cách mạng" },
       {
         type: "paragraph",
         content:
-          "Sau khi Phát xít Đức đầu hàng Đồng minh, và Nhật tuyên bố đầu hàng Đồng minh vô điều kiện (15-8-1945), quân Nhật ở Đông Dương mất hết tinh thần chiến đấu, chính quyền thân Nhật hoang mang cực độ. Đảng nhận định đây là thời cơ cách mạng.",
+          "Sau hơn 80 năm dưới ách thống trị của thực dân Pháp, nhân dân Việt Nam rơi vào cảnh lầm than, mất nước, nạn đói, nạn mù chữ và áp bức chính trị nặng nề. Trong Chiến tranh thế giới thứ hai, phát xít Nhật tiến vào Đông Dương, lật đổ Pháp, lập nên chính quyền tay sai thân Nhật, khiến đất nước rơi vào tình cảnh 'một cổ hai tròng'.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Đến giữa năm 1945, khi phát xít Đức đầu hàng Đồng minh và Nhật Bản tuyên bố đầu hàng vô điều kiện (15-8-1945), chính quyền thân Nhật ở Đông Dương hoang mang cực độ, quân Nhật mất tinh thần chiến đấu. Đây là thời cơ vàng của cách mạng Việt Nam. Dưới sự lãnh đạo của Đảng Cộng sản Đông Dương và Mặt trận Việt Minh, toàn dân vùng dậy giành chính quyền.",
       },
       {
         type: "image",
@@ -107,23 +112,35 @@ const timelineData: TimelineEvent[] = [
         alt: "Nạn đói năm 1945",
         caption: "Cảnh đói khổ của nhân dân trong nạn đói năm 1945",
       },
-      { type: "highlight-normal", content: "Quyết định Khởi nghĩa" },
       {
-        type: "paragraph",
-        content:
-          "Ngày 12-8-1945, Ủy ban lâm thời khu giải phóng hạ lệnh khởi nghĩa trong khu. 23 giờ ngày 13-8-1945, Trung ương Đảng và Tổng bộ Việt Minh thành lập Ủy ban Khởi nghĩa toàn quốc và ban bố 'Quân lệnh số 1', phát đi lệnh tổng khởi nghĩa trong toàn quốc. Ngày 14 và 15-8-1945, Hội nghị toàn quốc của Đảng họp ở Tân Trào, quyết định phát động toàn dân nổi dậy tổng khởi nghĩa giành chính quyền từ tay phát xít Nhật trước khi quân Đồng minh vào Đông Dương.",
+        type: "highlight-normal",
+        content: "Chủ trương và quyết định khởi nghĩa",
       },
-      { type: "highlight-normal", content: "Chủ trương hành động" },
       {
         type: "paragraph",
         content:
-          "Hội nghị xác định ba nguyên tắc chỉ đạo khởi nghĩa là tập trung, thống nhất và kịp thời. Phương hướng hành động là đánh chiếm ngay những nơi chắc thắng (không kể thành phố hay nông thôn), phối hợp quân sự và chính trị, làm tan rã tinh thần quân địch.",
+          "Ngày 12-8-1945, Ủy ban lâm thời khu giải phóng ra lệnh khởi nghĩa trong khu.",
       },
-      { type: "highlight-normal", content: "Thắng lợi ở các đô thị lớn" },
       {
         type: "paragraph",
         content:
-          "Ngày 19-8, Thủ đô Hà Nội tràn ngập cờ đỏ sao vàng, quần chúng cách mạng kéo đến Quảng trường Nhà hát thành phố. Cuộc mít tinh chuyển thành biểu tình vũ trang, tiến chiếm Phủ Khâm sai, Tòa Thị chính và các công sở.",
+          "23 giờ ngày 13-8-1945, Trung ương Đảng và Tổng bộ Việt Minh thành lập Ủy ban khởi nghĩa toàn quốc và ban bố 'Quân lệnh số 1', phát động Tổng khởi nghĩa trong toàn quốc.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Ngày 14–15-8-1945, Hội nghị toàn quốc của Đảng họp tại Tân Trào (Tuyên Quang), quyết định phát động toàn dân nổi dậy giành chính quyền từ tay phát xít Nhật trước khi quân Đồng minh vào Đông Dương.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Ba nguyên tắc chỉ đạo: Tập trung – Thống nhất – Kịp thời. Phương hướng hành động là đánh chiếm ngay những nơi chắc thắng, phối hợp quân sự và chính trị, làm tan rã tinh thần địch.",
+      },
+      { type: "highlight-normal", content: "Diễn biến và kết quả" },
+      {
+        type: "paragraph",
+        content:
+          "19-8-1945: Nhân dân Hà Nội vùng dậy khởi nghĩa, chiếm Phủ Khâm sai, Tòa Thị chính, trụ sở cảnh sát, bưu điện... Cờ đỏ sao vàng tung bay khắp nơi.",
       },
       {
         type: "image",
@@ -149,23 +166,75 @@ const timelineData: TimelineEvent[] = [
       {
         type: "paragraph",
         content:
-          "Ngày 23-8, Ủy ban khởi nghĩa Thừa Thiên-Huế huy động quần chúng biểu dương lực lượng và chiếm các công sở. Sáng 25-8, hơn 1 triệu người biểu tình tuần hành thị uy, chiếm các công sở ở Sài Gòn. Cuộc khởi nghĩa thành công nhanh chóng.",
+          "23-8-1945: Nhân dân Thừa Thiên – Huế giành chính quyền, vua Bảo Đại sau đó thoái vị, trao ấn kiếm cho chính quyền cách mạng, chấm dứt chế độ phong kiến kéo dài hàng nghìn năm.",
       },
-      { type: "highlight-normal", content: "Ý nghĩa" },
       {
         type: "paragraph",
         content:
-          "Những cuộc khởi nghĩa ở Hà Nội, Huế, Sài Gòn có ý nghĩa quyết định thắng lợi trong cả nước.",
+          "25-8-1945: Ở Sài Gòn và nhiều tỉnh Nam Bộ, hàng triệu người tham gia biểu tình, giành chính quyền thắng lợi.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Đến cuối tháng 8-1945, chính quyền trong cả nước hoàn toàn thuộc về nhân dân.",
+      },
+      { type: "highlight-normal", content: "Nguyên nhân thắng lợi" },
+      {
+        type: "paragraph",
+        content:
+          "Sự lãnh đạo đúng đắn, kịp thời và sáng tạo của Đảng Cộng sản Đông Dương.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Sự chuẩn bị lâu dài về lực lượng chính trị, vũ trang và căn cứ cách mạng.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Nhân dân cả nước đoàn kết, tin tưởng tuyệt đối vào Việt Minh.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Bối cảnh quốc tế thuận lợi: phát xít Nhật đầu hàng, chính quyền tay sai tê liệt.",
+      },
+      { type: "highlight-normal", content: "Ý nghĩa lịch sử" },
+      {
+        type: "paragraph",
+        content:
+          "Lật đổ ách thống trị của thực dân Pháp và phát xít Nhật, chấm dứt chế độ phong kiến kéo dài hàng nghìn năm.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Giành chính quyền về tay nhân dân, mở ra kỷ nguyên mới: độc lập dân tộc gắn liền với chủ nghĩa xã hội.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Thành lập Nhà nước Việt Nam Dân chủ Cộng hòa (VNDCCH) – nhà nước công nông đầu tiên ở Đông Nam Á.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Khẳng định đường lối cách mạng đúng đắn của Đảng, là thắng lợi vĩ đại đầu tiên của chủ nghĩa Mác – Lênin ở Việt Nam.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Góp phần thúc đẩy phong trào giải phóng dân tộc trên thế giới sau Thế chiến II.",
       },
       {
         type: "highlight",
-        content: "2. Thành lập Nhà nước VNDCCH và Thách thức (Tháng 9-1945)",
+        content:
+          "2. Thành lập Nhà nước Việt Nam Dân chủ Cộng hòa và tình thế 'Ngàn cân treo sợi tóc' (Tháng 9-1945)",
       },
-      { type: "highlight-normal", content: "Thành lập Chính phủ" },
+      { type: "highlight-normal", content: "Thành lập Nhà nước VNDCCH" },
       {
         type: "paragraph",
         content:
-          "Ngày 27-8-1945, Ủy ban dân tộc giải phóng cải tổ thành Chính phủ lâm thời nước Việt Nam Dân chủ Cộng hòa do Hồ Chí Minh làm Chủ tịch.",
+          "Ngày 27-8-1945: Ủy ban Dân tộc Giải phóng được cải tổ thành Chính phủ lâm thời nước VNDCCH, do Chủ tịch Hồ Chí Minh đứng đầu.",
       },
       {
         type: "image",
@@ -174,11 +243,20 @@ const timelineData: TimelineEvent[] = [
         caption:
           "Chủ tịch Hồ Chí Minh và Chính phủ lâm thời ra mắt ngày 3-9-1945",
       },
-      { type: "highlight-normal", content: "Tuyên ngôn Độc lập (2-9-1945)" },
       {
         type: "paragraph",
         content:
-          "Hồ Chí Minh quyết định sớm tổ chức lễ Tuyên bố độc lập để xác lập vị thế người chủ đất nước của nhân dân Việt Nam trước khi quân Đồng minh đến. Bản Tuyên ngôn Độc lập được coi là hoa, là quả của bao nhiêu máu đã đổ và tính mạng đã hy sinh của những người con anh dũng của Việt Nam.",
+          "Ngày 2-9-1945: Tại Quảng trường Ba Đình (Hà Nội), Chủ tịch Hồ Chí Minh đọc 'Tuyên ngôn Độc lập', long trọng tuyên bố với toàn thế giới rằng:",
+      },
+      {
+        type: "quote",
+        content:
+          "Nước Việt Nam có quyền hưởng tự do và độc lập, và sự thật đã trở thành một nước tự do độc lập.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Từ đây, nước Việt Nam Dân chủ Cộng hòa ra đời, trở thành nhà nước nhân dân, do nhân dân và vì nhân dân.",
       },
       {
         type: "image",
@@ -188,11 +266,35 @@ const timelineData: TimelineEvent[] = [
           "Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945",
         layout: "wide",
       },
-      { type: "highlight-normal", content: "Tình hình khó khăn" },
+      { type: "highlight-normal", content: "Khó khăn và thử thách" },
       {
         type: "paragraph",
         content:
-          "Ngay sau tuyên bố độc lập, chính quyền cách mạng non trẻ đứng trước tình thế 'như ngàn cân treo sợi tóc' do phải đối phó cùng lúc với nạn đói, nạn dốt và bọn thù trong, giặc ngoài. Giặc ngoại xâm: Quân Trung Hoa Dân quốc (Tưởng Giới Thạch) tràn vào miền Bắc, quân Anh-Ấn đổ bộ vào miền Nam, cùng với âm mưu phá hoại của các phe phái phản động (Việt Nam Quốc dân Đảng, Trốtxkit, Đại Việt).",
+          "Ngay sau khi giành chính quyền, chính phủ non trẻ phải đối mặt với muôn vàn khó khăn:",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Giặc đói: Nạn đói năm 1945 đã giết chết hơn 2 triệu người ở miền Bắc.",
+      },
+      {
+        type: "paragraph",
+        content: "Giặc dốt: Hơn 90% dân số mù chữ.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Giặc ngoại xâm: Quân Tưởng Giới Thạch kéo vào miền Bắc. Quân Anh đưa quân Pháp trở lại miền Nam. Các đảng phái phản động trong nước nổi lên chống phá.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Nền tài chính trống rỗng, ngân khố quốc gia chỉ còn vài triệu đồng Đông Dương.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Tình hình đất nước đúng như Hồ Chí Minh nói: 'Ngàn cân treo sợi tóc.'",
       },
       {
         type: "image",
@@ -743,11 +845,33 @@ const timelineData: TimelineEvent[] = [
         caption:
           "Thứ trưởng Bộ Quốc phòng Tạ Quang Bửu (ngồi bên phải) thay mặt Chính phủ và Bộ Tổng tư lệnh QĐND Việt Nam ký Hiệp định Geneva, năm 1954",
       },
-      { type: "highlight", content: "Kinh nghiệm giai đoạn 1945–1954" },
+      { type: "highlight", content: "Kết luận chung (1945–1954)" },
       {
         type: "paragraph",
         content:
-          "Giai đoạn 1945–1954 cho thấy kinh nghiệm nổi bật của Đảng là đề ra đường lối đúng đắn, sáng tạo ngay từ đầu (đường lối 'kháng chiến và kiến quốc'), kết hợp chặt chẽ hai nhiệm vụ cơ bản vừa kháng chiến vừa kiến quốc, chống đế quốc và chống phong kiến, và phát huy loại hình chiến tranh nhân dân, toàn dân, toàn diện.",
+          "Dưới sự lãnh đạo của Đảng và Chủ tịch Hồ Chí Minh, dân tộc Việt Nam đã giành độc lập, giữ vững chính quyền, xây dựng nền tảng chế độ mới và đánh bại thực dân Pháp.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Đây là thập niên anh hùng, khẳng định đường lối cách mạng đúng đắn, sáng tạo, độc lập, tự chủ.",
+      },
+      { type: "highlight-normal", content: "Bài học lớn" },
+      {
+        type: "paragraph",
+        content: "Kết hợp kháng chiến và kiến quốc.",
+      },
+      {
+        type: "paragraph",
+        content: "Phát huy sức mạnh toàn dân.",
+      },
+      {
+        type: "paragraph",
+        content: "Dựa vào nội lực, tranh thủ quốc tế.",
+      },
+      {
+        type: "paragraph",
+        content: "Kiên định mục tiêu độc lập dân tộc gắn với chủ nghĩa xã hội.",
       },
     ],
   },

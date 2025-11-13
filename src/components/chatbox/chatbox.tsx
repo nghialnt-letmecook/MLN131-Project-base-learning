@@ -28,6 +28,7 @@ export default function Chatbox({ isOpen, onClose }: ChatboxProps) {
   const [chatState, setChatState] = useState<ChatState>("welcome");
   const [isAuthenticating, setIsAuthenticating] = useState(false);
   const [sessionId, setSessionId] = useState<string>("");
+  const [showChatModal, setShowChatModal] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // Generate session ID
@@ -39,6 +40,7 @@ export default function Chatbox({ isOpen, onClose }: ChatboxProps) {
   const initializeChat = async () => {
     setIsAuthenticating(true);
     setChatState("connecting");
+    setShowChatModal(true); // Show modal immediately when starting
 
     try {
       await refreshTokenIfNeeded();
@@ -66,6 +68,7 @@ export default function Chatbox({ isOpen, onClose }: ChatboxProps) {
       setChatState("ready");
     } catch (error: any) {
       setChatState("error");
+      setShowChatModal(false); // Hide modal on error
     } finally {
       setIsAuthenticating(false);
     }
@@ -135,177 +138,231 @@ export default function Chatbox({ isOpen, onClose }: ChatboxProps) {
     setIsTyping(false);
   };
 
+  const handleCloseChatModal = () => {
+    setShowChatModal(false);
+    setChatState("welcome");
+    setMessages([]);
+    setSessionId("");
+  };
+
   if (!isOpen) return null;
 
   return (
     <>
-      {/* Backdrop */}
-      <div
-        className="fixed inset-0 bg-black bg-opacity-20 z-35 md:hidden"
-        onClick={onClose}
-      />
+      {/* Large Chat Modal - Center Screen */}
+      {showChatModal ? (
+        <>
+          {/* Modal Backdrop */}
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 animate-in fade-in duration-300"
+            onClick={handleCloseChatModal}
+          >
+            {/* Modal Container */}
+            <div
+              className="bg-[#F5F5F5] rounded-3xl shadow-2xl w-full max-w-4xl h-[85vh] max-h-[800px] flex flex-col overflow-hidden animate-in zoom-in-95 duration-300"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Header */}
+              <div className="bg-gradient-to-r from-[#B22222] to-[#1C1C1C] text-[#F5F5F5] p-6 flex items-center justify-between">
+                <div className="flex items-center space-x-3">
+                  <div className="bg-[#F5F5F5] p-2 rounded-full">
+                    <MessageCircle size={24} className="text-[#B22222]" />
+                  </div>
+                  <div>
+                    <h2 className="font-bold text-xl">
+                      Trò chuyện với AI Assistant
+                    </h2>
+                    <p className="text-sm text-[#FFD700] flex items-center gap-2">
+                      <span className="w-2 h-2 bg-[#2E4600] rounded-full animate-pulse"></span>
+                      Đang hoạt động
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onClick={handleCloseChatModal}
+                  className="hover:bg-[#B22222] rounded-full p-2 transition-colors"
+                >
+                  <X size={24} />
+                </button>
+              </div>
 
-      {/* Chatbox */}
-      <div
-        className="fixed bottom-6 right-52 w-80 h-96 bg-[#F5F5F5] border border-[#D2B48C] rounded-2xl shadow-2xl z-40 flex flex-col overflow-hidden
+              {/* Messages Area */}
+              <div className="flex-1 overflow-y-auto p-6 bg-gradient-to-b from-[#E5E5E5] to-[#F5F5F5] space-y-4">
+                {chatState === "connecting" && (
+                  <div className="flex flex-col items-center justify-center h-full text-center space-y-4">
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-4 border-[#B22222]"></div>
+                    <p className="text-lg text-[#4B2E2E] font-medium">
+                      Đang kết nối với server...
+                    </p>
+                  </div>
+                )}
+
+                {chatState === "ready" &&
+                  messages.map((message) => (
+                    <div
+                      key={message.id}
+                      className={`flex ${
+                        message.isUser ? "justify-end" : "justify-start"
+                      } animate-in slide-in-from-bottom-2 duration-300`}
+                    >
+                      <div
+                        className={`max-w-[70%] p-4 rounded-2xl shadow-md ${
+                          message.isUser
+                            ? "bg-gradient-to-r from-[#B22222] to-[#8B0000] text-[#F5F5F5] rounded-br-md"
+                            : "bg-white border-2 border-[#D2B48C] text-[#2E4600] rounded-bl-md"
+                        }`}
+                      >
+                        <p className="text-base leading-relaxed">
+                          {message.text}
+                        </p>
+                        <p
+                          className={`text-xs mt-2 ${
+                            message.isUser ? "text-[#FFD700]" : "text-[#8B7355]"
+                          }`}
+                        >
+                          {message.timestamp.toLocaleTimeString("vi-VN", {
+                            hour: "2-digit",
+                            minute: "2-digit",
+                          })}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+
+                {isTyping && (
+                  <div className="flex justify-start animate-in slide-in-from-bottom-2 duration-300">
+                    <div className="bg-white border-2 border-[#D2B48C] p-4 rounded-2xl rounded-bl-md shadow-md">
+                      <div className="flex space-x-2">
+                        <div className="w-3 h-3 bg-[#B22222] rounded-full animate-bounce"></div>
+                        <div
+                          className="w-3 h-3 bg-[#B22222] rounded-full animate-bounce"
+                          style={{ animationDelay: "0.1s" }}
+                        ></div>
+                        <div
+                          className="w-3 h-3 bg-[#B22222] rounded-full animate-bounce"
+                          style={{ animationDelay: "0.2s" }}
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                <div ref={messagesEndRef} />
+              </div>
+
+              {/* Input Area */}
+              <form
+                onSubmit={handleSubmit}
+                className="p-6 bg-white border-t-2 border-[#D2B48C]"
+              >
+                <div className="flex space-x-3">
+                  <input
+                    type="text"
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
+                    placeholder="Nhập câu hỏi của bạn..."
+                    className="flex-1 px-5 py-4 border-2 border-[#D2B48C] rounded-full focus:outline-none focus:ring-2 focus:ring-[#B22222] focus:border-transparent text-base bg-[#F5F5F5]"
+                    disabled={isTyping || chatState === "connecting"}
+                    autoFocus
+                  />
+                  <button
+                    type="submit"
+                    disabled={
+                      !inputValue.trim() ||
+                      isTyping ||
+                      chatState === "connecting"
+                    }
+                    className="bg-gradient-to-r from-[#B22222] to-[#8B0000] hover:from-[#8B0000] hover:to-[#B22222] disabled:from-[#D2B48C] disabled:to-[#C4A484] text-[#F5F5F5] px-6 py-4 rounded-full transition-all duration-300 flex items-center justify-center min-w-[56px] shadow-lg hover:shadow-xl transform hover:scale-105 disabled:transform-none"
+                  >
+                    <Send size={20} />
+                  </button>
+                </div>
+                <p className="text-xs text-[#8B7355] mt-3 text-center">
+                  Nhấn Enter để gửi tin nhắn
+                </p>
+              </form>
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 bg-black bg-opacity-20 z-35 md:hidden"
+            onClick={onClose}
+          />
+
+          {/* Small Chatbox - Welcome Screen */}
+          <div
+            className="fixed bottom-6 right-52 w-80 h-96 bg-[#F5F5F5] border border-[#D2B48C] rounded-2xl shadow-2xl z-40 flex flex-col overflow-hidden
                       max-sm:right-4 max-sm:w-72 max-sm:h-80 max-sm:bottom-4
                       max-md:right-48 max-md:w-76
                       animate-in slide-in-from-bottom-4 duration-300"
-      >
-        {/* Header */}
-        <div className="bg-gradient-to-r from-[#B22222] to-[#1C1C1C] text-[#F5F5F5] p-4 flex items-center justify-between rounded-t-2xl">
-          <div className="flex items-center space-x-2">
-            <MessageCircle size={20} />
-            <h3 className="font-semibold text-sm">Trò chuyện với AI</h3>
-          </div>
-          <div className="flex items-center space-x-1">
-            {/* Status indicator */}
-            <div className="flex items-center space-x-2">
-              {chatState === "connecting" && (
-                <div className="w-2 h-2 bg-[#FFD700] rounded-full animate-pulse"></div>
-              )}
-              {chatState === "ready" && (
-                <div className="w-2 h-2 bg-[#2E4600] rounded-full"></div>
-              )}
-              {chatState === "error" && (
-                <div className="w-2 h-2 bg-[#B22222] rounded-full"></div>
-              )}
-            </div>
-
-            <button
-              onClick={onClose}
-              className="hover:bg-[#B22222] rounded-full p-1 transition-colors"
-            >
-              <X size={18} />
-            </button>
-          </div>
-        </div>
-
-        {/* Messages Area */}
-        <div className="flex-1 overflow-y-auto p-4 bg-gradient-to-b from-[#E5E5E5] to-[#F5F5F5]">
-          {chatState === "welcome" && (
-            <div className="flex flex-col items-center justify-center h-full text-center space-y-4">
-              <MessageCircle size={48} className="text-[#B22222]" />
-              <div className="space-y-2">
-                <h3 className="font-semibold text-[#2E4600]">
-                  Chào mừng đến với AI Assistant
-                </h3>
-                <p className="text-sm text-[#4B2E2E] max-w-xs">
-                  Tôi có thể giúp bạn tìm hiểu về cuộc đời và sự nghiệp của Chủ
-                  tịch Hồ Chí Minh
-                </p>
-              </div>
-              <div className="space-y-2 w-full max-w-xs">
-                <button
-                  onClick={initializeChat}
-                  disabled={isAuthenticating}
-                  className="w-full bg-[#B22222] hover:bg-[#1C1C1C] disabled:bg-[#D2B48C] text-[#F5F5F5] px-4 py-2 rounded-lg transition-colors text-sm font-medium"
-                >
-                  {isAuthenticating ? "Đang kết nối..." : "Bắt đầu chat"}
-                </button>
-              </div>
-            </div>
-          )}
-
-          {chatState === "connecting" && (
-            <div className="flex flex-col items-center justify-center h-full text-center space-y-4">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#B22222]"></div>
-              <p className="text-sm text-[#4B2E2E]">
-                Đang kết nối với server...
-              </p>
-            </div>
-          )}
-
-          {chatState === "error" && (
-            <div className="flex flex-col items-center justify-center h-full text-center space-y-4">
-              <div className="w-12 h-12 bg-[#B22222]/20 rounded-full flex items-center justify-center">
-                <X size={20} className="text-[#B22222]" />
-              </div>
-              <div className="space-y-2">
-                <h3 className="font-semibold text-[#2E4600]">Có lỗi xảy ra</h3>
-                <p className="text-sm text-[#4B2E2E] max-w-xs">
-                  Không thể kết nối với server. Vui lòng thử lại
-                </p>
-              </div>
-              <button
-                onClick={() => setChatState("welcome")}
-                className="bg-[#4B2E2E] hover:bg-[#2E4600] text-[#F5F5F5] px-4 py-2 rounded-lg transition-colors text-sm font-medium"
-              >
-                Thử lại
-              </button>
-            </div>
-          )}
-
-          {chatState === "ready" && messages.length > 0 && (
-            <div className="space-y-3">
-              {messages.map((message) => (
-                <div
-                  key={message.id}
-                  className={`flex ${
-                    message.isUser ? "justify-end" : "justify-start"
-                  }`}
-                >
-                  <div
-                    className={`max-w-[75%] p-3 rounded-2xl text-sm leading-relaxed ${
-                      message.isUser
-                        ? "bg-[#B22222] text-[#F5F5F5] rounded-br-md"
-                        : "bg-[#F5F5F5] border border-[#D2B48C] text-[#2E4600] rounded-bl-md shadow-sm"
-                    }`}
-                  >
-                    {message.text}
-                  </div>
-                </div>
-              ))}
-
-              {isTyping && (
-                <div className="flex justify-start">
-                  <div className="bg-[#F5F5F5] border border-[#D2B48C] p-3 rounded-2xl rounded-bl-md shadow-sm">
-                    <div className="flex space-x-1">
-                      <div className="w-2 h-2 bg-[#B22222] rounded-full animate-bounce"></div>
-                      <div
-                        className="w-2 h-2 bg-[#B22222] rounded-full animate-bounce"
-                        style={{ animationDelay: "0.1s" }}
-                      ></div>
-                      <div
-                        className="w-2 h-2 bg-[#B22222] rounded-full animate-bounce"
-                        style={{ animationDelay: "0.2s" }}
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              )}
-              <div ref={messagesEndRef} />
-            </div>
-          )}
-        </div>
-
-        {/* Input */}
-        {chatState === "ready" && sessionId && (
-          <form
-            onSubmit={handleSubmit}
-            className="p-4 bg-[#F5F5F5] border-t border-[#D2B48C]"
           >
-            <div className="flex space-x-2">
-              <input
-                type="text"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                placeholder="Chat với AI..."
-                className="flex-1 px-3 py-2 border border-[#D2B48C] rounded-full focus:outline-none focus:ring-2 focus:ring-[#B22222] focus:border-transparent text-sm"
-                disabled={isTyping}
-                autoFocus
-              />
+            {/* Header */}
+            <div className="bg-gradient-to-r from-[#B22222] to-[#1C1C1C] text-[#F5F5F5] p-4 flex items-center justify-between rounded-t-2xl">
+              <div className="flex items-center space-x-2">
+                <MessageCircle size={20} />
+                <h3 className="font-semibold text-sm">Trò chuyện với AI</h3>
+              </div>
               <button
-                type="submit"
-                disabled={!inputValue.trim() || isTyping}
-                className="bg-[#B22222] hover:bg-[#1C1C1C] disabled:bg-[#D2B48C] text-[#F5F5F5] p-2 rounded-full transition-colors flex items-center justify-center min-w-[36px]"
+                onClick={onClose}
+                className="hover:bg-[#B22222] rounded-full p-1 transition-colors"
               >
-                <Send size={16} />
+                <X size={18} />
               </button>
             </div>
-          </form>
-        )}
-      </div>
+
+            {/* Welcome Content */}
+            <div className="flex-1 overflow-y-auto p-4 bg-gradient-to-b from-[#E5E5E5] to-[#F5F5F5]">
+              {chatState === "welcome" && (
+                <div className="flex flex-col items-center justify-center h-full text-center space-y-4">
+                  <MessageCircle size={48} className="text-[#B22222]" />
+                  <div className="space-y-2">
+                    <h3 className="font-semibold text-[#2E4600]">
+                      Chào mừng đến với AI Assistant
+                    </h3>
+                    <p className="text-sm text-[#4B2E2E] max-w-xs">
+                      Tôi có thể giúp bạn tìm hiểu về cuộc đời và sự nghiệp của
+                      Chủ tịch Hồ Chí Minh
+                    </p>
+                  </div>
+                  <div className="space-y-2 w-full max-w-xs">
+                    <button
+                      onClick={initializeChat}
+                      disabled={isAuthenticating}
+                      className="w-full bg-[#B22222] hover:bg-[#1C1C1C] disabled:bg-[#D2B48C] text-[#F5F5F5] px-4 py-2 rounded-lg transition-colors text-sm font-medium"
+                    >
+                      {isAuthenticating ? "Đang kết nối..." : "Bắt đầu chat"}
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {chatState === "error" && (
+                <div className="flex flex-col items-center justify-center h-full text-center space-y-4">
+                  <div className="w-12 h-12 bg-[#B22222]/20 rounded-full flex items-center justify-center">
+                    <X size={20} className="text-[#B22222]" />
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-semibold text-[#2E4600]">
+                      Có lỗi xảy ra
+                    </h3>
+                    <p className="text-sm text-[#4B2E2E] max-w-xs">
+                      Không thể kết nối với server. Vui lòng thử lại
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => setChatState("welcome")}
+                    className="bg-[#4B2E2E] hover:bg-[#2E4600] text-[#F5F5F5] px-4 py-2 rounded-lg transition-colors text-sm font-medium"
+                  >
+                    Thử lại
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
 }
