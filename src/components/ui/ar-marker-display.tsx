@@ -87,7 +87,7 @@ export default function ARMarkerDisplay() {
                 <div className="bg-white p-4 md:p-6 rounded-xl border-2 border-red-200 shadow-inner">
                   <div className="w-80 h-80 md:w-96 md:h-96 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/image/vr-image.jpg"
+                      src="/images/vr-image.jpg"
                       alt="AR Marker - Điện Biên Phủ"
                       className="w-full h-full object-contain"
                     />
