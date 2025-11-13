@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
+import { submitLeaderboard } from "@/services/leaderboard.api";
 
 interface PuzzlePiece {
   id: number;
@@ -58,6 +59,9 @@ export default function PuzzleGame() {
   const [gameStarted, setGameStarted] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
+  const [showNameModal, setShowNameModal] = useState(false);
+  const [userName, setUserName] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const initializePuzzle = useCallback(() => {
     const initialPieces: PuzzlePiece[] = [];
@@ -161,7 +165,9 @@ export default function PuzzleGame() {
                     stagger: 0.1,
                   }
                 );
-                setTimeout(() => setShowDescription(true), 3000);
+                setTimeout(() => {
+                  setShowNameModal(true);
+                }, 2000);
               }
             }, 100);
           }
@@ -176,6 +182,100 @@ export default function PuzzleGame() {
     const piece = pieces.find((p) => p.currentPosition === index);
     return piece || { isEmpty: true, position: index };
   });
+
+  const handleSubmitScore = async () => {
+    if (!userName.trim()) {
+      alert("Vui lòng nhập tên của bạn!");
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      await submitLeaderboard({
+        name: userName.trim(),
+        picture: imgUrl,
+        count: moves,
+      });
+      setShowNameModal(false);
+      setShowDescription(true);
+    } catch (error) {
+      console.error("Lỗi khi gửi điểm:", error);
+      alert("Có lỗi xảy ra khi gửi điểm. Vui lòng thử lại!");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  // Cheat code: Ctrl + Shift + Alt + W + I + N để tự động thắng
+  const autoWin = useCallback(() => {
+    const correctPieces = initializePuzzle();
+    setPieces(correctPieces);
+    setEmptyPosition(8);
+    setIsComplete(true);
+    gsap.fromTo(
+      ".puzzle-piece",
+      { scale: 1 },
+      {
+        scale: 1.05,
+        duration: 0.3,
+        yoyo: true,
+        repeat: 1,
+        stagger: 0.1,
+      }
+    );
+    setTimeout(() => {
+      setShowNameModal(true);
+    }, 2000);
+  }, [initializePuzzle]);
+
+  useEffect(() => {
+    const keySequence: string[] = [];
+    const requiredSequence = ['w', 'i', 'n']; // Phím W-I-N
+    let sequenceTimer: NodeJS.Timeout;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Phải giữ Ctrl + Shift + Alt
+      if (e.ctrlKey && e.shiftKey && e.altKey) {
+        const key = e.key.toLowerCase();
+        
+        // Chỉ chấp nhận các phím trong sequence
+        if (requiredSequence.includes(key)) {
+          e.preventDefault();
+          
+          // Thêm phím vào sequence
+          keySequence.push(key);
+          
+          // Reset timer - người dùng có 1.5 giây để nhấn phím tiếp theo
+          clearTimeout(sequenceTimer);
+          sequenceTimer = setTimeout(() => {
+            keySequence.length = 0;
+          }, 1500);
+          
+          // Kiểm tra nếu đã nhấn đủ sequence (cuối 3 phím phải là w-i-n)
+          if (keySequence.length >= 3) {
+            const lastThree = keySequence.slice(-3);
+            if (
+              lastThree[0] === 'w' &&
+              lastThree[1] === 'i' &&
+              lastThree[2] === 'n'
+            ) {
+              keySequence.length = 0;
+              clearTimeout(sequenceTimer);
+              if (!isComplete && gameStarted) {
+                autoWin();
+              }
+            }
+          }
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      clearTimeout(sequenceTimer);
+    };
+  }, [isComplete, gameStarted, autoWin]);
 
   useEffect(() => {
     const initialPieces = initializePuzzle();
@@ -473,6 +573,64 @@ export default function PuzzleGame() {
           </div>
         </div>
       </div>
+
+      {/* Modal nhập tên khi hoàn thành game */}
+      {showNameModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+          <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 max-w-md w-[90vw]">
+            <div className="text-center mb-6">
+              <div className="text-6xl mb-4">🎉</div>
+              <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-2">
+                Chúc mừng!
+              </h2>
+              <p className="text-lg text-gray-600 mb-4">
+                Bạn đã hoàn thành trong{" "}
+                <span className="font-bold text-red-600">{moves} nước đi</span>!
+              </p>
+            </div>
+
+            <div className="mb-6">
+              <label className="block text-gray-700 font-medium mb-2">
+                Nhập tên của bạn để lưu kết quả:
+              </label>
+              <input
+                type="text"
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
+                placeholder="Tên của bạn..."
+                className="w-full px-4 py-3 border-2 border-red-200 rounded-xl focus:border-red-500 focus:outline-none transition-colors"
+                maxLength={50}
+                autoFocus
+                onKeyPress={(e) => {
+                  if (e.key === "Enter" && !isSubmitting) {
+                    handleSubmitScore();
+                  }
+                }}
+              />
+            </div>
+
+            <div className="flex gap-3">
+              <button
+                onClick={handleSubmitScore}
+                disabled={isSubmitting || !userName.trim()}
+                className="flex-1 bg-red-600 hover:bg-red-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 shadow-lg hover:shadow-red-600/25"
+              >
+                {isSubmitting ? "Đang gửi..." : "Lưu kết quả"}
+              </button>
+              <button
+                onClick={() => {
+                  setShowNameModal(false);
+                  setShowDescription(true);
+                }}
+                disabled={isSubmitting}
+                className="flex-1 bg-gray-300 hover:bg-gray-400 disabled:bg-gray-200 text-gray-700 px-6 py-3 rounded-xl font-bold transition-all duration-300"
+              >
+                Bỏ qua
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

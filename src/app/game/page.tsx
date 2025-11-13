@@ -100,11 +100,11 @@ export default function GameGallery() {
         {/* Header Section */}
         <div className="flex flex-col sm:flex-row items-center justify-between mb-8 md:mb-12 gap-4 sm:gap-0">
           {/* <Link
-            href="/"
-            className="group flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-xl transition-all duration-300 font-medium shadow-lg hover:shadow-red-600/25 self-start sm:self-auto"
+            href="/leaderboard"
+            className="group flex items-center gap-2 bg-yellow-500 hover:bg-yellow-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-xl transition-all duration-300 font-medium shadow-lg hover:shadow-yellow-500/25 self-start sm:self-auto"
           >
-            <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 group-hover:-translate-x-1 transition-transform" />
-            <span className="hidden sm:inline">Trang chủ</span>
+            <Trophy className="w-4 h-4 sm:w-5 sm:h-5" />
+            <span>Bảng xếp hạng</span>
           </Link> */}
 
           <div className="text-center flex-1 sm:px-4">
