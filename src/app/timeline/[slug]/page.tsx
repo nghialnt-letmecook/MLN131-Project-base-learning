@@ -78,11 +78,11 @@ interface TimelineEvent {
 
 const timelineData: TimelineEvent[] = [
   {
-    year: "Tháng 8 - 9 năm 1945",
-    title: "Giành chính quyền và tình thế 'Ngàn cân treo sợi tóc'",
-    slug: "gianh-doc-lap-thanh-lap-chinh-quyen",
+    year: "Phần I",
+    title: "KHÁI NIỆM VÀ ĐẶC TRƯNG CỦA DÂN TỘC",
+    slug: "khai-niem-dac-trung-dan-toc",
     description:
-      "Giai đoạn này là đỉnh cao của 15 năm đấu tranh dưới sự lãnh đạo của Đảng, mở ra thời kỳ phát triển mới của dân tộc.",
+      "Quá trình hình thành dân tộc, hai nghĩa của khái niệm dân tộc và năm đặc trưng cơ bản về lãnh thổ, kinh tế, ngôn ngữ, văn hóa và nhà nước.",
     richContent: [
       {
         type: "highlight",
@@ -325,11 +325,11 @@ const timelineData: TimelineEvent[] = [
     ],
   },
   {
-    year: "Cuối 1945 – Cuối 1946",
-    title: "Vừa kháng chiến vừa kiến quốc",
-    slug: "cung-co-chinh-quyen",
+    year: "Phần II",
+    title: "Hai Xu hướng Phát triển và Cương lĩnh Lênin",
+    slug: "xu-huong-phat-trien",
     description:
-      "Đây là giai đoạn Đảng lãnh đạo 'Xây dựng và bảo vệ chính quyền cách mạng'.",
+      "Phân tích hai xu hướng phát triển dân tộc trong thời đại mới và nội dung cương lĩnh dân tộc của V.I. Lênin về bình đẳng, tự quyết và liên hiệp.",
     richContent: [
       {
         type: "highlight",
@@ -456,11 +456,11 @@ const timelineData: TimelineEvent[] = [
     ],
   },
   {
-    year: "Cuối 1946 – 1947",
-    title: "Kháng chiến toàn quốc và Chiến dịch Việt Bắc",
-    slug: "khang-chien-bung-no",
+    year: "Phần III",
+    title: "Đặc điểm và Chính sách Dân tộc ở Việt Nam",
+    slug: "dac-diem-chinh-sach-dan-toc",
     description:
-      "Giai đoạn này mở đầu bằng sự bùng nổ của cuộc kháng chiến toàn quốc.",
+      "Làm rõ đặc điểm của 54 dân tộc Việt Nam và các chính sách của Đảng, Nhà nước nhằm bảo đảm bình đẳng, đoàn kết và phát triển bền vững.",
     richContent: [
       { type: "highlight", content: "1. Bùng nổ Kháng chiến (12-1946)" },
       { type: "highlight-normal", content: "Quyết định" },
@@ -583,11 +583,11 @@ const timelineData: TimelineEvent[] = [
     ],
   },
   {
-    year: "1948 – 1950",
-    title: "Chuyển sang tiến công và Chiến thắng Biên giới",
-    slug: "xay-dung-luc-luong",
+    year: "Phần IV",
+    title: "Bản chất, Nguồn gốc và Tính chất của Tôn giáo",
+    slug: "ban-chat-nguon-goc",
     description:
-      "Giai đoạn Đảng lãnh đạo đẩy mạnh kháng chiến toàn diện và giành chiến thắng quân sự quan trọng.",
+      "Giải thích bản chất của tôn giáo, các nguồn gốc hình thành và những tính chất cơ bản trong đời sống xã hội.",
     richContent: [
       { type: "highlight-normal", content: "Phát triển lực lượng" },
       {
@@ -681,11 +681,11 @@ const timelineData: TimelineEvent[] = [
     ],
   },
   {
-    year: "1951 – 1953",
-    title: "Đảng ra công khai, Chính cương và Cải cách Ruộng đất",
-    slug: "cung-co-duong-loi",
+    year: "Phần V",
+    title: "Đặc điểm và Chính sách Tôn giáo ở Việt Nam",
+    slug: "dac-diem-chinh-sach-ton-giao",
     description:
-      "Giai đoạn Đảng củng cố toàn diện cả về đường lối chính trị, tổ chức và hậu phương để chuẩn bị cho thắng lợi quyết định.",
+      "Trình bày thực trạng tôn giáo ở Việt Nam và chính sách của Nhà nước trong việc bảo đảm quyền tự do tín ngưỡng, tôn giáo.",
     richContent: [
       { type: "highlight", content: "1. Đại hội Đảng lần thứ II (2-1951)" },
       {
@@ -777,11 +777,11 @@ const timelineData: TimelineEvent[] = [
     ],
   },
   {
-    year: "1954",
-    title: "Chiến thắng Điện Biên Phủ và Hiệp định Genève",
-    slug: "chien-thang",
+    year: "Phần VI",
+    title: "Đặc điểm Quan hệ Dân tộc – Tôn giáo",
+    slug: "dac-diem-quan-he",
     description:
-      "Năm 1954 là năm quyết định thắng lợi của cuộc kháng chiến chống Pháp.",
+      "Phân tích mối quan hệ gắn bó giữa dân tộc và tôn giáo, vai trò của tín ngưỡng truyền thống và tinh thần chung sống hòa bình.",
     richContent: [
       { type: "highlight", content: "Chiến dịch Điện Biên Phủ" },
       { type: "highlight-normal", content: "Bối cảnh" },
@@ -875,6 +875,22 @@ const timelineData: TimelineEvent[] = [
       },
     ],
   },
+  {
+    year: "Phần VII",
+    title: "Những Thách thức Hiện nay",
+    slug: "nhung-thach-thuc-hien-nay",
+    description:
+      "Nhận diện các hiện tượng tiêu cực như đạo lạ, lợi dụng tôn giáo và âm mưu chia rẽ khối đại đoàn kết dân tộc.",
+    richContent: [],
+  },
+  {
+    year: "Phần VIII",
+    title: "Định hướng và Giải pháp",
+    slug: "dinh-huong-giai-phap",
+    description:
+      "Đề xuất các giải pháp nhằm củng cố đoàn kết, phát triển kinh tế – xã hội và bảo vệ ổn định chính trị, xã hội.",
+    richContent: [],
+  },
 ];
 
 export default function TimelineDetail() {
@@ -965,7 +981,7 @@ export default function TimelineDetail() {
     if (!audioRef.current) return;
     const newTime = Math.max(
       0,
-      Math.min(audioDuration, audioRef.current.currentTime + seconds)
+      Math.min(audioDuration, audioRef.current.currentTime + seconds),
     );
     audioRef.current.currentTime = newTime;
   };
@@ -1012,7 +1028,7 @@ export default function TimelineDetail() {
     tl.fromTo(
       contentRef.current?.children || [],
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" }
+      { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" },
     );
   }, [event]);
 
@@ -1175,7 +1191,7 @@ export default function TimelineDetail() {
                           openImageModal(
                             imageItem.src || "/placeholder.svg",
                             imageItem.alt || "",
-                            imageItem.caption
+                            imageItem.caption,
                           )
                         }
                       >
@@ -1284,7 +1300,7 @@ export default function TimelineDetail() {
                 <button
                   onClick={() =>
                     router.push(
-                      `/timeline/${timelineData[currentIndex - 1].slug}`
+                      `/timeline/${timelineData[currentIndex - 1].slug}`,
                     )
                   }
                   className="flex items-center gap-3 text-red-700 hover:text-red-800 transition-all duration-200 group bg-white/70 px-6 py-3 rounded-xl border border-red-200 hover:bg-white/90 hover:shadow-md"
@@ -1323,7 +1339,7 @@ export default function TimelineDetail() {
                 <button
                   onClick={() =>
                     router.push(
-                      `/timeline/${timelineData[currentIndex + 1].slug}`
+                      `/timeline/${timelineData[currentIndex + 1].slug}`,
                     )
                   }
                   className="flex items-center gap-3 text-red-700 hover:text-red-800 transition-all duration-200 group bg-white/70 px-6 py-3 rounded-xl border border-red-200 hover:bg-white/90 hover:shadow-md"

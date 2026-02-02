@@ -18,46 +18,60 @@ if (typeof window !== "undefined") {
 
 const timelineData = [
   {
-    year: "Tháng 8 - 9 năm 1945",
-    title: "Giành Độc lập và Thành lập Chính quyền",
-    slug: "gianh-doc-lap-thanh-lap-chinh-quyen",
+    year: "Phần I",
+    title: "KHÁI NIỆM VÀ ĐẶC TRƯNG CỦA DÂN TỘC",
+    slug: "khai-niem-dac-trung-dan-toc",
     description:
-      "Đảng lãnh đạo tổng khởi nghĩa giành chính quyền và tuyên bố thành lập Nhà nước.",
+      "Quá trình hình thành dân tộc, hai nghĩa của khái niệm dân tộc và năm đặc trưng cơ bản về lãnh thổ, kinh tế, ngôn ngữ, văn hóa và nhà nước.",
   },
   {
-    year: "Cuối 1945 – Cuối 1946",
-    title: "Củng cố Chính quyền và Đối phó với Thù trong, Giặc ngoài”",
-    slug: "cung-co-chinh-quyen",
+    year: "Phần II",
+    title: "Hai Xu hướng Phát triển và Cương lĩnh Lênin",
+    slug: "xu-huong-phat-trien",
     description:
-      "Chính quyền non trẻ phải đối mặt với nhiều khó khăn (giặc đói, giặc dốt, giặc ngoại xâm) và thách thức lớn nhất là âm mưu quay lại thống trị của Pháp",
+      "Phân tích hai xu hướng phát triển dân tộc trong thời đại mới và nội dung cương lĩnh dân tộc của V.I. Lênin về bình đẳng, tự quyết và liên hiệp.",
   },
   {
-    year: "Cuối 1946 – 1947",
-    title: "Kháng chiến Toàn quốc Bùng nổ",
-    slug: "khang-chien-bung-no",
+    year: "Phần III",
+    title: "Đặc điểm và Chính sách Dân tộc ở Việt Nam",
+    slug: "dac-diem-chinh-sach-dan-toc",
     description:
-      "Do Pháp tăng cường gây hấn và ý chí xâm lược, cuộc chiến tranh toàn quốc bùng nổ",
+      "Làm rõ đặc điểm của 54 dân tộc Việt Nam và các chính sách của Đảng, Nhà nước nhằm bảo đảm bình đẳng, đoàn kết và phát triển bền vững.",
   },
   {
-    year: "1948 – 1950",
-    title: "Xây dựng Lực lượng và Mở đầu Tổng phản công ",
-    slug: "xay-dung-luc-luong",
+    year: "Phần IV",
+    title: "Bản chất, Nguồn gốc và Tính chất của Tôn giáo",
+    slug: "ban-chat-nguon-goc",
     description:
-      "Giai đoạn đẩy mạnh kháng chiến toàn diện và giành được chiến thắng lớn mang tính bước ngoặt",
+      "Giải thích bản chất của tôn giáo, các nguồn gốc hình thành và những tính chất cơ bản trong đời sống xã hội.",
   },
   {
-    year: "1951 – 1953",
-    title: "Củng cố Đường lối và Đẩy mạnh Kháng chiến",
-    slug: "cung-co-duong-loi",
+    year: "Phần V",
+    title: "Đặc điểm và Chính sách Tôn giáo ở Việt Nam",
+    slug: "dac-diem-chinh-sach-ton-giao",
     description:
-      "Giai đoạn Đảng ra hoạt động công khai, hoàn thiện đường lối cách mạng dân tộc dân chủ nhân dân và tiến hành cải cách ruộng đất",
+      "Trình bày thực trạng tôn giáo ở Việt Nam và chính sách của Nhà nước trong việc bảo đảm quyền tự do tín ngưỡng, tôn giáo.",
   },
   {
-    year: "1954",
-    title: "Chiến thắng Quyết định và Ký kết Hiệp định",
-    slug: "chien-thang",
+    year: "Phần VI",
+    title: "Đặc điểm Quan hệ Dân tộc – Tôn giáo",
+    slug: "dac-diem-quan-he",
     description:
-      "Đây là giai đoạn quyết định chấm dứt cuộc kháng chiến chống Pháp",
+      "Phân tích mối quan hệ gắn bó giữa dân tộc và tôn giáo, vai trò của tín ngưỡng truyền thống và tinh thần chung sống hòa bình.",
+  },
+  {
+    year: "Phần VII",
+    title: "Những Thách thức Hiện nay",
+    slug: "nhung-thach-thuc-hien-nay",
+    description:
+      "Nhận diện các hiện tượng tiêu cực như đạo lạ, lợi dụng tôn giáo và âm mưu chia rẽ khối đại đoàn kết dân tộc.",
+  },
+  {
+    year: "Phần VIII",
+    title: "Định hướng và Giải pháp",
+    slug: "dinh-huong-giai-phap",
+    description:
+      "Đề xuất các giải pháp nhằm củng cố đoàn kết, phát triển kinh tế – xã hội và bảo vệ ổn định chính trị, xã hội.",
   },
 ];
 
@@ -105,7 +119,7 @@ export default function DienBienPhuPage() {
             scale: 1,
             duration: 2.5,
             ease: "power3.out",
-          }
+          },
         )
 
         // 2. Hiệu ứng cho hero content container
@@ -123,7 +137,7 @@ export default function DienBienPhuPage() {
             duration: 3,
             ease: "power4.out",
           },
-          "-=2.0"
+          "-=2.0",
         )
 
         // 3. Hiệu ứng cho title với delay 2 giây
@@ -141,7 +155,7 @@ export default function DienBienPhuPage() {
             duration: 1.5,
             ease: "power3.out",
           },
-          "-=1"
+          "-=1",
         )
 
         // 5. Hiệu ứng floating particles
@@ -158,7 +172,7 @@ export default function DienBienPhuPage() {
             stagger: 0.1,
             ease: "power2.out",
           },
-          "-=1.5"
+          "-=1.5",
         )
 
         // 6. Quote với hiệu ứng elegant
@@ -176,7 +190,7 @@ export default function DienBienPhuPage() {
             duration: 1.5,
             ease: "power3.out",
           },
-          "-=2"
+          "-=2",
         );
 
       // 7. Thêm hiệu ứng floating liên tục cho particles
@@ -215,7 +229,7 @@ export default function DienBienPhuPage() {
                 end: "bottom 10%",
                 toggleActions: "play none none reverse",
               },
-            }
+            },
           );
         }
       });
@@ -235,7 +249,7 @@ export default function DienBienPhuPage() {
             end: "bottom 20%",
             scrub: 1,
           },
-        }
+        },
       );
 
       // Timeline dots floating animation
@@ -311,12 +325,12 @@ export default function DienBienPhuPage() {
             <h1 className="hero-title text-5xl md:text-7xl lg:text-[7rem] font-extrabold mb-8 text-balance leading-[0.9] tracking-wide font-[family-name:var(--font-be-vietnam)]">
               <div className="title-line text-center">
                 <span className="text-red-700/80 drop-shadow-2xl inline-block font-extrabold">
-                  HÀO KHÍ
+                  DÂN TỘC
                 </span>
               </div>
               <div className="title-line mt-6 text-center">
                 <span className="text-yellow-500/80 drop-shadow-2xl inline-block font-extrabold">
-                  KHÁNG CHIẾN
+                  TÔN GIÁO
                 </span>
               </div>
             </h1>
@@ -324,26 +338,23 @@ export default function DienBienPhuPage() {
 
           <div className="max-w-4xl mx-auto">
             <p className="hero-quote text-3xl md:text-4xl text-yellow-500 mb-6 text-pretty leading-relaxed italic drop-shadow-lg font-normal">
-              Từ Cách Mạng Tháng Tám Đến Điện Biên Phủ (1945–1954)
+              Trong Thời Kỳ Quá Độ Lên Chủ Nghĩa Xã Hội
             </p>
           </div>
         </div>
       </section>
 
       {/* Timeline Section */}
-      <section
-        className="timeline-container relative py-16 md:py-24 px-4 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/bo-doi-hanh-quan.webp')" }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/30 to-white/40"></div>
+      <section className="timeline-container relative py-16 md:py-24 px-4 bg-gradient-to-br from-amber-50 via-red-50 to-yellow-50">
+        <div className="absolute inset-0 bg-[url('/images/pattern-vietnam.png')] opacity-5 bg-repeat"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           {/* Timeline Title */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-red-800/80 mb-4">
-              Chín năm kháng chiến kiên cường
+              Vấn đề Dân tộc và Tôn giáo
             </h2>
             <p className="text-lg md:text-xl text-yellow-600 max-w-3xl mx-auto">
-              Dòng thời gian kháng chiến chống Pháp từ năm 1945 đến 1954
+              Những nội dung cơ bản về dân tộc và tôn giáo trong thời kỳ quá độ
             </p>
           </div>
 
@@ -375,15 +386,22 @@ export default function DienBienPhuPage() {
                 {/* Timeline Dot */}
                 {/* <div className="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 w-6 h-6 md:w-8 md:h-8 bg-gradient-to-br from-red-600 to-red-800 rounded-full timeline-dot z-10 border-4 border-white shadow-xl"></div> */}
 
-                {/* Year Display */}
+                {/* Section Number Badge */}
                 <div
                   className={`absolute md:left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 ${
                     // Desktop positioning, Mobile: above the dot
                     "md:" +
                     (index % 2 === 0 ? "translate-x-20" : "-translate-x-28") +
                     " -translate-y-12 md:translate-y-0"
-                  } text-lg md:text-xl font-bold z-20 text-yellow-100 bg-red-800/80 px-3 py-1 rounded-lg backdrop-blur-sm border border-yellow-400/30`}
+                  } flex items-center gap-2 text-base md:text-lg font-bold z-20 text-white bg-gradient-to-r from-red-600 to-red-700 px-4 py-2 rounded-full shadow-lg border-2 border-yellow-400/50`}
                 >
+                  <svg
+                    className="w-4 h-4"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
+                  </svg>
                   {item.year}
                 </div>
 
@@ -396,7 +414,7 @@ export default function DienBienPhuPage() {
                     (index % 2 === 0 ? "md:mr-auto" : "md:ml-auto")
                   }`}
                 >
-                  <Card className="timeline-card w-full shadow-2xl hover:shadow-red-600/40 transition-all duration-500 border-2 border-yellow-400 bg-white/95 backdrop-blur-sm hover:scale-105 md:hover:scale-105 hover:scale-[1.02] cursor-pointer group overflow-hidden hover:bg-yellow-50/50">
+                  <Card className="timeline-card w-full shadow-xl hover:shadow-2xl hover:shadow-amber-500/30 transition-all duration-500 border-2 border-amber-300 bg-white/98 backdrop-blur-sm hover:scale-105 md:hover:scale-105 hover:scale-[1.02] cursor-pointer group overflow-hidden hover:bg-gradient-to-br hover:from-amber-50/80 hover:to-red-50/50">
                     <CardContent className="p-6 md:p-8">
                       {/* Category Badge */}
                       {/* <div className="mb-4">
