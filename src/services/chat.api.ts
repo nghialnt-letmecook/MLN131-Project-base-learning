@@ -1,62 +1,17 @@
-import api from "@/lib/api";
+import { sendChatMessage } from "@/app/actions/mln.actions";
 import { ChatSession } from "@/types/chat.type";
-import { refreshTokenIfNeeded, getToken } from "@/services/token.api";
 
-export const createChatSession = async (data: ChatSession) => {
-  let retryCount = 0;
-  const maxRetries = 1;
-  while (retryCount <= maxRetries) {
-    try {
-      const response = await api.post("/haokhikhangchien/chat", data, {
-        responseType: "arraybuffer", // hoặc "blob"
-        headers: {
-          ...(getToken() ? { Authorization: `Bearer ${getToken()}` } : {}),
-        },
-      });
-      // chuyển ArrayBuffer -> Blob -> ObjectURL
-      const audioBlob = new Blob([response.data], { type: "audio/mpeg" }); // nếu server trả mp3
-      console.log(response);
-
-      const audioUrl = URL.createObjectURL(audioBlob);
-
-      // phát audio với tốc độ nhanh hơn
-      const audio = new Audio(audioUrl);
-      audio.playbackRate = 1.3; // Tăng tốc độ lên 1.3x (có thể điều chỉnh: 1.0 = normal, 1.5 = rất nhanh)
-      audio.play();
-      
-      // Return audio object để component có thể lắng nghe events
-      return audio;
-      // Nếu response là JSON và báo token expired thì retry
-      let resData = response.data;
-      try {
-        if (typeof resData === "string") resData = JSON.parse(resData);
-      } catch {}
-      if (
-        resData?.valid === "false" &&
-        typeof resData?.reason === "string" &&
-        resData.reason.includes("Token expired")
-      ) {
-        await refreshTokenIfNeeded(true);
-        retryCount++;
-        continue;
-      }
-      return response.data;
-    } catch (error: any) {
-      // Nếu lỗi do token expired, thử refresh và retry
-      let resData = error?.response?.data;
-      try {
-        if (typeof resData === "string") resData = JSON.parse(resData);
-      } catch {}
-      if (
-        resData?.valid === "false" &&
-        typeof resData?.reason === "string" &&
-        resData.reason.includes("Token expired")
-      ) {
-        await refreshTokenIfNeeded(true);
-        retryCount++;
-        continue;
-      }
-      throw error;
-    }
-  }
+export const createChatSession = async (
+  data: ChatSession
+): Promise<HTMLAudioElement> => {
+  const { audioBase64 } = await sendChatMessage(data);
+  const binary = atob(audioBase64);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  const audioBlob = new Blob([bytes], { type: "audio/mpeg" });
+  const audioUrl = URL.createObjectURL(audioBlob);
+  const audio = new Audio(audioUrl);
+  audio.playbackRate = 1.2;
+  audio.play();
+  return audio;
 };
