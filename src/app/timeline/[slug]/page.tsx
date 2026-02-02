@@ -86,241 +86,83 @@ const timelineData: TimelineEvent[] = [
     richContent: [
       {
         type: "highlight",
-        content: "1. Tổng khởi nghĩa Tháng Tám (Giữa tháng 8-1945)",
-      },
-      { type: "highlight-normal", content: "Bối cảnh và thời cơ cách mạng" },
-      {
-        type: "paragraph",
-        content:
-          "Sau hơn 80 năm dưới ách thống trị của thực dân Pháp, nhân dân Việt Nam rơi vào cảnh lầm than, mất nước, nạn đói, nạn mù chữ và áp bức chính trị nặng nề. Trong Chiến tranh thế giới thứ hai, phát xít Nhật tiến vào Đông Dương, lật đổ Pháp, lập nên chính quyền tay sai thân Nhật, khiến đất nước rơi vào tình cảnh 'một cổ hai tròng'.",
+        content: "Tiến trình hình thành dân tộc",
       },
       {
         type: "paragraph",
         content:
-          "Đến giữa năm 1945, khi phát xít Đức đầu hàng Đồng minh và Nhật Bản tuyên bố đầu hàng vô điều kiện (15-8-1945), chính quyền thân Nhật ở Đông Dương hoang mang cực độ, quân Nhật mất tinh thần chiến đấu. Đây là thời cơ vàng của cách mạng Việt Nam. Dưới sự lãnh đạo của Đảng Cộng sản Đông Dương và Mặt trận Việt Minh, toàn dân vùng dậy giành chính quyền.",
-      },
-      {
-        type: "image",
-        src: "/images/nan-doi-1945.jpg",
-        alt: "Nạn đói năm 1945",
-        caption:
-          "Nạn đói năm 1945 - một trong những thách thức lớn nhất mà chính quyền cách mạng phải đối mặt",
-      },
-      {
-        type: "image",
-        src: "/images/nan-doi-1945-1.jpg",
-        alt: "Nạn đói năm 1945",
-        caption: "Cảnh đói khổ của nhân dân trong nạn đói năm 1945",
-      },
-      {
-        type: "highlight-normal",
-        content: "Chủ trương và quyết định khởi nghĩa",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Ngày 12-8-1945, Ủy ban lâm thời khu giải phóng ra lệnh khởi nghĩa trong khu.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "23 giờ ngày 13-8-1945, Trung ương Đảng và Tổng bộ Việt Minh thành lập Ủy ban khởi nghĩa toàn quốc và ban bố 'Quân lệnh số 1', phát động Tổng khởi nghĩa trong toàn quốc.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Ngày 14–15-8-1945, Hội nghị toàn quốc của Đảng họp tại Tân Trào (Tuyên Quang), quyết định phát động toàn dân nổi dậy giành chính quyền từ tay phát xít Nhật trước khi quân Đồng minh vào Đông Dương.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Ba nguyên tắc chỉ đạo: Tập trung – Thống nhất – Kịp thời. Phương hướng hành động là đánh chiếm ngay những nơi chắc thắng, phối hợp quân sự và chính trị, làm tan rã tinh thần địch.",
-      },
-      { type: "highlight-normal", content: "Diễn biến và kết quả" },
-      {
-        type: "paragraph",
-        content:
-          "19-8-1945: Nhân dân Hà Nội vùng dậy khởi nghĩa, chiếm Phủ Khâm sai, Tòa Thị chính, trụ sở cảnh sát, bưu điện... Cờ đỏ sao vàng tung bay khắp nơi.",
-      },
-      {
-        type: "image",
-        src: "/images/mit-tinh-nha-hat-lon-ha-noi-19-8-1945.jpg",
-        alt: "Mít tinh tại Quảng trường Nhà hát Lớn Hà Nội",
-        caption:
-          "Mít tinh lớn tại Quảng trường Nhà hát Lớn Hà Nội ngày 19-8-1945",
-      },
-      {
-        type: "image",
-        src: "/images/mit-tinh-nha-hat-lon-ha-noi-19-8-1945-1.jpg",
-        alt: "Mít tinh tại Hà Nội",
-        caption:
-          "Quần chúng cách mạng tham gia mít tinh tại Quảng trường Nhà hát Lớn Hà Nội",
-      },
-      {
-        type: "image",
-        src: "/images/mit-tinh-nha-hat-lon-ha-noi-19-8-1945-2.jpg",
-        alt: "Biểu tình vũ trang tại Hà Nội",
-        caption:
-          "Cuộc biểu tình vũ trang tại Hà Nội chuyển thành khởi nghĩa giành chính quyền",
-      },
-      {
-        type: "paragraph",
-        content:
-          "23-8-1945: Nhân dân Thừa Thiên – Huế giành chính quyền, vua Bảo Đại sau đó thoái vị, trao ấn kiếm cho chính quyền cách mạng, chấm dứt chế độ phong kiến kéo dài hàng nghìn năm.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "25-8-1945: Ở Sài Gòn và nhiều tỉnh Nam Bộ, hàng triệu người tham gia biểu tình, giành chính quyền thắng lợi.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Đến cuối tháng 8-1945, chính quyền trong cả nước hoàn toàn thuộc về nhân dân.",
-      },
-      { type: "highlight-normal", content: "Nguyên nhân thắng lợi" },
-      {
-        type: "paragraph",
-        content:
-          "Sự lãnh đạo đúng đắn, kịp thời và sáng tạo của Đảng Cộng sản Đông Dương.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Sự chuẩn bị lâu dài về lực lượng chính trị, vũ trang và căn cứ cách mạng.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Nhân dân cả nước đoàn kết, tin tưởng tuyệt đối vào Việt Minh.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Bối cảnh quốc tế thuận lợi: phát xít Nhật đầu hàng, chính quyền tay sai tê liệt.",
-      },
-      { type: "highlight-normal", content: "Ý nghĩa lịch sử" },
-      {
-        type: "paragraph",
-        content:
-          "Lật đổ ách thống trị của thực dân Pháp và phát xít Nhật, chấm dứt chế độ phong kiến kéo dài hàng nghìn năm.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Giành chính quyền về tay nhân dân, mở ra kỷ nguyên mới: độc lập dân tộc gắn liền với chủ nghĩa xã hội.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Thành lập Nhà nước Việt Nam Dân chủ Cộng hòa (VNDCCH) – nhà nước công nông đầu tiên ở Đông Nam Á.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Khẳng định đường lối cách mạng đúng đắn của Đảng, là thắng lợi vĩ đại đầu tiên của chủ nghĩa Mác – Lênin ở Việt Nam.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Góp phần thúc đẩy phong trào giải phóng dân tộc trên thế giới sau Thế chiến II.",
+          "Dân tộc là hình thức cộng đồng người cao nhất, phát triển sau các hình thức: thị tộc, bộ lạc và bộ tộc.",
       },
       {
         type: "highlight",
-        content:
-          "2. Thành lập Nhà nước Việt Nam Dân chủ Cộng hòa và tình thế 'Ngàn cân treo sợi tóc' (Tháng 9-1945)",
-      },
-      { type: "highlight-normal", content: "Thành lập Nhà nước VNDCCH" },
-      {
-        type: "paragraph",
-        content:
-          "Ngày 27-8-1945: Ủy ban Dân tộc Giải phóng được cải tổ thành Chính phủ lâm thời nước VNDCCH, do Chủ tịch Hồ Chí Minh đứng đầu.",
+        content: "Hai tầng ý nghĩa của dân tộc",
       },
       {
-        type: "image",
-        src: "/images/chu-tich-ho-chi-minh-chinh-phu-lam-thoi-3-9-1945.jpg",
-        alt: "Chủ tịch Hồ Chí Minh và Chính phủ lâm thời",
-        caption:
-          "Chủ tịch Hồ Chí Minh và Chính phủ lâm thời ra mắt ngày 3-9-1945",
+        type: "highlight-normal",
+        content: "1. Nghĩa rộng (Dân tộc - Quốc gia/Nation)",
       },
       {
         type: "paragraph",
         content:
-          "Ngày 2-9-1945: Tại Quảng trường Ba Đình (Hà Nội), Chủ tịch Hồ Chí Minh đọc 'Tuyên ngôn Độc lập', long trọng tuyên bố với toàn thế giới rằng:",
+          "Chỉ cộng đồng người ổn định làm thành nhân dân một nước, có lãnh thổ riêng, kinh tế thống nhất, ngôn ngữ chung và có ý thức về sự thống nhất quốc gia.",
       },
       {
-        type: "quote",
-        content:
-          "Nước Việt Nam có quyền hưởng tự do và độc lập, và sự thật đã trở thành một nước tự do độc lập.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Từ đây, nước Việt Nam Dân chủ Cộng hòa ra đời, trở thành nhà nước nhân dân, do nhân dân và vì nhân dân.",
-      },
-      {
-        type: "image",
-        src: "/images/tuyen-ngon-doc-lap-2-9-1945.jpg",
-        alt: "Hồ Chí Minh đọc Tuyên ngôn Độc lập",
-        caption:
-          "Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945",
-        layout: "wide",
-      },
-      { type: "highlight-normal", content: "Khó khăn và thử thách" },
-      {
-        type: "paragraph",
-        content:
-          "Ngay sau khi giành chính quyền, chính phủ non trẻ phải đối mặt với muôn vàn khó khăn:",
+        type: "highlight-normal",
+        content: "2. Nghĩa hẹp (Dân tộc - Tộc người/Ethnie)",
       },
       {
         type: "paragraph",
         content:
-          "Giặc đói: Nạn đói năm 1945 đã giết chết hơn 2 triệu người ở miền Bắc.",
+          "Chỉ các cộng đồng người có mối liên hệ chặt chẽ về nguồn gốc, ngôn ngữ, văn hóa và ý thức tự giác tộc người; đây là bộ phận cấu thành nên quốc gia.",
       },
       {
-        type: "paragraph",
-        content: "Giặc dốt: Hơn 90% dân số mù chữ.",
+        type: "highlight",
+        content: "5 Đặc trưng cốt lõi của Dân tộc (Quốc gia)",
       },
       {
-        type: "paragraph",
-        content:
-          "Giặc ngoại xâm: Quân Tưởng Giới Thạch kéo vào miền Bắc. Quân Anh đưa quân Pháp trở lại miền Nam. Các đảng phái phản động trong nước nổi lên chống phá.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Nền tài chính trống rỗng, ngân khố quốc gia chỉ còn vài triệu đồng Đông Dương.",
+        type: "highlight-normal",
+        content: "1. Lãnh thổ",
       },
       {
         type: "paragraph",
         content:
-          "Tình hình đất nước đúng như Hồ Chí Minh nói: 'Ngàn cân treo sợi tóc.'",
+          "Có một vùng đất, vùng trời, vùng biển ổn định, là không gian sinh tồn của cộng đồng.",
       },
       {
-        type: "image",
-        src: "/images/quan-doi-anh-tiep-nhan-khi-gioi-nhat-ban-sai-gon-9-1945.png",
-        alt: "Quân đội Anh tại Sài Gòn",
-        caption:
-          "Quân đội Anh tiếp nhận khí giới đầu hàng của binh lính Nhật Bản tại Sài Gòn, tháng 9-1945",
+        type: "highlight-normal",
+        content: "2. Kinh tế",
       },
       {
         type: "paragraph",
         content:
-          "Thực dân Pháp bắt đầu gây hấn trở lại, nổ súng đánh chiếm Sài Gòn-Chợ Lớn ngày 23-9-1945.",
+          "Có chung một phương thức sinh hoạt kinh tế, tạo ra sự gắn kết bền vững giữa các bộ phận trong dân tộc.",
       },
       {
-        type: "image",
-        src: "/images/cho-ben-thanh-ngay-dau-khang-chien-23-9-1945.jpg",
-        alt: "Chợ Bến Thành ngày đầu kháng chiến",
-        caption:
-          "Chợ Bến Thành trong ngày đầu kháng chiến chống thực dân Pháp xâm lược, ngày 23-9-1945",
+        type: "highlight-normal",
+        content: "3. Ngôn ngữ",
       },
       {
-        type: "image",
-        src: "/images/mit-tinh-phan-doi-phai-bo-anh-24-9-1945.jpg",
-        alt: "Mít tinh phản đối phái bộ Anh",
-        caption:
-          "Mít tinh phản đối phái bộ Anh tại Quảng trường Nhà hát Lớn, 24-9-1945",
+        type: "paragraph",
+        content:
+          "Sử dụng một ngôn ngữ chung làm công cụ giao tiếp chính trong mọi lĩnh vực đời sống.",
+      },
+      {
+        type: "highlight-normal",
+        content: "4. Văn hóa và tâm lý",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Có nền văn hóa và đặc điểm tâm lý chung, biểu hiện qua lối sống, phong tục và bản sắc riêng.",
+      },
+      {
+        type: "highlight-normal",
+        content: "5. Nhà nước",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Có một Nhà nước thống nhất quản lý, đại diện cho dân tộc trong quan hệ quốc tế.",
       },
     ],
   },
@@ -333,125 +175,56 @@ const timelineData: TimelineEvent[] = [
     richContent: [
       {
         type: "highlight",
-        content: "1. Giải quyết nhiệm vụ cấp bách (Diệt Giặc đói, giặc dốt)",
+        content: "Hai xu hướng khách quan",
       },
       {
         type: "highlight-normal",
-        content: "Ba nhiệm vụ cấp bách (3-9-1945)",
+        content: "Xu hướng 1: Tách ra thành lập quốc gia độc lập",
       },
       {
         type: "paragraph",
         content:
-          "Chính phủ lâm thời xác định ba nhiệm vụ lớn trước mắt là: diệt giặc đói, diệt giặc dốt và diệt giặc ngoại xâm.",
-      },
-      { type: "highlight-normal", content: "Chống giặc đói" },
-      {
-        type: "paragraph",
-        content:
-          "Phát động phong trào tăng gia sản xuất (với khẩu hiệu tăng gia sản xuất ngay, tăng gia sản xuất nữa), lập Hũ gạo tiết kiệm, tổ chức Tuần lễ vàng, Quỹ độc lập. Chính phủ bãi bỏ thuế thân, thực hiện giảm tô 25%. Nạn đói cơ bản được đẩy lùi vào đầu năm 1946.",
-      },
-      { type: "highlight-normal", content: "Chống giặc dốt" },
-      {
-        type: "paragraph",
-        content:
-          "Phát động phong trào 'Bình dân học vụ' để xóa nạn mù chữ; vận động xây dựng nếp sống mới. Đến cuối năm 1946, hơn 2,5 triệu người biết đọc, biết viết chữ Quốc ngữ.",
-      },
-      {
-        type: "image",
-        src: "/images/bac-ho-day-chu-binh-dan-hoc-vu.jpg",
-        alt: "Bác Hồ dạy Bình dân học vụ",
-        caption: "Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ",
-      },
-      {
-        type: "highlight",
-        content: "2. Xây dựng chính quyền và Chỉ thị Kháng chiến kiến quốc",
+          "Các cộng đồng dân cư muốn tách ra để thành lập các quốc gia độc lập nhằm thực hiện quyền tự quyết và giải phóng dân tộc.",
       },
       {
         type: "highlight-normal",
-        content: "Chỉ thị Kháng chiến kiến quốc (25-11-1945)",
+        content: "Xu hướng 2: Liên hiệp để mở rộng không gian phát triển",
       },
       {
         type: "paragraph",
         content:
-          "Trung ương Đảng xác định rõ 'kẻ thù chính của ta lúc này là thực dân Pháp xâm lược, phải tập trung ngọn lửa đấu tranh vào chúng'. Khẩu hiệu được đề ra là 'Dân tộc trên hết, Tổ quốc trên hết'. Nhiệm vụ chủ yếu là củng cố chính quyền, chống Pháp, bài trừ nội phản, và cải thiện đời sống nhân dân.",
-      },
-      { type: "highlight-normal", content: "Xây dựng nền tảng pháp lý" },
-      {
-        type: "paragraph",
-        content:
-          "Ngày 6-1-1946, tổ chức thành công Tổng tuyển cử bầu Quốc hội khóa I theo hình thức phổ thông đầu phiếu. Bầu cử đã làm thất bại âm mưu chia rẽ, lật đổ của các kẻ thù.",
-      },
-      {
-        type: "image",
-        src: "/images/chu-tich-ho-chi-minh-den-bau-cu-pho-hang-voi.png",
-        alt: "Chủ tịch Hồ Chí Minh đi bầu cử",
-        caption:
-          "Chủ tịch Hồ Chí Minh đến bầu cử tại nhà số 10, phố Hàng Vôi, Hà Nội",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Quốc hội khóa I đã thông qua bản Hiến pháp đầu tiên của Nhà nước VNDCCH (Hiến pháp năm 1946) (tại kỳ họp thứ 2, 9-11-1946).",
-      },
-      {
-        type: "image",
-        src: "/images/bac-ho-coi-trong-cong-tac-tuyen-truyen.png",
-        alt: "Bác Hồ và công tác tuyên truyền",
-        caption: "Bác Hồ luôn coi trọng công tác tuyên truyền cách mạng",
+          "Các dân tộc muốn liên hiệp lại để mở rộng không gian phát triển kinh tế, khoa học và công nghệ trong bối cảnh toàn cầu hóa.",
       },
       {
         type: "highlight",
-        content: "3. Đấu tranh ngoại giao và chuẩn bị kháng chiến",
+        content: "Cương lĩnh dân tộc của V.I. Lênin",
       },
-      { type: "highlight-normal", content: "Chiến sự ở Nam Bộ" },
+      {
+        type: "highlight-normal",
+        content: "1. Các dân tộc hoàn toàn bình đẳng",
+      },
       {
         type: "paragraph",
         content:
-          "Quân và dân Nam Bộ đã đứng lên kháng chiến chống xâm lược Pháp ngay từ cuối tháng 9-1945, nêu cao tinh thần 'thà chết tự do còn hơn sống nô lệ'. Chính phủ Hồ Chí Minh kịp thời chi viện, và Hồ Chí Minh đã tặng nhân dân Nam Bộ danh hiệu 'Thành đồng Tổ quốc'.",
+          "Xóa bỏ mọi đặc quyền hoặc sự áp bức giữa dân tộc lớn và dân tộc nhỏ.",
       },
-      { type: "highlight-normal", content: "Sách lược 'Hòa để tiến'" },
+      {
+        type: "highlight-normal",
+        content: "2. Các dân tộc được quyền tự quyết",
+      },
       {
         type: "paragraph",
         content:
-          "Trước âm mưu của Pháp và Tưởng, Thường vụ Trung ương Đảng ra Chỉ thị Tình hình và chủ trương (3-3-1946), chủ trương tạm thời 'dàn hòa với Pháp' để diệt bọn phản động tay sai Tàu trắng, thúc đẩy nhanh quân Tưởng về nước, bớt đi một kẻ thù.",
+          "Quyền tự quyết định vận mệnh chính trị, con đường phát triển của mỗi dân tộc.",
       },
-      { type: "highlight-normal", content: "Hiệp định sơ bộ và Tạm ước" },
+      {
+        type: "highlight-normal",
+        content: "3. Liên hiệp công nhân tất cả các dân tộc",
+      },
       {
         type: "paragraph",
         content:
-          "Ngày 6-3-1946, Hồ Chí Minh ký Hiệp định sơ bộ với Pháp, Pháp công nhận Việt Nam là một quốc gia tự do trong Liên hiệp Pháp. Sau đó, Hồ Chí Minh ký Tạm ước 14-9-1946 tại Pháp, nhằm tranh thủ thời gian hòa hoãn.",
-      },
-      {
-        type: "image",
-        src: "/images/chu-tich-ho-chi-minh-ky-hiep-dinh-so-bo-6-3-1946.jpg",
-        alt: "Ký Hiệp định sơ bộ 6-3-1946",
-        caption:
-          "Chủ tịch Hồ Chí Minh và đại diện nước Pháp ký Hiệp định sơ bộ 6-3-1946",
-      },
-      {
-        type: "image",
-        src: "/images/ho-chu-tich-jean-sainteny-le-ky-hiep-dinh-so-bo-6-3-1946.jpg",
-        alt: "Lễ ký Hiệp định sơ bộ",
-        caption:
-          "Hồ Chủ tịch và Jean Sainteny cùng các vị dự lễ ký Hiệp định sơ bộ 6-3-1946 tại 38 Lý Thái Tổ, Hà Nội",
-      },
-      { type: "highlight-normal", content: "Chỉ thị Hòa để tiến (9-3-1946)" },
-      {
-        type: "paragraph",
-        content:
-          "Ngay sau khi ký Hiệp định sơ bộ, Đảng ra Chỉ thị, nhấn mạnh cần phải tiếp tục nêu cao tinh thần cảnh giác cách mạng, không ngừng một phút công việc sửa soạn, sẵn sàng kháng chiến bất cứ lúc nào.",
-      },
-      { type: "highlight-normal", content: "Chuẩn bị" },
-      {
-        type: "paragraph",
-        content:
-          "Đến tháng 12-1946, số lượng đảng viên tăng lên hơn 20.000 người. Sách lược đúng đắn của Đảng đã tạo thêm thời gian hòa bình, hòa hoãn, tranh thủ xây dựng thực lực, chuẩn bị sẵn sàng cho cuộc kháng chiến lâu dài.",
-      },
-      {
-        type: "image",
-        src: "/images/bac-ho-day-chu-binh-dan-hoc-vu-1.jpg",
-        alt: "Bác Hồ dạy Bình dân học vụ",
-        caption: "Bác Hồ trực tiếp dạy chữ cho một lớp Bình dân học vụ",
+          "Đây là nội dung quan trọng nhất, tạo sức mạnh đoàn kết để giải quyết vấn đề dân tộc theo lập trường giai cấp công nhân.",
       },
     ],
   },
@@ -462,123 +235,94 @@ const timelineData: TimelineEvent[] = [
     description:
       "Làm rõ đặc điểm của 54 dân tộc Việt Nam và các chính sách của Đảng, Nhà nước nhằm bảo đảm bình đẳng, đoàn kết và phát triển bền vững.",
     richContent: [
-      { type: "highlight", content: "1. Bùng nổ Kháng chiến (12-1946)" },
-      { type: "highlight-normal", content: "Quyết định" },
       {
-        type: "paragraph",
-        content:
-          "Trước sự khiêu khích, gây hấn và tối hậu thư của Pháp, ngày 18-12-1946, Ban Thường vụ Trung ương Đảng quyết định phát động toàn dân kháng chiến.",
-      },
-      { type: "highlight-normal", content: "Lời kêu gọi (19-12-1946)" },
-      {
-        type: "quote",
-        content:
-          "Chúng ta thà hy sinh tất cả, chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ.",
-        author: "Chủ tịch Hồ Chí Minh",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Chủ tịch Hồ Chí Minh ra Lời kêu gọi toàn quốc kháng chiến, khẳng định quyết tâm của dân tộc.",
-      },
-      {
-        type: "image",
-        src: "/images/loi-keu-goi-toan-quoc-khang-chien.jpg",
-        alt: "Lời kêu gọi toàn quốc kháng chiến",
-        caption: "Lời kêu gọi toàn quốc kháng chiến của Chủ tịch Hồ Chí Minh",
-      },
-      { type: "highlight-normal", content: "Mở đầu" },
-      {
-        type: "paragraph",
-        content:
-          "Bắt đầu từ 20 giờ ngày 19-12-1946, quân và dân Hà Nội và các đô thị từ Bắc vĩ tuyến 16 trở ra đồng loạt nổ súng.",
-      },
-      {
-        type: "image",
-        src: "/images/phat-lenh-toan-quoc-khang-chien-ha-noi.jpg",
-        alt: "Phát lệnh toàn quốc kháng chiến",
-        caption:
-          "Phát lệnh toàn quốc kháng chiến tại các cửa ngõ Thủ đô Hà Nội",
-      },
-      {
-        type: "image",
-        src: "/images/quan-dan-ha-noi-san-sang-chien-dau-12-1946.jpg",
-        alt: "Quân dân Hà Nội sẵn sàng chiến đấu",
-        caption: "Quân dân Hà Nội sẵn sàng chiến đấu, tháng 12-1946",
-      },
-      { type: "highlight-normal", content: "Trận chiến ở Hà Nội" },
-      {
-        type: "paragraph",
-        content:
-          "Diễn ra 60 ngày đêm khói lửa (từ 19-12-1946 đến 17-2-1947), thành công trong việc giam chân địch, bảo vệ an toàn các cơ quan đầu não và nhân dân rút ra ngoại thành, bước đầu làm thất bại kế hoạch đánh nhanh thắng nhanh của Pháp.",
-      },
-      { type: "highlight", content: "2. Đường lối Kháng chiến" },
-      {
-        type: "paragraph",
-        content:
-          "Đường lối kháng chiến được Đảng xác định là toàn dân, toàn diện, lâu dài và dựa vào sức mình là chính.",
-      },
-      { type: "highlight-normal", content: "Kháng chiến toàn dân" },
-      {
-        type: "paragraph",
-        content:
-          "Huy động toàn bộ sức dân, tài dân, lực dân, với Quân đội nhân dân làm nòng cốt.",
-      },
-      { type: "highlight-normal", content: "Kháng chiến toàn diện" },
-      {
-        type: "paragraph",
-        content:
-          "Đánh địch trên mọi lĩnh vực: quân sự, chính trị, kinh tế, văn hóa, tư tưởng, ngoại giao; trong đó, đấu tranh vũ trang giữ vai trò mũi nhọn, mang tính quyết định.",
+        type: "highlight",
+        content: "6 Đặc điểm dân tộc Việt Nam",
       },
       {
         type: "highlight-normal",
-        content: "Kháng chiến lâu dài (Trường kỳ kháng chiến)",
+        content: "1. Chênh lệch số dân giữa các tộc người",
       },
       {
         type: "paragraph",
         content:
-          "Là tư tưởng chỉ đạo chiến lược nhằm vừa đánh tiêu hao lực lượng địch vừa xây dựng, phát triển lực lượng ta; lấy thời gian để chuyển hóa yếu thành mạnh.",
+          "Có sự chênh lệch lớn về số dân giữa tộc người Kinh và 53 dân tộc thiểu số.",
       },
-      { type: "highlight-normal", content: "Dựa vào sức mình là chính" },
+      {
+        type: "highlight-normal",
+        content: "2. Cư trú xen kẽ nhau",
+      },
       {
         type: "paragraph",
         content:
-          "Lấy nguồn nội lực, sức mạnh vật chất, tinh thần của nhân dân làm chỗ dựa chủ yếu, đồng thời tranh thủ sự ủng hộ của quốc tế khi có điều kiện.",
+          "Các dân tộc cư trú xen kẽ nhau, không có vùng lãnh thổ riêng biệt tuyệt đối.",
       },
-      { type: "highlight", content: "3. Chiến dịch Việt Bắc (Thu Đông 1947)" },
-      { type: "highlight-normal", content: "Âm mưu Pháp" },
+      {
+        type: "highlight-normal",
+        content: "3. Vị trí chiến lược quan trọng",
+      },
       {
         type: "paragraph",
         content:
-          "Pháp mở cuộc tấn công quy mô lớn lên vùng ATK Việt Bắc, nhằm bắt gọn Chính phủ Hồ Chí Minh và tiêu diệt cơ quan đầu não kháng chiến.",
+          "Dân tộc thiểu số phân bố chủ yếu ở địa bàn có vị trí chiến lược quan trọng về an ninh, biên giới.",
       },
       {
-        type: "image",
-        src: "/images/bo-doi-qua-song-lo-chien-dich-viet-bac-1947.jpg",
-        alt: "Bộ đội qua sông Lô",
-        caption:
-          "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947",
+        type: "highlight-normal",
+        content: "4. Trình độ phát triển không đồng đều",
       },
-      {
-        type: "image",
-        src: "/images/chien-si-phao-binh-chien-dich-viet-bac-1947.jpg",
-        alt: "Chiến sĩ pháo binh",
-        caption:
-          "Các chiến sĩ pháo binh trong Chiến dịch Việt Bắc Thu-Đông, năm 1947",
-      },
-      {
-        type: "image",
-        src: "/images/chu-tich-ho-chi-minh-nghe-bao-cao-chien-dich-viet-bac-1947.jpg",
-        alt: "Bác Hồ nghe báo cáo Chiến dịch Việt Bắc",
-        caption:
-          "Chủ tịch Hồ Chí Minh và Hội đồng Chính phủ nghe Đại tướng Võ Nguyên Giáp báo cáo tình hình Chiến dịch Việt Bắc Thu - Đông 1947",
-        layout: "wide",
-      },
-      { type: "highlight-normal", content: "Kết quả" },
       {
         type: "paragraph",
         content:
-          "Quân và dân ta đã bảo toàn được cơ quan đầu não và căn cứ địa kháng chiến, đánh bại âm mưu, kế hoạch đánh nhanh, thắng nhanh của thực dân Pháp.",
+          "Trình độ phát triển kinh tế - xã hội giữa các dân tộc không đồng đều.",
+      },
+      {
+        type: "highlight-normal",
+        content: "5. Truyền thống đoàn kết lâu đời",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Có truyền thống đoàn kết lâu đời trong quá trình dựng nước và giữ nước.",
+      },
+      {
+        type: "highlight-normal",
+        content: "6. Bản sắc văn hóa đa dạng",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Mỗi dân tộc đều có bản sắc văn hóa riêng, tạo nên sự đa dạng của nền văn hóa Việt Nam thống nhất.",
+      },
+      {
+        type: "highlight",
+        content: "Chính sách của Đảng và Nhà nước",
+      },
+      {
+        type: "highlight-normal",
+        content: "1. Nguyên tắc bình đẳng và đoàn kết",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Thực hiện bình đẳng, đoàn kết, tương trợ và giúp nhau cùng phát triển.",
+      },
+      {
+        type: "highlight-normal",
+        content: "2. Ưu tiên đầu tư phát triển",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Ưu tiên đầu tư phát triển kinh tế - xã hội cho các vùng dân tộc thiểu số và miền núi.",
+      },
+      {
+        type: "highlight-normal",
+        content: "3. Bảo tồn và phát huy văn hóa",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Bảo tồn và phát huy các giá trị văn hóa truyền thống tốt đẹp của các tộc người.",
       },
     ],
   },
@@ -589,94 +333,102 @@ const timelineData: TimelineEvent[] = [
     description:
       "Giải thích bản chất của tôn giáo, các nguồn gốc hình thành và những tính chất cơ bản trong đời sống xã hội.",
     richContent: [
-      { type: "highlight-normal", content: "Phát triển lực lượng" },
+      {
+        type: "highlight",
+        content: "Bản chất của Tôn giáo",
+      },
       {
         type: "paragraph",
         content:
-          "Đầu năm 1948, Chủ tịch Hồ Chí Minh ký Sắc lệnh phong quân hàm Đại tướng cho đồng chí Võ Nguyên Giáp.",
-      },
-      {
-        type: "image",
-        src: "/images/bac-ho-cung-chien-si-cach-mang-viet-bac.jpg",
-        alt: "Bác Hồ tại căn cứ địa Việt Bắc",
-        caption: "Bác Hồ cùng các chiến sĩ cách mạng tại căn cứ địa Việt Bắc",
-      },
-      {
-        type: "image",
-        src: "/images/bac-ho-cham-soc-ngo-chien-khu-viet-bac.jpg",
-        alt: "Bác Hồ chăm sóc ngô",
-        caption: "Bác chăm sóc ngô trong vườn ở chiến khu Việt Bắc",
-      },
-      { type: "highlight-normal", content: "Thi đua Ái quốc" },
-      {
-        type: "paragraph",
-        content:
-          "Chủ tịch Hồ Chí Minh ra Lời kêu gọi Thi đua ái quốc (11-6-1948) để thúc đẩy sản xuất và tự cấp, tự túc hàng hóa cần thiết cho kháng chiến.",
-      },
-      { type: "highlight-normal", content: "Ngoại giao và Hậu phương" },
-      {
-        type: "paragraph",
-        content:
-          "Hội nghị Văn hóa toàn quốc (7-1948) nhất trí thông qua đường lối xây dựng nền văn hóa mới mang tính chất dân tộc, khoa học, đại chúng.",
+          "Tôn giáo là một hình thái ý thức xã hội phản ánh hư ảo thực tại khách quan; là một thực thể xã hội có niềm tin, hệ thống tổ chức và tín đồ.",
       },
       {
         type: "highlight",
-        content: "Biến đổi Quốc tế và sự Can thiệp của Mỹ",
+        content: "Phân biệt các khái niệm liên quan",
+      },
+      {
+        type: "highlight-normal",
+        content: "Tín ngưỡng",
+      },
+      {
+        type: "paragraph",
+        content: "Niềm tin và sự ngưỡng mộ vào một cái gì đó linh thiêng.",
+      },
+      {
+        type: "highlight-normal",
+        content: "Mê tín",
+      },
+      {
+        type: "paragraph",
+        content: "Niềm tin mê muội, viển vông, không dựa trên cơ sở khoa học.",
+      },
+      {
+        type: "highlight-normal",
+        content: "Mê tín dị đoan",
       },
       {
         type: "paragraph",
         content:
-          "Sau khi Cộng hòa Nhân dân Trung Hoa ra đời (1-10-1949), Việt Nam nhận được sự công nhận và đặt quan hệ ngoại giao từ Trung Quốc (18-1-1950), Liên Xô (30-1-1950) và các nước xã hội chủ nghĩa khác. Sự kiện này mở ra con đường liên lạc quốc tế cho Việt Nam. Mỹ bắt đầu can thiệp sâu vào chiến tranh ở Việt Nam, viện trợ cho Pháp.",
+          "Niềm tin cực đoan vào các lực lượng siêu nhiên đến mức mê muội, gây hậu quả tiêu cực cho xã hội.",
       },
-      { type: "highlight", content: "Chiến dịch Biên giới Thu Đông 1950" },
-      { type: "highlight-normal", content: "Mục tiêu" },
+      {
+        type: "highlight",
+        content: "3 Nguồn gốc của Tôn giáo",
+      },
+      {
+        type: "highlight-normal",
+        content: "1. Nguồn gốc tự nhiên, kinh tế - xã hội",
+      },
       {
         type: "paragraph",
         content:
-          "Tiêu diệt sinh lực địch, mở rộng căn cứ địa Việt Bắc, khai thông hành lang liên lạc quốc tế.",
+          "Do sự bất lực trước thiên tai và sự áp bức, bất công của xã hội cũ.",
       },
       {
-        type: "image",
-        src: "/images/chu-tich-ho-chi-minh-chu-truong-mo-chien-dich-bien-gioi-6-1950.jpg",
-        alt: "Bác Hồ chủ trương mở chiến dịch Biên giới",
-        caption:
-          "Tháng 6-1950, Chủ tịch Hồ Chí Minh cùng Thường vụ Trung ương Đảng chủ trương mở chiến dịch lớn đánh địch trên tuyến biên giới Việt-Trung",
-        layout: "wide",
+        type: "highlight-normal",
+        content: "2. Nguồn gốc nhận thức",
       },
-      {
-        type: "image",
-        src: "/images/chu-tich-ho-chi-minh-dai-tuong-vo-nguyen-giap-ban-ke-hoach-bien-gioi-1950.jpg",
-        alt: "Bác Hồ và Đại tướng Võ Nguyên Giáp",
-        caption:
-          "Chủ tịch Hồ Chí Minh và Đại tướng, Tổng tư lệnh Võ Nguyên Giáp bàn kế hoạch tác chiến Chiến dịch Biên giới năm 1950",
-        layout: "wide",
-      },
-      {
-        type: "image",
-        src: "/images/dai-tuong-vo-nguyen-giap-chu-tich-ho-chi-minh-ban-ke-hoach-8-1950.jpg",
-        alt: "Bàn kế hoạch tác chiến",
-        caption:
-          "Đại tướng Võ Nguyên Giáp và Chủ tịch Hồ Chí Minh bàn kế hoạch tác chiến với các sĩ quan quân đội trong chiến dịch vào hạ tuần tháng 8-1950",
-        layout: "wide",
-      },
-      {
-        type: "image",
-        src: "/images/chu-tich-ho-chi-minh-dai-quan-sat-dong-khe-16-9-1950.jpg",
-        alt: "Bác Hồ trên đài quan sát",
-        caption:
-          "Chủ tịch Hồ Chí Minh trên đài quan sát mặt trận Đông Khê, Chiến dịch Biên giới, ngày 16-9-1950",
-      },
-      {
-        type: "image",
-        src: "/images/bo-doi-giai-phong-dong-khe.jpg",
-        alt: "Bộ đội giải phóng Đông Khê",
-        caption: "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê",
-      },
-      { type: "highlight-normal", content: "Ý nghĩa" },
       {
         type: "paragraph",
         content:
-          "Chiến thắng Biên giới giành được thắng lợi to lớn, kết thúc thời kỳ chiến đấu trong vòng vây, đánh dấu bước phát triển mới, đưa cuộc kháng chiến chuyển sang giai đoạn phát triển cao hơn.",
+          "Do giới hạn của tri thức con người trước những hiện tượng bí ẩn.",
+      },
+      {
+        type: "highlight-normal",
+        content: "3. Nguồn gốc tâm lý",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Nỗi sợ hãi hoặc mong muốn được che chở trước các rủi ro trong cuộc sống.",
+      },
+      {
+        type: "highlight",
+        content: "3 Tính chất của Tôn giáo",
+      },
+      {
+        type: "highlight-normal",
+        content: "1. Tính lịch sử",
+      },
+      {
+        type: "paragraph",
+        content: "Có sinh ra và có mất đi.",
+      },
+      {
+        type: "highlight-normal",
+        content: "2. Tính quần chúng",
+      },
+      {
+        type: "paragraph",
+        content: "Là nhu cầu tinh thần của nhiều người.",
+      },
+      {
+        type: "highlight-normal",
+        content: "3. Tính chính trị",
+      },
+      {
+        type: "paragraph",
+        content: "Dễ bị lợi dụng vào mục đích xấu.",
       },
     ],
   },
@@ -687,92 +439,83 @@ const timelineData: TimelineEvent[] = [
     description:
       "Trình bày thực trạng tôn giáo ở Việt Nam và chính sách của Nhà nước trong việc bảo đảm quyền tự do tín ngưỡng, tôn giáo.",
     richContent: [
-      { type: "highlight", content: "1. Đại hội Đảng lần thứ II (2-1951)" },
       {
-        type: "image",
-        src: "/images/toan-canh-dai-hoi-lan-thu-ii-cua-dang.jpg",
-        alt: "Toàn cảnh Đại hội lần thứ II",
-        caption: "Toàn cảnh Đại hội lần thứ II của Đảng",
-        layout: "wide",
-      },
-      {
-        type: "image",
-        src: "/images/cac-dai-bieu-du-dai-hoi-dang-lan-thu-ii.jpg",
-        alt: "Các đại biểu dự Đại hội",
-        caption: "Các đại biểu dự Đại hội Đảng toàn quốc lần thứ II",
-      },
-      {
-        type: "image",
-        src: "/images/chu-tich-ho-chi-minh-tong-bi-thu-truong-chinh-trao-doi-dai-hoi-ii.jpg",
-        alt: "Bác Hồ và Tổng Bí thư Trường Chinh",
-        caption:
-          "Chủ tịch Hồ Chí Minh và Tổng Bí thư Trường Chinh trao đổi về những văn kiện Đại hội II",
-      },
-      {
-        type: "image",
-        src: "/images/cac-dai-bieu-mung-dai-hoi-thanh-cong.jpg",
-        alt: "Đại biểu mừng Đại hội",
-        caption: "Các đại biểu mừng Đại hội thành công",
-      },
-      { type: "highlight-normal", content: "Tên Đảng" },
-      {
-        type: "paragraph",
-        content:
-          "Đảng ra hoạt động công khai dưới tên gọi Đảng Lao động Việt Nam.",
+        type: "highlight",
+        content: "Đặc điểm Tôn giáo ở Việt Nam",
       },
       {
         type: "highlight-normal",
-        content: "Chính cương của Đảng Lao động Việt Nam",
+        content: "Quốc gia đa tôn giáo",
       },
       {
         type: "paragraph",
         content:
-          "Được thông qua, xác định tính chất xã hội Việt Nam lúc này có 3 tính chất: 'dân chủ nhân dân, một phần thuộc địa và nửa phong kiến'.",
+          "Việt Nam là quốc gia có nhiều tôn giáo (13 tôn giáo được công nhận, khoảng 24 triệu tín đồ).",
       },
-      { type: "highlight-normal", content: "Đối tượng đấu tranh chính" },
+      {
+        type: "highlight-normal",
+        content: "Tính chất chung sống hòa bình",
+      },
       {
         type: "paragraph",
         content:
-          "Chủ nghĩa đế quốc xâm lược Pháp và can thiệp Mỹ, và phong kiến phản động.",
+          "Tôn giáo đa dạng, đan xen, chung sống hòa bình và không có xung đột lớn.",
       },
-      { type: "highlight-normal", content: "Nhiệm vụ chính" },
+      {
+        type: "highlight-normal",
+        content: "Tín đồ yêu nước",
+      },
+      {
+        type: "paragraph",
+        content: "Tín đồ phần lớn là nhân dân lao động có tinh thần yêu nước.",
+      },
+      {
+        type: "highlight-normal",
+        content: "Vai trò chức sắc",
+      },
       {
         type: "paragraph",
         content:
-          "Tập trung đấu tranh chống xâm lược, hoàn thành công cuộc giải phóng dân tộc.",
-      },
-      { type: "highlight-normal", content: "Lãnh đạo" },
-      {
-        type: "paragraph",
-        content:
-          "Hồ Chí Minh được bầu làm Chủ tịch Đảng, Trường Chinh được bầu lại làm Tổng Bí thư. Đại hội II là 'Đại hội kháng chiến kiến quốc'.",
+          "Hàng ngũ chức sắc có vai trò quan trọng và có quan hệ quốc tế rộng rãi.",
       },
       {
         type: "highlight",
-        content: "2. Củng cố hậu phương và Cải cách Ruộng đất",
-      },
-      { type: "highlight-normal", content: "Chỉnh Đảng, Chỉnh quân" },
-      {
-        type: "paragraph",
-        content:
-          "Hội nghị Trung ương lần thứ ba (4-1952) đề ra quyết sách lớn về công tác 'chỉnh Đảng, chỉnh quân', xác định đây là nhiệm vụ trọng tâm.",
-      },
-      { type: "highlight-normal", content: "Cải cách Ruộng đất" },
-      {
-        type: "paragraph",
-        content:
-          "Ngày 19-12-1953, Chủ tịch Hồ Chí Minh ký ban hành sắc lệnh Luật cải cách ruộng đất. Chủ trương này nhằm triệt để giảm tô, giảm tức và tiến hành cải cách ruộng đất, thực hiện người cầy có ruộng, nâng cao quyền lợi kinh tế và chính trị của người nông dân.",
+        content: "Chính sách của Việt Nam hiện nay",
       },
       {
-        type: "image",
-        src: "/images/cai-cach-ruong-dat-nong-dan-dot-van-tu-cu.jpg",
-        alt: "Cải cách ruộng đất",
-        caption: "Cải cách ruộng đất hoàn tất, nông dân đốt văn tự cũ",
+        type: "highlight-normal",
+        content: "Bảo đảm quyền tự do tín ngưỡng",
       },
       {
         type: "paragraph",
         content:
-          "Chủ trương này đã tạo ra chuyển biến lớn về kinh tế, chính trị ở nông thôn, thúc đẩy sức sản xuất phát triển, và tăng thêm quyết tâm giết giặc, lập công cho bộ đội nơi tiền tuyến.",
+          "Tôn trọng và bảo đảm quyền tự do tín ngưỡng, tôn giáo và quyền không theo tôn giáo của mọi người.",
+      },
+      {
+        type: "highlight-normal",
+        content: "Đoàn kết trong khối đại đoàn kết dân tộc",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Đoàn kết đồng bào có đạo và đồng bào không có đạo trong khối đại đoàn kết dân tộc.",
+      },
+      {
+        type: "highlight-normal",
+        content: "Trách nhiệm toàn hệ thống chính trị",
+      },
+      {
+        type: "paragraph",
+        content: "Công tác tôn giáo là trách nhiệm của cả hệ thống chính trị.",
+      },
+      {
+        type: "highlight-normal",
+        content: "Nghiêm cấm lợi dụng tôn giáo",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Nghiêm cấm lợi dụng tôn giáo để hoạt động trái pháp luật, kích động chia rẽ dân tộc.",
       },
     ],
   },
@@ -783,95 +526,68 @@ const timelineData: TimelineEvent[] = [
     description:
       "Phân tích mối quan hệ gắn bó giữa dân tộc và tôn giáo, vai trò của tín ngưỡng truyền thống và tinh thần chung sống hòa bình.",
     richContent: [
-      { type: "highlight", content: "Chiến dịch Điện Biên Phủ" },
-      { type: "highlight-normal", content: "Bối cảnh" },
       {
         type: "paragraph",
         content:
-          "Pháp thực hiện Kế hoạch Navarre, xây dựng Điện Biên Phủ thành tập đoàn cứ điểm mạnh nhất Đông Dương.",
-      },
-      { type: "highlight-normal", content: "Quyết định" },
-      {
-        type: "paragraph",
-        content:
-          "Ngày 6-12-1953, Bộ Chính trị quyết định mở Chiến dịch Điện Biên Phủ.",
-      },
-      { type: "highlight-normal", content: "Chỉ đạo" },
-      {
-        type: "paragraph",
-        content:
-          "Đại tướng Võ Nguyên Giáp được giao làm Tư lệnh. Phương châm chiến dịch là 'đánh chắc, tiến chắc'.",
-      },
-      { type: "highlight-normal", content: "Chiến thắng" },
-      {
-        type: "paragraph",
-        content:
-          "Sau 56 ngày đêm, ngày 7-5-1954, quân đội ta giành chiến thắng, bắt sống tướng Đờ Cátơri. Chiến thắng này buộc Pháp phải đàm phán. Chiến thắng Điện Biên Phủ được ghi nhận là một chiến công vĩ đại của dân tộc Việt Nam, báo hiệu sự sụp đổ của chủ nghĩa thực dân.",
+          "Mối quan hệ giữa dân tộc và tôn giáo ở nước ta không chỉ là sự tồn tại song song mà là sự đan xen, tác động qua lại sâu sắc, quyết định đến sự ổn định chính trị và phát triển xã hội.",
       },
       {
-        type: "image",
-        src: "/images/chien-thang-dien-bien-phu-1954.jpg",
-        alt: "Mừng chiến thắng Điện Biên Phủ",
-        caption:
-          "Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954",
-        layout: "wide",
+        type: "highlight",
+        content: "Đặc điểm cốt lõi của mối quan hệ dân tộc và tôn giáo",
       },
-      { type: "highlight", content: "Hiệp định Genève (21-7-1954)" },
       {
-        type: "paragraph",
-        content: "Hội nghị được tiến hành từ ngày 8-5-1954.",
+        type: "highlight-normal",
+        content: '1. Sự gắn bó mật thiết "Gắn đạo với đời"',
       },
       {
         type: "paragraph",
         content:
-          "Hiệp định chính thức chấm dứt chiến tranh, công nhận độc lập, chủ quyền, thống nhất và toàn vẹn lãnh thổ của Việt Nam, Lào, và Campuchia.",
+          'Ở Việt Nam, các tôn giáo có truyền thống đồng hành cùng dân tộc trong mọi giai đoạn lịch sử. Đa số tín đồ là nhân dân lao động, họ vừa có lòng nồng nàn yêu nước, vừa có niềm tin tôn giáo sâu sắc, luôn thực hiện phương châm "tốt đời, đẹp đạo".',
+      },
+      {
+        type: "highlight-normal",
+        content: "2. Sự chi phối của tín ngưỡng truyền thống",
       },
       {
         type: "paragraph",
         content:
-          "Hiệp định đánh dấu kết thúc thắng lợi cuộc kháng chiến chống Pháp xâm lược và dẫn đến việc giải phóng hoàn toàn miền Bắc, tạo tiền đề cho miền Bắc quá độ lên chủ nghĩa xã hội, xây dựng miền Bắc thành hậu phương lớn.",
+          "Quan hệ dân tộc - tôn giáo chịu ảnh hưởng mạnh mẽ của các hình thái tín ngưỡng bản địa.",
       },
       {
-        type: "image",
-        src: "/images/hoi-nghi-geneve-1954-hoa-binh-dong-duong.jpg",
-        alt: "Hội nghị Genève 1954",
-        caption: "Hội nghị Genève 1954 bàn về lập lại hòa bình ở Đông Dương",
-        layout: "wide",
-      },
-      {
-        type: "image",
-        src: "/images/thu-truong-ta-quang-buu-ky-hiep-dinh-geneva-1954.jpg",
-        alt: "Ký Hiệp định Geneva",
-        caption:
-          "Thứ trưởng Bộ Quốc phòng Tạ Quang Bửu (ngồi bên phải) thay mặt Chính phủ và Bộ Tổng tư lệnh QĐND Việt Nam ký Hiệp định Geneva, năm 1954",
-      },
-      { type: "highlight", content: "Kết luận chung (1945–1954)" },
-      {
-        type: "paragraph",
-        content:
-          "Dưới sự lãnh đạo của Đảng và Chủ tịch Hồ Chí Minh, dân tộc Việt Nam đã giành độc lập, giữ vững chính quyền, xây dựng nền tảng chế độ mới và đánh bại thực dân Pháp.",
+        type: "highlight-normal",
+        content: "Ở cấp độ gia đình",
       },
       {
         type: "paragraph",
         content:
-          "Đây là thập niên anh hùng, khẳng định đường lối cách mạng đúng đắn, sáng tạo, độc lập, tự chủ.",
-      },
-      { type: "highlight-normal", content: "Bài học lớn" },
-      {
-        type: "paragraph",
-        content: "Kết hợp kháng chiến và kiến quốc.",
+          "Tín ngưỡng thờ cúng tổ tiên là nét đẹp văn hóa phổ biến, gắn kết các thành viên trong dòng họ.",
       },
       {
-        type: "paragraph",
-        content: "Phát huy sức mạnh toàn dân.",
+        type: "highlight-normal",
+        content: "Ở cấp độ làng xã",
       },
       {
         type: "paragraph",
-        content: "Dựa vào nội lực, tranh thủ quốc tế.",
+        content:
+          "Thờ cúng Thành hoàng làng tạo nên sự cố kết cộng đồng địa phương.",
+      },
+      {
+        type: "highlight-normal",
+        content: "Ở cấp độ quốc gia",
       },
       {
         type: "paragraph",
-        content: "Kiên định mục tiêu độc lập dân tộc gắn với chủ nghĩa xã hội.",
+        content:
+          'Tín ngưỡng thờ cúng Hùng Vương đã trở thành biểu tượng của sự hội tụ khối đại đoàn kết, nhắc nhở về nguồn gốc "đồng bào" chung của 54 dân tộc.',
+      },
+      {
+        type: "highlight-normal",
+        content: "3. Sự đan xen và chung sống hòa bình",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Việt Nam là nơi giao lưu của nhiều luồng văn hóa thế giới, tạo nên một bức tranh tôn giáo đa dạng, đan xen mà không dẫn đến xung đột, chiến tranh tôn giáo lớn. Mọi công dân không phân biệt dân tộc, tín ngưỡng đều có ý thức rõ ràng về cội nguồn và sự thống nhất quốc gia.",
       },
     ],
   },
@@ -881,7 +597,49 @@ const timelineData: TimelineEvent[] = [
     slug: "nhung-thach-thuc-hien-nay",
     description:
       "Nhận diện các hiện tượng tiêu cực như đạo lạ, lợi dụng tôn giáo và âm mưu chia rẽ khối đại đoàn kết dân tộc.",
-    richContent: [],
+    richContent: [
+      {
+        type: "highlight",
+        content:
+          "Những thách thức và hiện tượng mới trong quan hệ dân tộc - tôn giáo",
+      },
+      {
+        type: "highlight-normal",
+        content: "Sự xuất hiện của các hiện tượng tôn giáo mới",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Gần đây xuất hiện nhiều hiện tượng tôn giáo mới có xu hướng phát triển mạnh, tác động đến đời sống cộng đồng.",
+      },
+      {
+        type: "highlight-normal",
+        content: "Sự lợi dụng của các thế lực thù địch",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Một số tổ chức đã lợi dụng niềm tin tôn giáo và các vấn đề dân tộc thiểu số để thực hiện mưu đồ chính trị.",
+      },
+      {
+        type: "highlight-normal",
+        content: "Kích động ly khai",
+      },
+      {
+        type: "paragraph",
+        content:
+          'Các hiện tượng như "Tin lành Đề Ga" hay "Hà Mòn" ở Tây Nguyên đã bị lợi dụng để tuyên truyền nội dung gây hoang mang, xuyên tạc chính sách của Đảng và Nhà nước.',
+      },
+      {
+        type: "highlight-normal",
+        content: "Phá hoại đại đoàn kết",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Những hành vi này làm ảnh hưởng đến sự ổn định, trật tự xã hội và trực tiếp xâm phạm đến mối quan hệ tốt đẹp giữa dân tộc và tôn giáo.",
+      },
+    ],
   },
   {
     year: "Phần VIII",
@@ -889,7 +647,62 @@ const timelineData: TimelineEvent[] = [
     slug: "dinh-huong-giai-phap",
     description:
       "Đề xuất các giải pháp nhằm củng cố đoàn kết, phát triển kinh tế – xã hội và bảo vệ ổn định chính trị, xã hội.",
-    richContent: [],
+    richContent: [
+      {
+        type: "paragraph",
+        content:
+          "Để giải quyết tốt mối quan hệ này, Đảng và Nhà nước đề ra các định hướng sau:",
+      },
+      {
+        type: "highlight",
+        content: "Các định hướng và giải pháp chủ yếu",
+      },
+      {
+        type: "highlight-normal",
+        content: "1. Tăng cường đại đoàn kết là nhiệm vụ hàng đầu",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Coi vấn đề dân tộc và tôn giáo là vấn đề chiến lược, lâu dài và cấp bách của cách mạng Việt Nam. Phải xây dựng khối liên minh giữa giai cấp công nhân, nông dân và đội ngũ trí thức làm nòng cốt cho khối đoàn kết toàn dân.",
+      },
+      {
+        type: "highlight-normal",
+        content: "2. Giải quyết vấn đề tôn giáo trên cơ sở vấn đề dân tộc",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Tuyệt đối không được để các vấn đề tôn giáo trở thành cái cớ để đòi ly khai dân tộc. Mọi hoạt động tôn giáo phải bảo đảm giữ vững độc lập, chủ quyền và thống nhất đất nước.",
+      },
+      {
+        type: "highlight-normal",
+        content: "3. Phát triển toàn diện kinh tế - xã hội",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Gắn việc thực hiện chính sách dân tộc, tôn giáo với nhiệm vụ phát triển vùng dân tộc thiểu số và miền núi. Nhà nước ưu tiên đầu tư để rút ngắn khoảng cách phát triển, bảo đảm an sinh xã hội cho đồng bào có đạo ở vùng sâu, vùng xa.",
+      },
+      {
+        type: "highlight-normal",
+        content: "4. Thực thi pháp luật nghiêm minh",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Bảo đảm quyền tự do tín ngưỡng, tôn giáo của nhân dân theo Hiến pháp và Luật Tín ngưỡng, Tôn giáo năm 2016. Đồng thời, kiên quyết đấu tranh chống lợi dụng tôn giáo vào mục đích chính trị và xử lý nghiêm các hành vi truyền đạo trái pháp luật.",
+      },
+      {
+        type: "highlight-normal",
+        content: "5. Chủ động phòng ngừa và vạch trần âm mưu thù địch",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Xây dựng cơ chế phối hợp giữa các lực lượng để nắm bắt tình hình, ngăn chặn từ sớm các hoạt động phá hoại khối đoàn kết dân tộc.",
+      },
+    ],
   },
 ];
 
