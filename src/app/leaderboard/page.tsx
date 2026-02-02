@@ -2,12 +2,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowLeft, Trophy, Medal, Award, Crown } from "lucide-react";
-import { getLeaderboard } from "@/services/leaderboard.api";
+import { getLeaderboard } from "@/app/actions/mln.actions";
 
 interface LeaderboardEntry {
   name: string;
   picture: string;
   count: number;
+  imageSrc: string;
 }
 
 interface GroupedLeaderboard {
@@ -38,8 +39,7 @@ export default function LeaderboardPage() {
 
   const fetchLeaderboard = async () => {
     try {
-      const response = await getLeaderboard();
-      const data = response.data || response; // Handle cả {data: [...]} và [...]
+      const data = await getLeaderboard();
 
       // Nhóm theo picture và sắp xếp theo điểm (count thấp = tốt hơn)
       const grouped: GroupedLeaderboard = {};
@@ -180,14 +180,18 @@ export default function LeaderboardPage() {
                   className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-red-200 hover:border-red-400 transition-all duration-300"
                 >
                   {/* Header với hình ảnh */}
-                  <div className="relative h-48 bg-gradient-to-r from-red-600 to-yellow-600">
-                    <div className="absolute inset-0 bg-red-900/50"></div>
+                  <div className="relative h-48 bg-gradient-to-r from-red-600 to-yellow-600 overflow-hidden">
+                    <img
+                      src={entries[0]?.imageSrc ?? `/images/${picture}`}
+                      alt={displayName}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-red-900/50" />
                     <div className="absolute inset-0 flex items-center justify-center p-4">
                       <h2 className="text-xl md:text-2xl font-bold text-white text-center px-4 drop-shadow-lg">
                         {displayName}
                       </h2>
                     </div>
-                    {/* Hiển thị số người chơi */}
                     <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
                       <span className="text-sm font-bold text-red-600">
                         {entries.length} người chơi

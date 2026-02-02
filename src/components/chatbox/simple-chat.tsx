@@ -3,7 +3,6 @@
 import { useState, useRef } from "react";
 import { Send, X, MessageCircle, Volume2, Mic } from "lucide-react";
 import { createChatSession } from "@/services/chat.api";
-import { refreshTokenIfNeeded } from "@/services/token.api";
 import { ChatSession } from "@/types/chat.type";
 
 interface SimpleChatProps {
@@ -24,7 +23,6 @@ export default function SimpleChat({ isOpen, onClose }: SimpleChatProps) {
   const [isPlayingAudio, setIsPlayingAudio] = useState(false); // AI đang đọc câu trả lời
   const [sessionId, setSessionId] = useState<string>("");
   const [isInitialized, setIsInitialized] = useState(false);
-  const [isInitializing, setIsInitializing] = useState(false);
   const [showChatModal, setShowChatModal] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -62,54 +60,12 @@ export default function SimpleChat({ isOpen, onClose }: SimpleChatProps) {
     setIsTyping(false);
   };
 
-  // Initialize chat session
-  const initializeChat = async () => {
-    // IMPORTANT: Stop any existing audio/session before creating new one
-    console.log("🔄 Initializing new chat session...");
+  const initializeChat = () => {
     stopCurrentAudio();
-
-    // Reset messages for new session
     setMessages([]);
-
-    setIsInitializing(true);
-    setShowChatModal(true); // Show modal immediately
-
-    try {
-      console.log("🔑 Starting chat session...");
-
-      // Call the start webhook to get session ID
-      const response = await fetch(
-        "https://n8n.aizy.vn/webhook/haokhikhangchien/start",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Failed to start chat session");
-      }
-
-      const data = await response.json();
-      const newSessionId = data.sessionId;
-
-      if (!newSessionId) {
-        throw new Error("No session ID returned from server");
-      }
-
-      console.log("✅ Session ID received:", newSessionId);
-      setSessionId(newSessionId);
-      setIsInitialized(true);
-      console.log("✅ Chat initialized successfully");
-    } catch (error: any) {
-      console.error("❌ Chat initialization failed:", error);
-      setShowChatModal(false); // Hide modal on error
-      alert("Không thể kết nối với server. Vui lòng thử lại!");
-    } finally {
-      setIsInitializing(false);
-    }
+    setShowChatModal(true);
+    setSessionId(generateSessionId());
+    setIsInitialized(true);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -257,7 +213,7 @@ export default function SimpleChat({ isOpen, onClose }: SimpleChatProps) {
                   </h2>
                   <p className="text-sm text-yellow-200 flex items-center gap-2 mt-1">
                     <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse shadow-lg shadow-green-400/50"></span>
-                    {isInitializing ? "Đang kết nối..." : "Sẵn sàng nghe bạn"}
+                    Sẵn sàng nghe bạn
                   </p>
                 </div>
               </div>
@@ -271,22 +227,7 @@ export default function SimpleChat({ isOpen, onClose }: SimpleChatProps) {
 
             {/* Messages Area */}
             <div className="flex-1 overflow-y-auto p-6 space-y-4">
-              {isInitializing && (
-                <div className="flex flex-col items-center justify-center h-full text-center space-y-6">
-                  <div className="relative">
-                    <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#B22222]"></div>
-                    <Mic
-                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#B22222]"
-                      size={24}
-                    />
-                  </div>
-                  <p className="text-lg text-gray-700 font-medium">
-                    Đang kết nối với trợ lý AI...
-                  </p>
-                </div>
-              )}
-
-              {isInitialized && !isInitializing && messages.length === 0 && (
+              {isInitialized && messages.length === 0 && (
                 <div className="flex flex-col items-center justify-center h-full text-center space-y-6 px-4">
                   <div className="bg-gradient-to-br from-red-100 to-yellow-100 p-8 rounded-3xl shadow-xl">
                     <Volume2
@@ -382,11 +323,10 @@ export default function SimpleChat({ isOpen, onClose }: SimpleChatProps) {
                           ? "Vui lòng chờ AI trả lời..."
                           : "Nhập câu hỏi của bạn..."
                       }
-                      className={`w-full px-5 py-4 border-2 rounded-full focus:outline-none focus:ring-2 text-base transition-all duration-300 ${
-                        isTyping
-                          ? "border-gray-300 bg-gray-100 text-gray-500 cursor-not-allowed placeholder:text-gray-400"
-                          : "border-red-200 bg-gray-50 text-gray-900 focus:ring-[#B22222] focus:border-transparent placeholder:text-gray-400"
-                      }`}
+                      className={`w-full px-5 py-4 border-2 rounded-full focus:outline-none focus:ring-2 text-base transition-all duration-300 ${isTyping
+                        ? "border-gray-300 bg-gray-100 text-gray-500 cursor-not-allowed placeholder:text-gray-400"
+                        : "border-red-200 bg-gray-50 text-gray-900 focus:ring-[#B22222] focus:border-transparent placeholder:text-gray-400"
+                        }`}
                       disabled={isTyping}
                       autoFocus
                     />
@@ -441,10 +381,9 @@ export default function SimpleChat({ isOpen, onClose }: SimpleChatProps) {
           <div className="text-center">
             <button
               onClick={initializeChat}
-              disabled={isInitializing}
-              className="w-full bg-red-600 hover:bg-red-700 disabled:bg-red-300 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium"
+              className="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium"
             >
-              {isInitializing ? "Đang kết nối..." : "Bắt đầu chat"}
+              Bắt đầu chat
             </button>
           </div>
         </div>
