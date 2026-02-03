@@ -13,7 +13,9 @@ interface LeaderboardRawItem {
   id?: number;
   createdAt?: string;
   updatedAt?: string;
-  value: string;
+  name: string;
+  count: string | number;
+  picture: string;
 }
 
 export async function fetchLeaderboardServer(): Promise<LeaderboardEntry[]> {
@@ -29,27 +31,21 @@ export async function fetchLeaderboardServer(): Promise<LeaderboardEntry[]> {
 
   const entries: LeaderboardEntry[] = [];
   for (const item of raw) {
-    if (typeof item?.value !== "string") continue;
-    try {
-      const parsed = JSON.parse(item.value) as LeaderboardEntry;
-      if (
-        typeof parsed?.name === "string" &&
-        typeof parsed?.picture === "string" &&
-        typeof parsed?.count === "number"
-      ) {
-        const picture = parsed.picture.trim();
-        const imageSrc = picture.startsWith("/")
-          ? picture
-          : `/images/${picture.replace(/^images\//, "")}`;
-        entries.push({
-          name: parsed.name,
-          picture,
-          count: parsed.count,
-          imageSrc,
-        });
-      }
-    } catch {
-      // skip invalid value
+    if (
+      typeof item?.name === "string" &&
+      typeof item?.picture === "string" &&
+      (typeof item?.count === "string" || typeof item?.count === "number")
+    ) {
+      const picture = item.picture.trim();
+      const imageSrc = picture.startsWith("/")
+        ? picture
+        : `/images/${picture.replace(/^images\//, "")}`;
+      entries.push({
+        name: item.name,
+        picture,
+        count: typeof item.count === "string" ? parseInt(item.count, 10) : item.count,
+        imageSrc,
+      });
     }
   }
   return entries;
