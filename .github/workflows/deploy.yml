@@ -6,7 +6,6 @@ on:
 
 env:
   AAPANEL_PROJECT_NAME: "mln131.aizy.io.vn"
-  REPO_URL: "https://github.com/AIZY-Outsourcing/motkhoivietnam-3d.git"
 
 jobs:
   deploy:
@@ -21,7 +20,7 @@ jobs:
           port: ${{ secrets.SERVER_PORT || '22' }}
           script: |
             PROJECT_NAME="${{ env.AAPANEL_PROJECT_NAME }}"
-            REPO_URL="${{ env.REPO_URL }}"
+            REPO_URL="${{ github.server_url }}/${{ github.repository }}.git"
             GITHUB_TOKEN="${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}"
             SOURCE_DIR="/app/git/${PROJECT_NAME}"
             
