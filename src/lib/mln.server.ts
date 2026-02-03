@@ -1,6 +1,6 @@
 import { signPayload } from "./mln.signing";
 
-const MLN_BASE = "https://n8n.aizy.vn/webhook/motkhoivietnam";
+const MLN_BASE = "http://n8n.aizy.io.vn:5678/motkhoivietnam";
 
 export interface LeaderboardEntry {
   name: string;
@@ -77,7 +77,7 @@ export async function storeScoreServer(payload: {
   return res.json();
 }
 
-const CHATBOT_URL = "https://n8n.aizy.vn/webhook/motkhoivietnam/chatbot";
+const CHATBOT_URL = "http://n8n.aizy.io.vn:5678/motkhoivietnam/chatbot";
 
 export async function fetchChatbotServer(payload: {
   sessionId: string;
