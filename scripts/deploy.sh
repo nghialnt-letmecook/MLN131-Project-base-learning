@@ -66,6 +66,15 @@ rsync -az node_modules/ $WEB_DIR/node_modules/
 # ------------------------------------------------------------------------------
 echo -e "${GREEN}---> Restarting project via aaPanel Node Project Manager...${NC}"
 
+# Extract PORT from .env if exists to ensure restart uses correct port
+if [ -f "$WEB_DIR/.env" ]; then
+    ENV_PORT=$(grep '^PORT=' "$WEB_DIR/.env" | cut -d '=' -f2)
+    if [ -n "$ENV_PORT" ]; then
+        export PORT=$ENV_PORT
+        echo -e "${GREEN}---> Found PORT=$PORT in .env, applying to environment...${NC}"
+    fi
+fi
+
 export PYTHONPATH=$PYTHONPATH:/www/server/panel/class:/www/server/panel
 btpython /www/server/panel/plugin/nodejs/nodejs_main.py restart "{\"project_name\":\"${PROJECT_NAME}\"}"
 
