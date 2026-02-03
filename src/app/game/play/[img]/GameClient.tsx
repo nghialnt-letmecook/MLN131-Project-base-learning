@@ -200,66 +200,6 @@ export default function PuzzleGame({
     }
   };
 
-  const autoWin = useCallback(() => {
-    const correctPieces = initializePuzzle();
-    setPieces(correctPieces);
-    setEmptyPosition(8);
-    setIsComplete(true);
-    gsap.fromTo(
-      ".puzzle-piece",
-      { scale: 1 },
-      {
-        scale: 1.05,
-        duration: 0.3,
-        yoyo: true,
-        repeat: 1,
-        stagger: 0.1,
-      }
-    );
-    setTimeout(() => {
-      setShowNameModal(true);
-    }, 2000);
-  }, [initializePuzzle]);
-
-  useEffect(() => {
-    const keySequence: string[] = [];
-    const requiredSequence = ["w", "i", "n"];
-    let sequenceTimer: NodeJS.Timeout;
-    const handleKeyDown = (e: KeyboardEvent) => {
-      const mod = e.ctrlKey || e.metaKey;
-      if (mod && e.shiftKey && e.altKey) {
-        const key = e.key.toLowerCase();
-        if (requiredSequence.includes(key)) {
-          e.preventDefault();
-          keySequence.push(key);
-          clearTimeout(sequenceTimer);
-          sequenceTimer = setTimeout(() => {
-            keySequence.length = 0;
-          }, 1500);
-          if (keySequence.length >= 3) {
-            const lastThree = keySequence.slice(-3);
-            if (
-              lastThree[0] === "w" &&
-              lastThree[1] === "i" &&
-              lastThree[2] === "n"
-            ) {
-              keySequence.length = 0;
-              clearTimeout(sequenceTimer);
-              if (!isComplete && gameStarted) {
-                autoWin();
-              }
-            }
-          }
-        }
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-      clearTimeout(sequenceTimer);
-    };
-  }, [isComplete, gameStarted, autoWin]);
-
   useEffect(() => {
     const initialPieces = initializePuzzle();
     setPieces(initialPieces);
@@ -413,16 +353,6 @@ export default function PuzzleGame({
             Xem mẫu
           </span>
         </div>
-        <button
-          type="button"
-          onClick={() => !isComplete && autoWin()}
-          disabled={isComplete}
-          className="absolute bottom-6 right-6 z-20 flex flex-col items-center justify-center gap-1.5 w-20 h-20 md:w-24 md:h-24 rounded-xl border-2 border-amber-400 bg-amber-100 shadow-lg active:scale-95 hover:bg-amber-200 hover:border-amber-500 transition-all disabled:opacity-40 disabled:pointer-events-none"
-          title="Thắng ngay"
-        >
-          <span className="text-3xl md:text-4xl">🎮</span>
-          <span className="text-sm font-bold text-amber-800">Cheat</span>
-        </button>
         {showImageModal && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"

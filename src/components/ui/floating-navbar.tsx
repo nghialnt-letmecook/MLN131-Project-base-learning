@@ -348,7 +348,7 @@ export default function FloatingNavbar() {
           {/* Gallery */}
           <motion.div custom={5} variants={itemVariants}>
             <Link
-              href="https://haokhikhangchien-3d.aizy.vn/"
+              href="https://motkhoivietnam-3d.aizy.io.vn/"
               target="_blank"
               rel="noopener noreferrer"
             >
