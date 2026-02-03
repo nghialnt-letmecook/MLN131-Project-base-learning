@@ -79,7 +79,7 @@ interface TimelineEvent {
 const timelineData: TimelineEvent[] = [
   {
     year: "Phần I",
-    title: "KHÁI NIỆM VÀ ĐẶC TRƯNG CỦA DÂN TỘC",
+    title: "Khái niệm và Đặc trưng Dân tộc",
     slug: "khai-niem-dac-trung-dan-toc",
     description:
       "Quá trình hình thành dân tộc, hai nghĩa của khái niệm dân tộc và năm đặc trưng cơ bản về lãnh thổ, kinh tế, ngôn ngữ, văn hóa và nhà nước.",

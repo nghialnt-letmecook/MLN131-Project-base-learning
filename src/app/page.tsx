@@ -19,7 +19,7 @@ if (typeof window !== "undefined") {
 const timelineData = [
   {
     year: "Phần I",
-    title: "KHÁI NIỆM VÀ ĐẶC TRƯNG CỦA DÂN TỘC",
+    title: "Khái niệm và Đặc trưng Dân tộc",
     slug: "khai-niem-dac-trung-dan-toc",
     description:
       "Quá trình hình thành dân tộc, hai nghĩa của khái niệm dân tộc và năm đặc trưng cơ bản về lãnh thổ, kinh tế, ngôn ngữ, văn hóa và nhà nước.",
@@ -286,12 +286,13 @@ export default function DienBienPhuPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 hero-bg"
             style={{
-              backgroundImage: "url('/images/header-image.png')",
+              backgroundImage:
+                "url('/images/dan-toc-ton-giao-qua-do-XHCN.jpg')",
               backgroundPosition: "center center",
               backgroundSize: "cover",
             }}
           ></div>
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/60"></div>
 
           {/* Floating Particles */}
           <div className="absolute inset-0 pointer-events-none">
@@ -370,7 +371,7 @@ export default function DienBienPhuPage() {
                 className={`relative flex items-center ${
                   // Desktop: alternating left/right, Mobile: all left-aligned
                   "md:" + (index % 2 === 0 ? "justify-start" : "justify-end")
-                  }`}
+                }`}
               >
                 {/* Timeline Dot */}
                 {/* <div className="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 w-6 h-6 md:w-8 md:h-8 bg-gradient-to-br from-red-600 to-red-800 rounded-full timeline-dot z-10 border-4 border-white shadow-xl"></div> */}
@@ -382,7 +383,7 @@ export default function DienBienPhuPage() {
                     "md:" +
                     (index % 2 === 0 ? "translate-x-20" : "-translate-x-28") +
                     " -translate-y-12 md:translate-y-0"
-                    } flex items-center gap-2 text-base md:text-lg font-bold z-20 text-white bg-gradient-to-r from-red-600 to-red-700 px-4 py-2 rounded-full shadow-lg border-2 border-yellow-400/50`}
+                  } flex items-center gap-2 text-base md:text-lg font-bold z-20 text-white bg-gradient-to-r from-red-600 to-red-700 px-4 py-2 rounded-full shadow-lg border-2 border-yellow-400/50`}
                 >
                   <svg
                     className="w-4 h-4"
@@ -401,7 +402,7 @@ export default function DienBienPhuPage() {
                     // Desktop: max-width and positioning, Mobile: full width with left margin
                     "md:max-w-lg ml-20 md:ml-0 " +
                     (index % 2 === 0 ? "md:mr-auto" : "md:ml-auto")
-                    }`}
+                  }`}
                 >
                   <Card className="timeline-card w-full shadow-xl hover:shadow-2xl hover:shadow-amber-500/30 transition-all duration-500 border-2 border-amber-300 bg-white/98 backdrop-blur-sm hover:scale-105 md:hover:scale-105 hover:scale-[1.02] cursor-pointer group overflow-hidden hover:bg-gradient-to-br hover:from-amber-50/80 hover:to-red-50/50">
                     <CardContent className="p-6 md:p-8">

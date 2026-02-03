@@ -33,7 +33,7 @@ export default function HeroFooter() {
             trigger: footerRef.current,
             start: "top 90%",
           },
-        }
+        },
       );
     }, footerRef);
 
@@ -77,50 +77,47 @@ export default function HeroFooter() {
           </div>
 
           {/* Main Quote */}
-          <blockquote className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-            <span className="text-gradient-red-yellow">
-              “Chúng ta thà hy sinh tất cả,
+          <blockquote className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-8 leading-relaxed text-pretty">
+            <span className="text-yellow-200 block mb-4">
+              "Việt Nam là đất nước đa dân tộc, đa tôn giáo, với 54 dân tộc anh
+              em, nhiều tôn giáo cùng sinh hoạt tại các cộng đồng... Hiến pháp,
+              pháp luật Việt Nam quy định tất cả mọi người dân đều có quyền theo
+              hoặc không theo tôn giáo. Ở Việt Nam không có xung đột tôn giáo,
+              xung đột dân tộc, tất cả chung sống hòa thuận..."
             </span>
-            <br />
-            <span className="text-yellow-200">
-              chứ nhất định không chịu mất nước,
-            </span>
-            <br />
-            <span className="text-white">không chịu làm nô lệ.”</span>
+            <span className="text-gradient-red-yellow italic block"></span>
           </blockquote>
 
-          <cite className="text-2xl md:text-3xl text-yellow-300 font-medium mb-12 block">
-            — Chủ tịch Hồ Chí Minh —
+          <cite className="text-xl md:text-2xl text-yellow-300 font-medium mb-12 block">
+            — Thủ tướng trân trọng chuyển lời chúc mừng của Tổng Bí thư Nguyễn
+            Phú Trọng đến đồng bào Phật giáo cả nước nhân Đại lễ Phật đản —
           </cite>
 
-          {/* Victory Date */}
-          <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-8 border-2 border-yellow-400 mb-8">
-            <div className="text-6xl md:text-8xl font-black text-yellow-400 mb-4 animate-victory-glow">
-              1945 – 1954
+          {/* Unity Theme */}
+          {/* <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-8 border-2 border-yellow-400 mb-8">
+            <div className="text-4xl md:text-6xl font-black text-yellow-400 mb-4 animate-victory-glow">
+              54 DÂN TỘC
             </div>
             <div className="text-2xl md:text-3xl font-bold text-white mb-2">
-              9 NĂM TRƯỜNG KỲ KHÁNG CHIẾN
+              MỘT ĐẤT NƯỚC VIỆT NAM THỐNG NHẤT
             </div>
             <div className="text-lg md:text-xl text-yellow-200 space-y-2">
+              <p>"Đại đoàn kết dân tộc là truyền thống quý báu,</p>
               <p>
-                “Toàn dân, toàn Đảng, toàn quân ta quyết đem tất cả tinh thần và
-                lực lượng,
+                là sức mạnh to lớn của dân tộc ta trong sự nghiệp đấu tranh giải
+                phóng dân tộc,"
               </p>
-              <p>tính mạng và của cải để giữ vững quyền tự do, độc lập ấy.”</p>
-              <p className="mt-1">
-                - Hồ Chí Minh, Lời kêu gọi Toàn quốc kháng chiến (19/12/1946) -
-              </p>
+              <p>và xây dựng, bảo vệ Tổ quốc Việt Nam xã hội chủ nghĩa."</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Final Quote */}
-          <div className="text-xl md:text-2xl text-red-100 italic">
-            Dưới sự lãnh đạo của Đảng, nhân dân Việt Nam đã kiên cường đứng lên
-            bảo vệ độc lập,
+          {/* <div className="text-xl md:text-2xl text-red-100 italic">
+            Khối đại đoàn kết toàn dân tộc là nguồn sức mạnh vô tận,
             <br />
-            giữ vững chính quyền cách mạng và làm nên thắng lợi của cuộc kháng
-            chiến trường kỳ.
-          </div>
+            là nền tảng vững chắc để xây dựng đất nước Việt Nam phồn vinh, hạnh
+            phúc.
+          </div> */}
         </div>
       </div>
     </section>

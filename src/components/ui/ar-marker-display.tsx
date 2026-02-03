@@ -68,9 +68,9 @@ export default function ARMarkerDisplay() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-800">
-                      AR Marker
+                      AR Experience
                     </h3>
-                    <p className="text-sm text-gray-600">Hình để scan AR</p>
+                    <p className="text-sm text-gray-600">54 Dân tộc Việt Nam</p>
                   </div>
                 </div>
                 <button
@@ -86,8 +86,8 @@ export default function ARMarkerDisplay() {
                 <div className="bg-white p-4 md:p-6 rounded-xl border-2 border-red-200 shadow-inner">
                   <div className="w-80 h-80 md:w-96 md:h-96 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/images/vr-image.jpg"
-                      alt="AR Marker - Điện Biên Phủ"
+                      src="/images/AR-img.jpg"
+                      alt="AR Experience - 54 Dân tộc Việt Nam"
                       className="w-full h-full object-contain"
                     />
                   </div>
@@ -102,15 +102,17 @@ export default function ARMarkerDisplay() {
                     </h5>
                   </div>
                   <ol className="text-sm md:text-base text-blue-700 space-y-2 list-decimal list-inside">
-                    <li>Mở AR từ navbar (VR → Quét QR)</li>
-                    <li>Cho phép truy cập camera</li>
-                    <li>Hướng camera về phía hình này</li>
-                    <li>Thưởng thức video AR!</li>
+                    <li>Quét mã QR bằng camera điện thoại</li>
+                    <li>Chờ trang AR scan tải xong</li>
+                    <li>Cho phép truy cập camera khi được hỏi</li>
+                    <li>Hướng camera về phía hình AR marker</li>
+                    <li>Khám phá nội dung AR về 54 dân tộc!</li>
                   </ol>
                 </div>
 
                 <p className="text-sm md:text-base text-gray-500 text-center">
-                  Lưu hình này hoặc để màn hình mở để scan AR
+                  Làm theo hướng dẫn trên để trải nghiệm AR về 54 dân tộc Việt
+                  Nam
                 </p>
               </div>
             </motion.div>

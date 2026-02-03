@@ -50,42 +50,42 @@ const crimsonText = Crimson_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Hào khí kháng chiến",
+  title: "Một khối Việt Nam",
   description:
-    "Khám phá chiến thắng lịch sử Điện Biên Phủ 1954 - đỉnh cao nghệ thuật quân sự Việt Nam, chấm dứt ách thống trị thực dân Pháp tại Đông Dương",
+    "Tìm hiểu vấn đề dân tộc và tôn giáo trong thời kỳ quá độ lên chủ nghĩa xã hội - 54 dân tộc anh em, đoàn kết tôn giáo, xây dựng khối đại đoàn kết dân tộc",
   keywords:
-    "Điện Biên Phủ, chiến thắng 1954, Đại tướng Võ Nguyên Giáp, kháng chiến chống Pháp, lịch sử Việt Nam, chiến tranh Đông Dương, Hiệp định Genève, Henri Navarre, cứ điểm Điện Biên Phủ, đợt tấn công, Him Lam, Độc Lập, A1",
+    "dân tộc tôn giáo Việt Nam, 54 dân tộc, đại đoàn kết dân tộc, tự do tôn giáo, chủ nghĩa xã hội, Tổng Bí thư Nguyễn Phú Trọng, đặc trưng dân tộc, chính sách dân tộc, Leinxin, Cương lĩnh dân tộc",
   authors: [{ name: "AIZY" }],
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
-  creator: "Hào khí kháng chiến",
-  publisher: "Hào khí kháng chiến",
+  creator: "Một khối Việt Nam",
+  publisher: "Một khối Việt Nam",
   openGraph: {
-    title: "Hào khí kháng chiến",
+    title: "Một khối Việt Nam",
     description:
-      "Khám phá chiến thắng lịch sử Điện Biên Phủ 1954 - đỉnh cao nghệ thuật quân sự Việt Nam, chấm dứt ách thống trị thực dân Pháp tại Đông Dương",
-    url: "https://dauchanlichsu.aizy.vn",
+      "Tìm hiểu vấn đề dân tộc và tôn giáo trong thời kỳ quá độ lên chủ nghĩa xã hội - 54 dân tộc anh em, đoàn kết tôn giáo, xây dựng khối đại đoàn kết dân tộc",
+    url: "https://motkhoivietnam.aizy.io.vn/",
     images: [
       {
-        url: "/image/header.png",
+        url: "/image/dan-toc-ton-giao-qua-do-XHCN.jpg",
         width: 1200,
         height: 630,
-        alt: "Hào khí kháng chiến",
+        alt: "Một khối Việt Nam",
         type: "image/png",
       },
     ],
     type: "website",
     locale: "vi_VN",
-    siteName: "Hào khí kháng chiến",
+    siteName: "Một khối Việt Nam",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hào khí kháng chiến",
+    title: "Một khối Việt Nam",
     description:
-      "Khám phá chiến thắng lịch sử Điện Biên Phủ 1954 - đỉnh cao nghệ thuật quân sự Việt Nam, chấm dứt ách thống trị thực dân Pháp tại Đông Dương",
+      "Tìm hiểu vấn đề dân tộc và tôn giáo trong thời kỳ quá độ lên chủ nghĩa xã hội - 54 dân tộc anh em, đoàn kết tôn giáo, xây dựng khối đại đoàn kết dân tộc",
   },
   robots: {
     index: true,

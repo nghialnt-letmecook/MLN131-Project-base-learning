@@ -24,37 +24,47 @@ import {
   Camera,
 } from "lucide-react";
 
-// Timeline data extracted from the page
+// Timeline data for Dân tộc và Tôn giáo
 const timelineItems = [
   {
-    year: "Tháng 8 - 9 năm 1945",
-    title: "Giành Độc lập và Thành lập Chính quyền",
-    slug: "gianh-doc-lap-thanh-lap-chinh-quyen",
+    year: "Phần I",
+    title: "Khái niệm và Đặc trưng Dân tộc",
+    slug: "khai-niem-dac-trung-dan-toc",
   },
   {
-    year: "Cuối 1945 – Cuối 1946",
-    title: "Củng cố Chính quyền và Đối phó với Thù trong, Giặc ngoài",
-    slug: "cung-co-chinh-quyen",
+    year: "Phần II",
+    title: "Hai Xu hướng Phát triển và Cương lĩnh Lênin",
+    slug: "xu-huong-phat-trien",
   },
   {
-    year: "Cuối 1946 – 1947",
-    title: "Kháng chiến Toàn quốc Bùng nổ",
-    slug: "khang-chien-bung-no",
+    year: "Phần III",
+    title: "Đặc điểm và Chính sách Dân tộc ở Việt Nam",
+    slug: "dac-diem-chinh-sach-dan-toc",
   },
   {
-    year: "1948 – 1950",
-    title: "Xây dựng Lực lượng và Mở đầu Tổng phản công",
-    slug: "xay-dung-luc-luong",
+    year: "Phần IV",
+    title: "Bản chất, Nguồn gốc và Tính chất của Tôn giáo",
+    slug: "ban-chat-nguon-goc",
   },
   {
-    year: "1951 – 1953",
-    title: "Củng cố Đường lối và Đẩy mạnh Kháng chiến",
-    slug: "cung-co-duong-loi",
+    year: "Phần V",
+    title: "Đặc điểm và Chính sách Tôn giáo ở Việt Nam",
+    slug: "dac-diem-chinh-sach-ton-giao",
   },
   {
-    year: "1954",
-    title: "Chiến thắng Quyết định và Ký kết Hiệp định",
-    slug: "chien-thang",
+    year: "Phần VI",
+    title: "Đặc điểm Quan hệ Dân tộc – Tôn giáo",
+    slug: "dac-diem-quan-he",
+  },
+  {
+    year: "Phần VII",
+    title: "Những Thách thức Hiện nay",
+    slug: "nhung-thach-thuc-hien-nay",
+  },
+  {
+    year: "Phần VIII",
+    title: "Định hướng và Giải pháp",
+    slug: "dinh-huong-giai-phap",
   },
 ];
 
@@ -242,7 +252,7 @@ export default function FloatingNavbar() {
               }`}
             >
               <Calendar className="w-4 h-4" />
-              <span className="font-medium">Timeline</span>
+              <span className="font-medium">Nội dung</span>
               <motion.div
                 animate={{ rotate: isTimelineOpen ? 180 : 0 }}
                 transition={{ duration: 0.3, type: "spring", stiffness: 200 }}
@@ -451,7 +461,7 @@ export default function FloatingNavbar() {
                   <div className="space-y-2">
                     <div className="flex items-center space-x-3 p-3 text-red-800 font-medium">
                       <Calendar className="w-5 h-5" />
-                      <span>Timeline</span>
+                      <span>Nội dung</span>
                     </div>
                     <div className="ml-8 space-y-1 max-h-60 overflow-y-auto">
                       {timelineItems.map((item, index) => (
@@ -665,7 +675,7 @@ export default function FloatingNavbar() {
                     <div className="w-40 h-40 bg-gray-100 rounded-lg flex items-center justify-center">
                       <img
                         src={`https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(
-                          window.location.origin + "/ar-scan.html"
+                          window.location.origin + "/ar-scan.html",
                         )}`}
                         alt="QR Code for AR Experience"
                         className="w-full h-full object-contain"
@@ -685,8 +695,8 @@ export default function FloatingNavbar() {
                   <div className="bg-white p-4 rounded-xl border-2 border-red-200 shadow-inner">
                     <div className="w-40 h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
                       <img
-                        src="/images/vr-image.jpg"
-                        alt="AR Marker - Điện Biên Phủ"
+                        src="/images/AR-img.jpg"
+                        alt="AR Experience - 54 Dân tộc Việt Nam"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -707,7 +717,7 @@ export default function FloatingNavbar() {
                     <li>Quét mã QR bằng camera điện thoại</li>
                     <li>Chờ trang AR scan tải xong</li>
                     <li>Cho phép truy cập camera khi được hỏi</li>
-                    <li>Hướng camera về phía hình Điện Biên Phủ bên trên</li>
+                    <li>Hướng camera về phía hình AR marker trên</li>
                     <li>Thưởng thức trải nghiệm thực tế ảo tăng cường!</li>
                   </ol>
                 </div>
@@ -715,7 +725,7 @@ export default function FloatingNavbar() {
 
               <div className="text-center space-y-2 mt-4">
                 <p className="text-gray-700 font-medium">
-                  Trải nghiệm lịch sử Điện Biên Phủ với công nghệ AR
+                  Trải nghiệm văn hóa 54 dân tộc Việt Nam với công nghệ AR
                 </p>
                 <p className="text-sm text-gray-500">
                   Hình ảnh sẽ hiện ra khi bạn hướng camera vào marker
@@ -784,20 +794,20 @@ export default function FloatingNavbar() {
                 {/* Marker 1 */}
                 <div className="bg-gray-50 rounded-lg p-4">
                   <h4 className="font-semibold text-gray-800 mb-3">
-                    Marker 1: Chiến thắng Điện Biên Phủ
+                    Marker 1: 54 Dân tộc Việt Nam
                   </h4>
                   <div className="flex flex-col items-center space-y-4">
                     <div className="bg-white p-4 md:p-6 rounded-xl border-2 border-red-200 shadow-inner">
                       <div className="w-64 h-64 md:w-80 md:h-80 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
                         <img
-                          src="/images/vr-image.jpg"
-                          alt="AR Marker - Điện Biên Phủ"
+                          src="/images/AR-img.jpg"
+                          alt="AR Experience - 54 Dân tộc Việt Nam"
                           className="w-full h-full object-contain"
                         />
                       </div>
                     </div>
                     <p className="text-sm text-gray-600 text-center">
-                      Quét hình này để xem video AR về chiến thắng Điện Biên Phủ
+                      Quét hình này để xem nội dung AR về 54 dân tộc Việt Nam
                     </p>
                   </div>
                 </div>
