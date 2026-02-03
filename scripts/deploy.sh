@@ -99,6 +99,10 @@ rsync -az node_modules/ $WEB_DIR/node_modules/
 # ------------------------------------------------------------------------------
 echo -e "${GREEN}---> Restarting project via aaPanel Node Project Manager...${NC}"
 
+# Fix for "ModuleNotFoundError: No module named 'public'"
+# aaPanel internal scripts rely on libraries in /www/server/panel/class
+export PYTHONPATH=$PYTHONPATH:/www/server/panel/class
+
 # Internal aaPanel command
 python3 /www/server/panel/plugin/nodejs/nodejs_main.py restart "{\"project_name\":\"${PROJECT_NAME}\"}"
 
