@@ -35,7 +35,7 @@ if [ -f "$WEB_DIR/.env" ]; then
     
     # Export các biến trong .env ra môi trường Build một cách an toàn
     set -a
-    [ -f .env ] && . .env
+    source ./.env
     set +a
     
     if [ -n "$PORT" ]; then
@@ -46,9 +46,14 @@ else
     if [ -f "$SOURCE_DIR/.env" ]; then
         echo -e "${GREEN}---> Loading .env from current directory...${NC}"
         set -a
-        . .env
+        source ./.env
         set +a
     fi
+fi
+
+# Kiểm tra xem biến quan trọng có tồn tại không
+if [ -z "$MLN_LEADERBOARD_API_KEY" ]; then
+    echo -e "${RED}---> WARNING: MLN_LEADERBOARD_API_KEY is still empty after loading .env!${NC}"
 fi
 
 # 2. INSTALL & BUILD

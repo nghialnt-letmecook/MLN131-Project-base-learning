@@ -22,8 +22,10 @@ export async function fetchLeaderboardServer(): Promise<LeaderboardEntry[]> {
   try {
     const key = process.env.MLN_LEADERBOARD_API_KEY;
     if (!key) {
-      console.error("MLN_LEADERBOARD_API_KEY is not set");
+      console.error("MLN_LEADERBOARD_API_KEY is not set (undefined or empty)");
       return [];
+    } else {
+      console.log(`MLN_LEADERBOARD_API_KEY loaded: ${key.substring(0, 4)}...`);
     }
 
     const res = await fetch(`${MLN_BASE}/leaderboard`, {
