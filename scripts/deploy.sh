@@ -1,30 +1,42 @@
 #!/bin/bash
 
 # ==============================================================================
-# AA-PANEL NODE PROJECT DEPLOYMENT SCRIPT
+# AA-PANEL GENERIC DEPLOYMENT SCRIPT
 # ==============================================================================
 
 # --- ARGS ---
 BIT_BRANCH=${1:-main}
 GITHUB_TOKEN=${2}
+PROJECT_NAME=${3}
+REPO_URL_INPUT=${4}
+
+# --- VALIDATION ---
+if [ -z "$PROJECT_NAME" ]; then
+    echo "Error: PROJECT_NAME (Machine Name/Domain) is required as 3rd argument."
+    exit 1
+fi
 
 # --- ENV ---
-# Ensure the correct Node.js version is in path (Adjust version if needed)
 export PATH=/www/server/nvm/versions/node/v24.13.0/bin:$PATH
 corepack enable
 
 # --- CONSTANTS ---
-PROJECT_NAME="mln1313d.aizy.io.vn"
-REPO_NAME="motkhoivietnam-3d"
+# Use the Project Name as the directory name
 SOURCE_DIR="/app/git/${PROJECT_NAME}"
 WEB_DIR="/www/wwwroot/${PROJECT_NAME}"
 
-# Use token if provided, otherwise fallback to SSH or existing config
-if [ -n "$GITHUB_TOKEN" ]; then
-    REPO_URL="https://${GITHUB_TOKEN}@github.com/AIZY-Outsourcing/${REPO_NAME}.git"
+# Determine Repo URL
+if [ -n "$REPO_URL_INPUT" ]; then
+    # Inject token if present and URL is HTTPS
+    if [ -n "$GITHUB_TOKEN" ] && [[ "$REPO_URL_INPUT" == https://* ]]; then
+        # Replace https:// with https://TOKEN@
+        REPO_URL="${REPO_URL_INPUT/https:\/\//https:\/\/${GITHUB_TOKEN}@}"
+    else
+        REPO_URL="$REPO_URL_INPUT"
+    fi
 else
-    # Fallback to standard HTTPS or SSH if key is configured on server
-    REPO_URL="https://github.com/AIZY-Outsourcing/${REPO_NAME}.git"
+    echo "Error: REPO_URL is required as 4th argument."
+    exit 1
 fi
 
 # Colors
@@ -33,7 +45,8 @@ CYAN='\033[0;36m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-echo -e "${CYAN}===> STARTING DEPLOYMENT: ${PROJECT_NAME} (Branch: ${BIT_BRANCH})${NC}"
+echo -e "${CYAN}===> STARTING DEPLOYMENT FOR: ${PROJECT_NAME} (Branch: ${BIT_BRANCH})${NC}"
+echo -e "${CYAN}===> REPO: ${REPO_URL_INPUT}${NC}"
 
 # 1. CLONE / UPDATE SOURCE
 # ------------------------------------------------------------------------------
@@ -46,9 +59,9 @@ else
     echo -e "${GREEN}---> Pulling latest changes...${NC}"
     cd $SOURCE_DIR
     
-    # Update remote URL if token changes (optional, but good safety)
+    # Update remote URL if needed (e.g. token changed)
     if [ -n "$GITHUB_TOKEN" ]; then
-        git remote set-url origin $REPO_URL
+         git remote set-url origin $REPO_URL
     fi
 
     git fetch origin
@@ -70,8 +83,6 @@ pnpm run build || exit 1
 echo -e "${GREEN}---> Syncing files to ${WEB_DIR}...${NC}"
 mkdir -p $WEB_DIR
 
-# Sync public assets and built files
-# Exclude git, source, and unnecessary files to keep production clean
 rsync -az --delete \
     --exclude '.git' \
     --exclude '.github' \
@@ -80,26 +91,20 @@ rsync -az --delete \
     --exclude 'README.md' \
     public/ $WEB_DIR/public/
 
-# Copy config files
 cp package.json pnpm-lock.yaml next.config.ts $WEB_DIR/
-
-# Sync build output (.next)
 rsync -az --delete .next/ $WEB_DIR/.next/
-
-# Sync node_modules
 rsync -az node_modules/ $WEB_DIR/node_modules/
 
 # 4. RESTART (AA-PANEL NODE PROJECT)
 # ------------------------------------------------------------------------------
 echo -e "${GREEN}---> Restarting project via aaPanel Node Project Manager...${NC}"
 
-# Internal aaPanel command to validly restart the node project
+# Internal aaPanel command
 python3 /www/server/panel/plugin/nodejs/nodejs_main.py restart "{\"project_name\":\"${PROJECT_NAME}\"}"
 
 if [ $? -eq 0 ]; then
     echo -e "${CYAN}===> DEPLOYMENT SUCCESSFUL!${NC}"
 else
     echo -e "${RED}===> FILE UPDATE SUCCESSFUL, BUT RESTART FAILED.${NC}"
-    echo "Please check aaPanel Node Project status."
     exit 1
 fi
