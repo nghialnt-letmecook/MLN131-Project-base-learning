@@ -28,6 +28,15 @@ jobs:
             mkdir -p /app/git
             
             # 2. Xử lý Git Pull/Clone trực tiếp trên server
+            if [ -d "$SOURCE_DIR/.git" ]; then
+              CURRENT_URL=$(cd "$SOURCE_DIR" && git remote get-url origin)
+              # Check if the existing repo is the right one (ignoring token part)
+              if [[ "$CURRENT_URL" != *"${REPO_URL/https:\/\//}"* ]]; then
+                echo "Repository mismatch. Cleaning up..."
+                rm -rf "$SOURCE_DIR"
+              fi
+            fi
+
             if [ ! -d "$SOURCE_DIR/.git" ]; then
               # Inject token vào URL để clone repo private
               AUTH_URL="${REPO_URL/https:\/\//https:\/\/${GITHUB_TOKEN}@}"
