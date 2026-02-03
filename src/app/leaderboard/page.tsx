@@ -15,19 +15,13 @@ interface GroupedLeaderboard {
   [picture: string]: LeaderboardEntry[];
 }
 
-// Tên hiển thị cho từng hình ảnh
-const imageLabels: Record<string, string> = {
-  "Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội, ngày 2-9-1945.jpg":
-    "Tuyên ngôn Độc lập 2/9/1945",
-  "Quân dân Hà Nội sẵn sàng chiến đấu, tháng 12-1946.jpg":
-    "Quân dân Hà Nội sẵn sàng chiến đấu",
-  "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947.jpg":
-    "Chiến dịch Việt Bắc Thu-Đông 1947",
-  "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê.jpg":
-    "Giải phóng Đông Khê 1950",
-  "bo-doi-hanh-quan.webp": "Bộ đội hành quân Điện Biên Phủ",
-  "Lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh được trang hoàng trên chiếc xe tăng thu được của địch diễu hành mừng chiến thắng tại Điện Biên Phủ, năm 1954.jpg":
-    "Chiến thắng Điện Biên Phủ 1954",
+import imagesData from "../../../public/images/game/images.json";
+
+// Helper to find title dynamically
+const getImageTitle = (picturePath: string) => {
+  const filename = picturePath.split("/").pop() || picturePath;
+  const imageEntry = imagesData.images.find((img) => img.file === filename);
+  return imageEntry ? imageEntry.title : filename.replace(".jpg", "").replace(".webp", "");
 };
 
 export default function LeaderboardPage() {
@@ -151,8 +145,11 @@ export default function LeaderboardPage() {
           <div className="text-center flex-1 px-4">
             <h1 className="text-4xl md:text-5xl font-bold text-red-700 mb-2 flex items-center justify-center gap-3">
               <Trophy className="w-10 h-10 text-yellow-500" />
-              Bảng Xếp Hạng
+              Bảng Vàng Văn Hóa
             </h1>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Tôn vinh những sứ giả văn hóa đã xuất sắc hoàn thành thử thách ghép hình sắc màu Dân tộc & Tôn giáo
+            </p>
           </div>
 
           <div className="w-32"></div>
@@ -170,9 +167,7 @@ export default function LeaderboardPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {pictures.map((picture) => {
               const entries = leaderboardData[picture];
-              const displayName =
-                imageLabels[picture] ||
-                picture.replace(".jpg", "").replace(".webp", "");
+              const displayName = getImageTitle(picture);
 
               return (
                 <div
@@ -288,7 +283,10 @@ export default function LeaderboardPage() {
 
         {/* Footer info */}
         <div className="mt-8 text-center bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-red-200">
-          <p className="text-gray-600">
+          <p className="text-gray-700">
+            Mỗi mảnh ghép là một nét văn hóa độc đáo. Hãy tiếp tục hành trình để hiểu thêm về sự đa dạng dân tộc và tôn giáo của đất nước!
+          </p>
+          <p className="text-sm text-gray-500 mt-2">
             💡 <strong>Mẹo:</strong> Số nước đi càng ít thì xếp hạng càng cao!
           </p>
         </div>
