@@ -10,7 +10,7 @@ on:
 
 env:
   # Tên dự án trên aaPanel (thường là domain)
-  AAPANEL_PROJECT_NAME: "mln1313d.aizy.io.vn"
+  AAPANEL_PROJECT_NAME: "mln131.aizy.io.vn"
 
 jobs:
   deploy:
