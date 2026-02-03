@@ -100,13 +100,12 @@ rsync -az node_modules/ $WEB_DIR/node_modules/
 # ------------------------------------------------------------------------------
 echo -e "${GREEN}---> Restarting project via aaPanel Node Project Manager...${NC}"
 
-AAPANEL_PYTHON="/www/server/panel/pyenv/bin/python3"
+# Fix for "ModuleNotFoundError"
+# aaPanel internal scripts rely on libraries in /www/server/panel/class and /www/server/panel
+export PYTHONPATH=$PYTHONPATH:/www/server/panel/class:/www/server/panel
 
-# aaPanel internal libs
-export PYTHONPATH=/www/server/panel/class
-
-$AAPANEL_PYTHON /www/server/panel/plugin/nodejs/nodejs_main.py restart \
-"{\"project_name\":\"${PROJECT_NAME}\"}"
+# Use btpython (aaPanel's internal python) as it has all required modules pre-configured
+btpython /www/server/panel/plugin/nodejs/nodejs_main.py restart "{\"project_name\":\"${PROJECT_NAME}\"}"
 
 if [ $? -eq 0 ]; then
     echo -e "${CYAN}===> DEPLOYMENT SUCCESSFUL!${NC}"

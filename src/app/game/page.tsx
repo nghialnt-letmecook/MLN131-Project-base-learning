@@ -62,12 +62,10 @@ export default function GameGallery() {
 
           <div className="text-center flex-1 sm:px-4">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-red-700 mb-1 sm:mb-2 leading-tight">
-              Chín năm kháng chiến trường kì
+              Sắc màu Dân tộc & Tôn giáo
             </h1>
             <p className="text-sm sm:text-base lg:text-lg text-gray-700 max-w-xl lg:max-w-2xl mx-auto px-2 sm:px-0 leading-relaxed">
-              Tái hiện những khoảnh khắc lịch sử hào hùng của những năm tháng
-              kháng chiến từ năm 1945 đến năm 1954 qua trò chơi xếp hình tương
-              tác
+              Khám phá vẻ đẹp đa dạng của các dân tộc và nét đặc sắc trong văn hóa tôn giáo Việt Nam qua những mảnh ghép đầy thú vị
             </p>
           </div>
 
@@ -127,12 +125,12 @@ export default function GameGallery() {
             <Star className="w-6 h-6 fill-current" />
           </div>
           <h3 className="text-2xl font-bold text-red-700 mb-2 font-serif">
-            Học Lịch Sử Qua Trò Chơi
+            Khám phá Văn hóa Việt
           </h3>
           <p className="text-gray-700 max-w-2xl mx-auto leading-relaxed">
-            Mỗi mảnh ghép là một khoảnh khắc lịch sử, mỗi hình hoàn thành là một
-            chương vẻ vang của quá trình kháng chiến chống thực dân Pháp. Hãy
-            bắt đầu hành trình khám phá những trang sử hào hùng này!
+            Mỗi mảnh ghép là một nét văn hóa độc đáo, mỗi hình ảnh hoàn thành là một
+            câu chuyện về sự đoàn kết và đa dạng của các dân tộc Việt Nam. Hãy
+            bắt đầu hành trình khám phá những giá trị tinh thần quý báu này!
           </p>
         </div>
       </div>
