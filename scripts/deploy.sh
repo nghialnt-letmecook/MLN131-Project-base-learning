@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# AA-PANEL GENERIC DEPLOYMENT SCRIPT
+# AA-PANEL NODE PROJECT DEPLOYMENT SCRIPT (STAYING IN REPO)
 # ==============================================================================
 
 # --- ARGS ---
@@ -10,34 +10,15 @@ GITHUB_TOKEN=${2}
 PROJECT_NAME=${3}
 REPO_URL_INPUT=${4}
 
-# --- VALIDATION ---
-if [ -z "$PROJECT_NAME" ]; then
-    echo "Error: PROJECT_NAME (Machine Name/Domain) is required as 3rd argument."
-    exit 1
-fi
-
 # --- ENV ---
 export PATH=/www/server/nvm/versions/node/v24.13.0/bin:$PATH
 corepack enable
 
-# --- CONSTANTS ---
-# Use the Project Name as the directory name
-SOURCE_DIR="/app/git/${PROJECT_NAME}"
+# --- PATHS ---
+# Script đang chạy từ /app/git/DIR/scripts/deploy.sh
+# SOURCE_DIR là thư mục cha của thư mục chứa script này
+SOURCE_DIR=$(dirname $(cd "$(dirname "$0")"; pwd))
 WEB_DIR="/www/wwwroot/${PROJECT_NAME}"
-
-# Determine Repo URL
-if [ -n "$REPO_URL_INPUT" ]; then
-    # Inject token if present and URL is HTTPS
-    if [ -n "$GITHUB_TOKEN" ] && [[ "$REPO_URL_INPUT" == https://* ]]; then
-        # Replace https:// with https://TOKEN@
-        REPO_URL="${REPO_URL_INPUT/https:\/\//https:\/\/${GITHUB_TOKEN}@}"
-    else
-        REPO_URL="$REPO_URL_INPUT"
-    fi
-else
-    echo "Error: REPO_URL is required as 4th argument."
-    exit 1
-fi
 
 # Colors
 GREEN='\033[0;32m'
@@ -45,30 +26,15 @@ CYAN='\033[0;36m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-echo -e "${CYAN}===> STARTING DEPLOYMENT FOR: ${PROJECT_NAME} (Branch: ${BIT_BRANCH})${NC}"
-echo -e "${CYAN}===> REPO: ${REPO_URL_INPUT}${NC}"
+echo -e "${CYAN}===> STARTING BUILD & SYNC FOR: ${PROJECT_NAME} ${NC}"
+cd "$SOURCE_DIR"
 
-# 1. CLONE / UPDATE SOURCE
+# 1. PREPARE ENVIRONMENT (Copy .env if exists in production)
 # ------------------------------------------------------------------------------
-mkdir -p $SOURCE_DIR
-
-if [ ! -d "$SOURCE_DIR/.git" ]; then
-    echo -e "${GREEN}---> Cloning repository...${NC}"
-    git clone -b $BIT_BRANCH $REPO_URL $SOURCE_DIR || { echo -e "${RED}Git clone failed${NC}"; exit 1; }
-else
-    echo -e "${GREEN}---> Pulling latest changes...${NC}"
-    cd $SOURCE_DIR
-    
-    # Update remote URL if needed (e.g. token changed)
-    if [ -n "$GITHUB_TOKEN" ]; then
-         git remote set-url origin $REPO_URL
-    fi
-
-    git fetch origin
-    git reset --hard origin/$BIT_BRANCH
+if [ -f "$WEB_DIR/.env" ]; then
+    echo -e "${GREEN}---> Copying .env from production directory...${NC}"
+    cp "$WEB_DIR/.env" "$SOURCE_DIR/.env"
 fi
-
-cd $SOURCE_DIR || exit 1
 
 # 2. INSTALL & BUILD
 # ------------------------------------------------------------------------------
@@ -96,16 +62,11 @@ cp package.json pnpm-lock.yaml next.config.ts $WEB_DIR/
 rsync -az --delete .next/ $WEB_DIR/.next/
 rsync -az node_modules/ $WEB_DIR/node_modules/
 
-# ------------------------------------------------------------------------------
 # 4. RESTART (AA-PANEL NODE PROJECT)
 # ------------------------------------------------------------------------------
 echo -e "${GREEN}---> Restarting project via aaPanel Node Project Manager...${NC}"
 
-# Fix for "ModuleNotFoundError"
-# aaPanel internal scripts rely on libraries in /www/server/panel/class and /www/server/panel
 export PYTHONPATH=$PYTHONPATH:/www/server/panel/class:/www/server/panel
-
-# Use btpython (aaPanel's internal python) as it has all required modules pre-configured
 btpython /www/server/panel/plugin/nodejs/nodejs_main.py restart "{\"project_name\":\"${PROJECT_NAME}\"}"
 
 if [ $? -eq 0 ]; then
