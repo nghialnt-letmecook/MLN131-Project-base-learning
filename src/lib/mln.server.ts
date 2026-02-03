@@ -19,36 +19,59 @@ interface LeaderboardRawItem {
 }
 
 export async function fetchLeaderboardServer(): Promise<LeaderboardEntry[]> {
-  const key = process.env.MLN_LEADERBOARD_API_KEY;
-  if (!key) throw new Error("MLN_LEADERBOARD_API_KEY is not set");
-  const res = await fetch(`${MLN_BASE}/leaderboard`, {
-    headers: { motkhoivietnam: key },
-    next: { revalidate: 0 },
-  });
-  if (!res.ok) throw new Error(`Leaderboard failed: ${res.status}`);
-  const raw: LeaderboardRawItem[] = await res.json();
-  if (!Array.isArray(raw)) return [];
-
-  const entries: LeaderboardEntry[] = [];
-  for (const item of raw) {
-    if (
-      typeof item?.name === "string" &&
-      typeof item?.picture === "string" &&
-      (typeof item?.count === "string" || typeof item?.count === "number")
-    ) {
-      const picture = item.picture.trim();
-      const imageSrc = picture.startsWith("/")
-        ? picture
-        : `/images/${picture.replace(/^images\//, "")}`;
-      entries.push({
-        name: item.name,
-        picture,
-        count: typeof item.count === "string" ? parseInt(item.count, 10) : item.count,
-        imageSrc,
-      });
+  try {
+    const key = process.env.MLN_LEADERBOARD_API_KEY;
+    if (!key) {
+      console.error("MLN_LEADERBOARD_API_KEY is not set");
+      return [];
     }
+
+    const res = await fetch(`${MLN_BASE}/leaderboard`, {
+      headers: { motkhoivietnam: key },
+      next: { revalidate: 0 },
+    });
+
+    if (!res.ok) {
+      console.error(`Leaderboard API failed: ${res.status}`);
+      return [];
+    }
+
+    const raw = await res.json();
+    if (!Array.isArray(raw)) {
+      console.error("Leaderboard API did not return an array", raw);
+      return [];
+    }
+
+    const entries: LeaderboardEntry[] = [];
+    for (const item of raw) {
+      if (!item) continue;
+
+      const name = String(item.name || "").trim();
+      const picture = String(item.picture || "").trim();
+      const countRaw = item.count;
+
+      if (name && picture && (typeof countRaw === "number" || (typeof countRaw === "string" && countRaw.trim() !== ""))) {
+        const count = typeof countRaw === "number" ? countRaw : parseInt(countRaw, 10);
+
+        if (isNaN(count)) continue;
+
+        const imageSrc = picture.startsWith("/")
+          ? picture
+          : `/images/${picture.replace(/^images\//, "")}`;
+
+        entries.push({
+          name,
+          picture,
+          count,
+          imageSrc,
+        });
+      }
+    }
+    return entries;
+  } catch (error) {
+    console.error("Error in fetchLeaderboardServer:", error);
+    return [];
   }
-  return entries;
 }
 
 export async function storeScoreServer(payload: {

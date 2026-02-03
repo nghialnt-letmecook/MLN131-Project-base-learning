@@ -33,14 +33,22 @@ if [ -f "$WEB_DIR/.env" ]; then
     echo -e "${GREEN}---> Loading and Injecting .env from production...${NC}"
     cp "$WEB_DIR/.env" "$SOURCE_DIR/.env"
     
-    # Export các biến trong .env ra môi trường Build
-    export $(grep -v '^#' .env | xargs)
+    # Export các biến trong .env ra môi trường Build một cách an toàn
+    set -a
+    [ -f .env ] && . .env
+    set +a
     
     if [ -n "$PORT" ]; then
         echo -e "${GREEN}---> Detected PORT=$PORT from .env${NC}"
     fi
 else
-    echo -e "${RED}---> WARNING: .env not found in $WEB_DIR. Build might miss variables.${NC}"
+    # Fallback cho local nếu không tìm thấy $WEB_DIR/.env
+    if [ -f "$SOURCE_DIR/.env" ]; then
+        echo -e "${GREEN}---> Loading .env from current directory...${NC}"
+        set -a
+        . .env
+        set +a
+    fi
 fi
 
 # 2. INSTALL & BUILD
