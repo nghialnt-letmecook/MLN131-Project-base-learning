@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+  # Allow manual trigger for testing
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -21,6 +24,7 @@ jobs:
           port: ${{ secrets.SERVER_PORT || '22' }}
           source: "scripts/deploy.sh"
           target: "/tmp"
+          strip_components: 1
 
       - name: Execute deploy script
         uses: appleboy/ssh-action@v1.0.3
@@ -30,6 +34,10 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT || '22' }}
           script: |
-            chmod +x /tmp/scripts/deploy.sh
+            echo "Checking deployment script..."
+            ls -la /tmp/deploy.sh
+            chmod +x /tmp/deploy.sh
+            
+            echo "Starting deployment process..."
             # Run the script with the branch name and the Github token
-            /tmp/scripts/deploy.sh main ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+            /tmp/deploy.sh main ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
