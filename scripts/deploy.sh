@@ -15,15 +15,16 @@ corepack enable
 
 # --- CONSTANTS ---
 PROJECT_NAME="mln1313d.aizy.io.vn"
+REPO_NAME="motkhoivietnam-3d"
 SOURCE_DIR="/app/git/${PROJECT_NAME}"
 WEB_DIR="/www/wwwroot/${PROJECT_NAME}"
 
 # Use token if provided, otherwise fallback to SSH or existing config
 if [ -n "$GITHUB_TOKEN" ]; then
-    REPO_URL="https://${GITHUB_TOKEN}@github.com/AIZY-Outsourcing/${PROJECT_NAME}.git"
+    REPO_URL="https://${GITHUB_TOKEN}@github.com/AIZY-Outsourcing/${REPO_NAME}.git"
 else
     # Fallback to standard HTTPS or SSH if key is configured on server
-    REPO_URL="https://github.com/AIZY-Outsourcing/${PROJECT_NAME}.git"
+    REPO_URL="https://github.com/AIZY-Outsourcing/${REPO_NAME}.git"
 fi
 
 # Colors
