@@ -14,19 +14,19 @@ interface PuzzlePiece {
   isEmpty?: boolean;
 }
 
-const imageDescriptions: Record<string, string> = {
-  "tuyen-ngon-doc-lap-2-9-1945.jpg":
-    'Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội ngày 2-9-1945, tuyên bố nước Việt Nam Dân chủ Cộng hòa ra đời trước hàng vạn đồng bào và đại biểu các nước. Đây là sự kiện lịch sử trọng đại, đánh dấu bước ngoặt vĩ đại trong lịch sử dân tộc - kết thúc gần một thế kỷ đô hộ của thực dân Pháp và mở ra kỷ nguyên mới của độc lập, tự do. Bản Tuyên ngôn Độc lập khẳng định những quyền bất khả xâm phạm của con người và dân tộc, tuyên bố "nước Việt Nam có quyền hưởng tự do và độc lập, và sự thật đã thành một nước tự do độc lập". Lời tuyên bố chấn động của Bác Hồ đã khẳng định quyền tự quyết của dân tộc, mở đầu cho thời kỳ xây dựng và bảo vệ chính quyền cách mạng non trẻ, truyền cảm hứng cho các dân tộc bị áp bức trên thế giới đứng lên đấu tranh giành độc lập.',
-  "quan-dan-ha-noi-san-sang-chien-dau-12-1946.jpg":
-    'Quân dân Hà Nội sẵn sàng chiến đấu tháng 12-1946, chuẩn bị cho cuộc kháng chiến trường kỳ, gian khổ chống thực dân Pháp xâm lược. Sau khi thực dân Pháp gây hấn ngày 19-12-1946 tại Hà Nội, theo lời kêu gọi "Hỡi đồng bào cả nước, hễ ai còn một tấc sắt thì dùng một tấc sắt, hễ ai còn một gang thép thì dùng một gang thép..." của Chủ tịch Hồ Chí Minh, toàn thể quân và dân Thủ đô Hà Nội đã vùng lên với tinh thần "quyết tử cho Tổ quốc quyết sinh". Hình ảnh này ghi lại khoảnh khắc lịch sử khi nhân dân Thủ đô, từ già đến trẻ, từ công nhân, nông dân đến trí thức, tất cả đều sẵn sàng cầm vũ khí chiến đấu bảo vệ Tổ quốc. 60 ngày đêm kháng chiến của quân dân Hà Nội đã làm nên trang sử vàng chói lọi, thể hiện ý chí quyết chiến quyết thắng và tinh thần yêu nước nồng nàn của nhân dân Thủ đô anh hùng.',
-  "bo-doi-qua-song-lo-chien-dich-viet-bac-1947.jpg":
-    'Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947, một trong những chiến dịch quan trọng để bảo vệ căn cứ địa kháng chiến và đánh bại âm mưu "đánh nhanh thắng nhanh" của thực dân Pháp. Chiến dịch diễn ra từ ngày 7/10 đến 22/12/1947, khi địch huy động gần 20.000 quân tinh nhuệ với vũ khí hiện đại tấn công vào vùng căn cứ Việt Bắc nhằm tiêu diệt bộ chỉ huy kháng chiến. Với chiến lược "địch tiến ta lùi, địch đóng ta quấy, địch mỏi ta đánh, địch chạy ta đuổi", quân và dân ta đã kiên cường chiến đấu, tiêu diệt và làm tiêu hao sinh lực địch, buộc chúng phải rút lui trong thất bại. Chiến thắng này đã bảo vệ vững chắc căn cứ địa kháng chiến, giữ vững bộ máy lãnh đạo kháng chiến và chứng minh sức mạnh của chiến tranh du kích kết hợp với chiến tranh vận động.',
-  "bo-doi-giai-phong-dong-khe.jpg":
-    "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê trong Chiến dịch Biên giới Thu-Đông 1950, đánh dấu bước ngoặt quan trọng khi quân ta chuyển từ thế phòng thủ sang tổng phản công trên chiến trường. Chiến thắng Đông Khê (16-18/9/1950) không chỉ giải phóng thị trấn chiến lược này mà còn mở đầu cho chuỗi thắng lợi liên tiếp trong chiến dịch Biên giới, tạo thế chủ động cho ta trên toàn mặt trận Đông Bắc. Đây là lần đầu tiên quân ta tiến công và tiêu diệt hoàn toàn một cứ điểm kiên cố của địch, chứng tỏ sự trưởng thành vượt bậc về chiến lược, chiến thuật và khả năng tác chiến của quân đội ta. Chiến thắng này đã tạo điều kiện để mở rộng căn cứ địa Việt Bắc và chuẩn bị lực lượng cho những chiến dịch lớn sau này.",
-  "bo-doi-hanh-quan.webp":
-    'Hình ảnh bộ đội Việt Nam hành quân qua những địa hình núi rừng hiểm trở để tiến vào chiến dịch Điện Biên Phủ thể hiện sức mạnh to lớn của ý chí con người. Với tinh thần kiên cường và quyết tâm cao độ, các chiến sĩ đã vượt qua vô vàn khó khăn, thử thách của thiên nhiên - những con đường rừng núi hiểm trở, sương mù dày đặc, địa hình quanh co - để vận chuyển vũ khí, lương thực và tiến vào vị trí chiến đấu. Họ đã biến "không thể thành có thể", thể hiện tinh thần bất khuất, lòng yêu nước thiết tha và niềm tin vững chắc vào chiến thắng của dân tộc Việt Nam. Mỗi bước chân của bộ đội trên những con đường hành quân ấy đều là minh chứng cho sức mạnh vô địch của chủ nghĩa anh hùng cách mạng.',
-  "chien-thang-dien-bien-phu-1954.jpg":
-    'Chiến thắng Điện Biên Phủ (7/5/1954) là đỉnh cao của nghệ thuật quân sự Việt Nam, kết thúc 56 ngày đêm chiến đấu anh dũng, kiên cường. Chiến thắng này không chỉ có ý nghĩa quân sự to lớn mà còn là thắng lợi chính trị - ngoại giao vang dội trên toàn thế giới, buộc thực dân Pháp phải ngồi vào bàn đàm phán tại Hội nghị Genève. Đây là trận đánh "lừng lẫy năm châu, chấn động địa cầu", chấm dứt gần 100 năm ách thống trị của thực dân Pháp tại Đông Dương và mở ra kỷ nguyên mới cho các dân tộc thuộc địa đấu tranh giành độc lập. Hình ảnh chiếc xe tăng được trang trí lá cờ Quyết chiến Quyết thắng và chân dung Chủ tịch Hồ Chí Minh đã trở thành biểu tượng bất hủ của chiến thắng lịch sử này.',
+import imagesData from "../../../../../public/images/game/images.json";
+
+// Helper to find description dynamically
+const getImageInfo = (filename: string) => {
+  const pureFilename = filename.split('/').pop() || filename;
+  const imageEntry = imagesData.images.find((img) => img.file === pureFilename);
+  return imageEntry
+    ? { description: imageEntry.description, title: imageEntry.title }
+    : {
+      description:
+        "Hãy quan sát kỹ bức ảnh và sắp xếp các mảnh ghép để hoàn thiện tác phẩm lịch sử này. Bạn có thể làm được!",
+      title: "Trò chơi ghép hình",
+    };
 };
 
 export default function PuzzleGame({
@@ -38,10 +38,7 @@ export default function PuzzleGame({
 }) {
   const imgUrl = `/images/${img}`;
   const decodedImg = decodeURIComponent(img);
-  const description =
-    imageDescriptions[img] ||
-    imageDescriptions[decodedImg] ||
-    "Hình ảnh lịch sử quý giá trong cuộc kháng chiến chống thực dân Pháp (1945-1954), thể hiện tinh thần bất khuất và ý chí quyết tâm giành độc lập của dân tộc Việt Nam.";
+  const { description, title } = getImageInfo(decodedImg);
 
   const [pieces, setPieces] = useState<PuzzlePiece[]>([]);
   const [emptyPosition, setEmptyPosition] = useState(8);
@@ -97,7 +94,7 @@ export default function PuzzleGame({
       if (adjacentPositions.length > 0) {
         const randomPos =
           adjacentPositions[
-            Math.floor(Math.random() * adjacentPositions.length)
+          Math.floor(Math.random() * adjacentPositions.length)
           ];
         const pieceToMove = newPieces.find(
           (p) => p.currentPosition === randomPos
@@ -199,66 +196,6 @@ export default function PuzzleGame({
       setIsSubmitting(false);
     }
   };
-
-  const autoWin = useCallback(() => {
-    const correctPieces = initializePuzzle();
-    setPieces(correctPieces);
-    setEmptyPosition(8);
-    setIsComplete(true);
-    gsap.fromTo(
-      ".puzzle-piece",
-      { scale: 1 },
-      {
-        scale: 1.05,
-        duration: 0.3,
-        yoyo: true,
-        repeat: 1,
-        stagger: 0.1,
-      }
-    );
-    setTimeout(() => {
-      setShowNameModal(true);
-    }, 2000);
-  }, [initializePuzzle]);
-
-  useEffect(() => {
-    const keySequence: string[] = [];
-    const requiredSequence = ["w", "i", "n"];
-    let sequenceTimer: NodeJS.Timeout;
-    const handleKeyDown = (e: KeyboardEvent) => {
-      const mod = e.ctrlKey || e.metaKey;
-      if (mod && e.shiftKey && e.altKey) {
-        const key = e.key.toLowerCase();
-        if (requiredSequence.includes(key)) {
-          e.preventDefault();
-          keySequence.push(key);
-          clearTimeout(sequenceTimer);
-          sequenceTimer = setTimeout(() => {
-            keySequence.length = 0;
-          }, 1500);
-          if (keySequence.length >= 3) {
-            const lastThree = keySequence.slice(-3);
-            if (
-              lastThree[0] === "w" &&
-              lastThree[1] === "i" &&
-              lastThree[2] === "n"
-            ) {
-              keySequence.length = 0;
-              clearTimeout(sequenceTimer);
-              if (!isComplete && gameStarted) {
-                autoWin();
-              }
-            }
-          }
-        }
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-      clearTimeout(sequenceTimer);
-    };
-  }, [isComplete, gameStarted, autoWin]);
 
   useEffect(() => {
     const initialPieces = initializePuzzle();
@@ -413,16 +350,6 @@ export default function PuzzleGame({
             Xem mẫu
           </span>
         </div>
-        <button
-          type="button"
-          onClick={() => !isComplete && autoWin()}
-          disabled={isComplete}
-          className="absolute bottom-6 right-6 z-20 flex flex-col items-center justify-center gap-1.5 w-20 h-20 md:w-24 md:h-24 rounded-xl border-2 border-amber-400 bg-amber-100 shadow-lg active:scale-95 hover:bg-amber-200 hover:border-amber-500 transition-all disabled:opacity-40 disabled:pointer-events-none"
-          title="Thắng ngay"
-        >
-          <span className="text-3xl md:text-4xl">🎮</span>
-          <span className="text-sm font-bold text-amber-800">Cheat</span>
-        </button>
         {showImageModal && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
@@ -445,7 +372,7 @@ export default function PuzzleGame({
           </div>
         )}
         <div className="flex items-center justify-between w-full max-w-4xl px-4 mt-4 mb-4">
-          <h1 className="text-2xl md:text-4xl font-bold text-red-700 text-center flex-1"></h1>
+          <h1 className="text-2xl md:text-4xl font-bold text-red-700 text-center flex-1">{title}</h1>
           <div className="w-24"></div>
         </div>
         <div className="text-center mb-2 w-full max-w-4xl">
@@ -463,31 +390,29 @@ export default function PuzzleGame({
                 <div
                   key={index}
                   onClick={() => handlePieceClick(index)}
-                  className={`puzzle-piece w-20 h-20 md:w-40 md:h-40 rounded-lg overflow-hidden relative ${
-                    item.isEmpty
-                      ? "bg-gray-200 border-2 border-dashed border-gray-400"
-                      : `cursor-pointer hover:scale-105 hover:shadow-lg ${
-                          gameStarted && isAdjacent(index, emptyPosition)
-                            ? "ring-2 ring-blue-400 ring-opacity-50"
-                            : ""
-                        }`
-                  } ${!gameStarted ? "cursor-not-allowed opacity-50" : ""}`}
+                  className={`puzzle-piece w-20 h-20 md:w-40 md:h-40 rounded-lg overflow-hidden relative ${item.isEmpty
+                    ? "bg-gray-200 border-2 border-dashed border-gray-400"
+                    : `cursor-pointer hover:scale-105 hover:shadow-lg ${gameStarted && isAdjacent(index, emptyPosition)
+                      ? "ring-2 ring-blue-400 ring-opacity-50"
+                      : ""
+                    }`
+                    } ${!gameStarted ? "cursor-not-allowed opacity-50" : ""}`}
                   style={
                     !item.isEmpty
                       ? {
-                          backgroundImage: `url('${imgUrl}')`,
-                          backgroundSize: "300% 300%",
-                          backgroundPosition: `${(item as PuzzlePiece).backgroundPositionX} ${(item as PuzzlePiece).backgroundPositionY}`,
-                          backgroundRepeat: "no-repeat",
-                          transition:
-                            "transform 0.3s ease, box-shadow 0.3s ease",
-                          aspectRatio: "1/1",
-                        }
+                        backgroundImage: `url('${imgUrl}')`,
+                        backgroundSize: "300% 300%",
+                        backgroundPosition: `${(item as PuzzlePiece).backgroundPositionX} ${(item as PuzzlePiece).backgroundPositionY}`,
+                        backgroundRepeat: "no-repeat",
+                        transition:
+                          "transform 0.3s ease, box-shadow 0.3s ease",
+                        aspectRatio: "1/1",
+                      }
                       : {
-                          transition:
-                            "transform 0.3s ease, box-shadow 0.3s ease",
-                          aspectRatio: "1/1",
-                        }
+                        transition:
+                          "transform 0.3s ease, box-shadow 0.3s ease",
+                        aspectRatio: "1/1",
+                      }
                   }
                 >
                   {!item.isEmpty && (

@@ -1,0 +1,55 @@
+name: Deploy to aaPanel
+
+on:
+  # Allow manual trigger only
+  workflow_dispatch:
+
+env:
+  AAPANEL_PROJECT_NAME: "mln131.aizy.io.vn"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute deploy on server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: ${{ secrets.SERVER_PORT || '22' }}
+          script: |
+            PROJECT_NAME="${{ env.AAPANEL_PROJECT_NAME }}"
+            REPO_URL="${{ github.server_url }}/${{ github.repository }}.git"
+            GITHUB_TOKEN="${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}"
+            SOURCE_DIR="/app/git/${PROJECT_NAME}"
+            
+            # 1. Khởi tạo thư mục nếu chưa có
+            mkdir -p /app/git
+            
+            # 2. Xử lý Git Pull/Clone trực tiếp trên server
+            if [ -d "$SOURCE_DIR/.git" ]; then
+              CURRENT_URL=$(cd "$SOURCE_DIR" && git remote get-url origin)
+              # Check if the existing repo is the right one (ignoring token part)
+              if [[ "$CURRENT_URL" != *"${REPO_URL/https:\/\//}"* ]]; then
+                echo "Repository mismatch. Cleaning up..."
+                rm -rf "$SOURCE_DIR"
+              fi
+            fi
+
+            if [ ! -d "$SOURCE_DIR/.git" ]; then
+              # Inject token vào URL để clone repo private
+              AUTH_URL="${REPO_URL/https:\/\//https:\/\/${GITHUB_TOKEN}@}"
+              git clone -b main "$AUTH_URL" "$SOURCE_DIR"
+            else
+              cd "$SOURCE_DIR"
+              # Cập nhật token nếu cần
+              AUTH_URL="${REPO_URL/https:\/\//https:\/\/${GITHUB_TOKEN}@}"
+              git remote set-url origin "$AUTH_URL"
+              git fetch origin
+              git reset --hard origin/main
+            fi
+            
+            # 3. Chạy file deploy nằm trong chính repo vừa pull về
+            chmod +x "$SOURCE_DIR/scripts/deploy.sh"
+            "$SOURCE_DIR/scripts/deploy.sh" main "$GITHUB_TOKEN" "$PROJECT_NAME" "$REPO_URL"
