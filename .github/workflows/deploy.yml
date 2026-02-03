@@ -1,0 +1,35 @@
+name: Deploy to aaPanel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Copy deploy script to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: ${{ secrets.SERVER_PORT || '22' }}
+          source: "scripts/deploy.sh"
+          target: "/tmp"
+
+      - name: Execute deploy script
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: ${{ secrets.SERVER_PORT || '22' }}
+          script: |
+            chmod +x /tmp/scripts/deploy.sh
+            # Run the script with the branch name and the Github token
+            /tmp/scripts/deploy.sh main ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
