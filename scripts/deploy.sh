@@ -89,6 +89,7 @@ rsync -az --delete \
     --exclude 'src' \
     --exclude 'scripts' \
     --exclude 'README.md' \
+    --exclude '.env*' \
     public/ $WEB_DIR/public/
 
 cp package.json pnpm-lock.yaml next.config.ts $WEB_DIR/
