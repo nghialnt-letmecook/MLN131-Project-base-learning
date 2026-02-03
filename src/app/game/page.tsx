@@ -3,68 +3,22 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Clock, Trophy, Star } from "lucide-react";
 
-const galleryImages = [
-  {
-    src: "/images/tuyen-ngon-doc-lap-2-9-1945.jpg",
-    alt: "Tuyên ngôn Độc lập 2/9/1945",
-    label: "Tuyên ngôn Độc lập 2/9/1945",
-    file: "tuyen-ngon-doc-lap-2-9-1945.jpg",
-    pieces: "12 mảnh",
-    period: "1945",
-    description:
-      "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, tuyên bố nước Việt Nam Dân chủ Cộng hòa ra đời, mở ra kỷ nguyên mới của dân tộc.",
-  },
-  {
-    src: "/images/quan-dan-ha-noi-san-sang-chien-dau-12-1946.jpg",
-    alt: "Kháng chiến toàn quốc 1946",
-    label: "Quân dân Hà Nội sẵn sàng chiến đấu",
-    file: "quan-dan-ha-noi-san-sang-chien-dau-12-1946.jpg",
-    pieces: "15 mảnh",
-    period: "1946",
-    description:
-      "Quân dân Hà Nội sẵn sàng chiến đấu tháng 12-1946, chuẩn bị cho cuộc kháng chiến toàn quốc chống thực dân Pháp xâm lược.",
-  },
-  {
-    src: "/images/bo-doi-qua-song-lo-chien-dich-viet-bac-1947.jpg",
-    alt: "Bộ đội qua sông Lô",
-    label: "Chiến dịch Việt Bắc Thu-Đông 1947",
-    file: "bo-doi-qua-song-lo-chien-dich-viet-bac-1947.jpg",
-    pieces: "18 mảnh",
-    period: "1947",
-    description:
-      "Bộ đội qua sông Lô truy kích địch trong chiến dịch Việt Bắc Thu-Đông 1947, bảo vệ căn cứ địa kháng chiến và đánh bại âm mưu đánh nhanh thắng nhanh của Pháp.",
-  },
-  {
-    src: "/images/bo-doi-giai-phong-dong-khe.jpg",
-    alt: "Bộ đội giải phóng thị trấn Đông Khê",
-    label: "Bộ đội giải phóng thị trấn Đông Khê",
-    file: "bo-doi-giai-phong-dong-khe.jpg",
-    pieces: "20 mảnh",
-    period: "1950",
-    description:
-      "Bộ đội ta tiến vào giải phóng thị trấn Đông Khê trong Chiến dịch Biên giới Thu-Đông 1950, mở đầu cho giai đoạn ta chuyển sang tổng phản công.",
-  },
-  {
-    src: "/images/bo-doi-hanh-quan.webp",
-    alt: "Bộ đội hành quân tại Điện Biên Phủ",
-    label: "Bộ đội hành quân tại Điện Biên Phủ",
-    file: "bo-doi-hanh-quan.webp",
-    pieces: "22 mảnh",
-    period: "1953-1954",
-    description:
-      "Hình ảnh bộ đội Việt Nam hành quân qua những địa hình hiểm trở để tiến vào Điện Biên Phủ, thể hiện ý chí quyết tâm và tinh thần bất khuất của quân dân ta.",
-  },
-  {
-    src: "/images/chien-thang-dien-bien-phu-1954.jpg",
-    alt: "Chiến thắng lịch sử Điện Biên Phủ",
-    label: "Chiến thắng lịch sử Điện Biên Phủ",
-    file: "chien-thang-dien-bien-phu-1954.jpg",
-    pieces: "25 mảnh",
-    period: "1954",
-    description:
-      "Chiến thắng Điện Biên Phủ là đỉnh cao của nghệ thuật quân sự Việt Nam, buộc thực dân Pháp phải ký Hiệp định Genève, chấm dứt ách thống trị của họ tại Đông Dương.",
-  },
-];
+import imagesData from "../../../public/images/game/images.json";
+
+// Define the specific images to show based on user request
+const activeImageFiles = ["12.jpg", "14.jpg", "15.jpg", "17.jpg", "20.jpg", "21.jpg"];
+
+const galleryImages = imagesData.images
+  .filter((img) => activeImageFiles.includes(img.file))
+  .map((img) => ({
+    src: `/images/game/${img.file}`,
+    alt: img.title,
+    label: img.title,
+    file: `game/${img.file}`,
+    pieces: "9 mảnh", // Default or calculated
+    period: "Lễ hội & Văn hóa", // Generic or could be added to JSON
+    description: img.description,
+  }));
 
 export default function GameGallery() {
   const router = useRouter();
