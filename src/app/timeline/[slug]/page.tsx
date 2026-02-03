@@ -107,6 +107,13 @@ const timelineData: TimelineEvent[] = [
           "Chỉ cộng đồng người ổn định làm thành nhân dân một nước, có lãnh thổ riêng, kinh tế thống nhất, ngôn ngữ chung và có ý thức về sự thống nhất quốc gia.",
       },
       {
+        type: "image",
+        src: "/images/buu-thiep-dan-toc.jpg",
+        alt: "Minh họa khái niệm Dân tộc - Quốc gia",
+        caption:
+          "Ảnh: “Một tấm bưu thiếp từ năm 1916 cho thấy hình ảnh nhân cách hóa quốc gia của một số nước Đồng minh trong Thế chiến I, mỗi người cầm một lá cờ đại diện cho quốc gia của họ.”",
+      },
+      {
         type: "highlight-normal",
         content: "2. Nghĩa hẹp (Dân tộc - Tộc người/Ethnie)",
       },
@@ -114,6 +121,13 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content:
           "Chỉ các cộng đồng người có mối liên hệ chặt chẽ về nguồn gốc, ngôn ngữ, văn hóa và ý thức tự giác tộc người; đây là bộ phận cấu thành nên quốc gia.",
+      },
+      {
+        type: "image",
+        src: "/images/dan-toc-minh-hoa.jpg",
+        alt: "Minh họa khái niệm Dân tộc - Tộc người",
+        caption:
+          "Ảnh: “Một nghệ sĩ biểu diễn mặc trang phục truyền thống trong lễ hội Quốc khánh ở Kuala Lumpur, Malaysia.”",
       },
       {
         type: "highlight",
@@ -164,6 +178,12 @@ const timelineData: TimelineEvent[] = [
         content:
           "Có một Nhà nước thống nhất quản lý, đại diện cho dân tộc trong quan hệ quốc tế.",
       },
+      {
+        type: "image",
+        src: "/images/5-dac-trung.jpg",
+        alt: "Minh họa đặc trưng Dân tộc Việt Nam",
+        caption: "Ảnh: Minh họa 5 đặc trưng dân tộc. Nguồn: baochinhphu.vn",
+      },
     ],
   },
   {
@@ -196,8 +216,21 @@ const timelineData: TimelineEvent[] = [
           "Các dân tộc muốn liên hiệp lại để mở rộng không gian phát triển kinh tế, khoa học và công nghệ trong bối cảnh toàn cầu hóa.",
       },
       {
+        type: "image",
+        src: "/images/anh-minh-hoa-xu-huong.png",
+        alt: "Minh họa hai xu hướng phát triển dân tộc",
+        caption:
+          "Ảnh: Minh họa hai xu hướng phát triển dân tộc. Nguồn: Internet",
+      },
+      {
         type: "highlight",
         content: "Cương lĩnh dân tộc của V.I. Lênin",
+      },
+      {
+        type: "image",
+        src: "/images/lenin.jpg",
+        alt: "Chân dung V.I. Lênin",
+        caption: "Ảnh: Chân dung V.I. Lênin.",
       },
       {
         type: "highlight-normal",
@@ -226,6 +259,13 @@ const timelineData: TimelineEvent[] = [
         content:
           "Đây là nội dung quan trọng nhất, tạo sức mạnh đoàn kết để giải quyết vấn đề dân tộc theo lập trường giai cấp công nhân.",
       },
+      {
+        type: "image",
+        src: "/images/anh-minh-hoa-cuong-linh-Lenin.jpg",
+        alt: "Minh họa cương lĩnh dân tộc của V.I. Lênin",
+        caption:
+          "Ảnh: Minh họa cương lĩnh dân tộc của V.I. Lênin: Các quốc gia, dân tộc trên Thế Giới. Nguồn: Internet",
+      },
     ],
   },
   {
@@ -249,6 +289,13 @@ const timelineData: TimelineEvent[] = [
           "Có sự chênh lệch lớn về số dân giữa tộc người Kinh và 53 dân tộc thiểu số.",
       },
       {
+        type: "image",
+        src: "/images/54-dan-toc.jpg",
+        alt: "Ảnh: “Năm mươi bốn nhóm dân tộc được mô tả bằng biểu tượng cảm xúc, kèm theo thông tin chi tiết về văn hóa”",
+        caption:
+          "Ảnh: “Năm mươi bốn nhóm dân tộc được mô tả bằng biểu tượng cảm xúc, kèm theo thông tin chi tiết về văn hóa”",
+      },
+      {
         type: "highlight-normal",
         content: "2. Cư trú xen kẽ nhau",
       },
@@ -257,6 +304,7 @@ const timelineData: TimelineEvent[] = [
         content:
           "Các dân tộc cư trú xen kẽ nhau, không có vùng lãnh thổ riêng biệt tuyệt đối.",
       },
+
       {
         type: "highlight-normal",
         content: "3. Vị trí chiến lược quan trọng",
@@ -265,6 +313,12 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content:
           "Dân tộc thiểu số phân bố chủ yếu ở địa bàn có vị trí chiến lược quan trọng về an ninh, biên giới.",
+      },
+      {
+        type: "image",
+        src: "/images/nguoi-HMong.jpg",
+        alt: "Ảnh: “Chân dung người dân tộc H’Mông ở Sapa (Việt Nam) ",
+        caption: "Ảnh: “Chân dung người dân tộc H’Mông ở Sapa (Việt Nam) ",
       },
       {
         type: "highlight-normal",
@@ -276,17 +330,38 @@ const timelineData: TimelineEvent[] = [
           "Trình độ phát triển kinh tế - xã hội giữa các dân tộc không đồng đều.",
       },
       {
+        type: "image",
+        src: "/images/doi-song-lao-dong.jpg",
+        alt: "Ảnh: “Đời sống và lao động của đồng bào các dân tộc — ảnh minh họa sinh hoạt cộng đồng.”",
+        caption:
+          "Ảnh: “Đời sống và lao động của đồng bào các dân tộc — ảnh minh họa sinh hoạt cộng đồng.”",
+      },
+      {
         type: "highlight-normal",
         content: "5. Truyền thống đoàn kết lâu đời",
       },
+
       {
         type: "paragraph",
         content:
           "Có truyền thống đoàn kết lâu đời trong quá trình dựng nước và giữ nước.",
       },
       {
+        type: "image",
+        src: "/images/hinh-anh-dan-toc-doan-ket.jpg",
+        alt: "Ảnh: Minh họa về truyền thống đoàn kết dân tộc Việt Nam",
+        caption: "Ảnh: Minh họa về truyền thống đoàn kết dân tộc Việt Nam",
+      },
+      {
         type: "highlight-normal",
         content: "6. Bản sắc văn hóa đa dạng",
+      },
+      {
+        type: "image",
+        src: "/images/trang-phuc-truyen-thong.jpg",
+        alt: "Ảnh: “Người các dân tộc thiểu số ở Việt Nam — trang phục truyền thống và văn hoá đặc trưng của nhiều dân tộc khác nhau.”",
+        caption:
+          "Ảnh: “Người các dân tộc thiểu số ở Việt Nam — trang phục truyền thống và văn hoá đặc trưng của nhiều dân tộc khác nhau.”",
       },
       {
         type: "paragraph",
@@ -307,6 +382,12 @@ const timelineData: TimelineEvent[] = [
           "Thực hiện bình đẳng, đoàn kết, tương trợ và giúp nhau cùng phát triển.",
       },
       {
+        type: "image",
+        src: "/images/nha-nuoc-doan-ket.jpg",
+        alt: "Ảnh: Minh họa về truyền thống đoàn kết dân tộc Việt Nam",
+        caption: "Ảnh: Minh họa về bình đẳng, đoàn kết dân tộc Việt Nam",
+      },
+      {
         type: "highlight-normal",
         content: "2. Ưu tiên đầu tư phát triển",
       },
@@ -316,6 +397,13 @@ const timelineData: TimelineEvent[] = [
           "Ưu tiên đầu tư phát triển kinh tế - xã hội cho các vùng dân tộc thiểu số và miền núi.",
       },
       {
+        type: "image",
+        src: "/images/phat-trien-ktxh.jpg",
+        alt: "Ảnh: Minh họa về ưu tiên đầu tư phát triển kinh tế - xã hội cho các vùng dân tộc thiểu số và miền núi.",
+        caption:
+          "Ảnh: Minh họa về ưu tiên đầu tư phát triển kinh tế - xã hội cho các vùng dân tộc thiểu số và miền núi.",
+      },
+      {
         type: "highlight-normal",
         content: "3. Bảo tồn và phát huy văn hóa",
       },
@@ -323,6 +411,13 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content:
           "Bảo tồn và phát huy các giá trị văn hóa truyền thống tốt đẹp của các tộc người.",
+      },
+      {
+        type: "image",
+        src: "/images/nhom-nhac-vung-cao.jpg",
+        alt: "Ảnh: “Nhóm nhạc dân tộc thiểu số biểu diễn trong lễ hội văn hóa truyền thống.”",
+        caption:
+          "Ảnh: “Nhóm nhạc của dân tộc thiểu số vùng cao — biểu diễn văn hoá, âm nhạc truyền thống.”",
       },
     ],
   },
@@ -343,6 +438,12 @@ const timelineData: TimelineEvent[] = [
           "Tôn giáo là một hình thái ý thức xã hội phản ánh hư ảo thực tại khách quan; là một thực thể xã hội có niềm tin, hệ thống tổ chức và tín đồ.",
       },
       {
+        type: "image",
+        src: "/images/anh-minh-hoa-ton-giao.jpg",
+        alt: "Minh họa bản chất của Tôn giáo",
+        caption: "Ảnh: Minh họa Tôn giáo. Nguồn: Internet",
+      },
+      {
         type: "highlight",
         content: "Phân biệt các khái niệm liên quan",
       },
@@ -353,6 +454,13 @@ const timelineData: TimelineEvent[] = [
       {
         type: "paragraph",
         content: "Niềm tin và sự ngưỡng mộ vào một cái gì đó linh thiêng.",
+      },
+      {
+        type: "image",
+        src: "/images/tin-nguong-dan-gian.jpg",
+        alt: "Ảnh: Tín ngưỡng thờ Thành Hoàng làng là một nét đẹp trong văn hóa người Việt",
+        caption:
+          "Ảnh: Tín ngưỡng thờ Thành Hoàng làng là một nét đẹp trong văn hóa người Việt",
       },
       {
         type: "highlight-normal",
@@ -370,6 +478,13 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content:
           "Niềm tin cực đoan vào các lực lượng siêu nhiên đến mức mê muội, gây hậu quả tiêu cực cho xã hội.",
+      },
+      {
+        type: "image",
+        src: "/images/Hoi-Thanh-Duc-Chua-T.jpeg",
+        alt: "Ảnh: Một buổi truyền đạo của Hội Thánh Đức Chúa Trời Mẹ tại Việt Nam",
+        caption:
+          "Ảnh: Bộ Nội vụ yêu cầu kiên quyết đấu tranh, xóa bỏ tổ chức của Hội thánh của Đức Chúa Trời Mẹ. Ảnh: Văn Trực. Nguồn: Báo Lao Động",
       },
       {
         type: "highlight",
@@ -450,7 +565,7 @@ const timelineData: TimelineEvent[] = [
       {
         type: "paragraph",
         content:
-          "Việt Nam là quốc gia có nhiều tôn giáo (13 tôn giáo được công nhận, khoảng 24 triệu tín đồ).",
+          "Việt Nam là một quốc gia có nhiều tôn giáo: Hiện nay, nước ta có 13 tôn giáo đã được công nhận tư cách pháp nhân (như Phật giáo, Công giáo, Tin lành, Cao Đài, Hòa Hảo, Hồi giáo...). Về quy mô, có hơn 40 tổ chức tôn giáo được công nhận hoặc đăng ký hoạt động với khoảng 24 triệu tín đồ (chiếm khoảng 27% dân số), 95.000 chức sắc, 200.000 chức việc và hơn 23.250 cơ sở thờ tự.",
       },
       {
         type: "highlight-normal",
@@ -459,7 +574,14 @@ const timelineData: TimelineEvent[] = [
       {
         type: "paragraph",
         content:
-          "Tôn giáo đa dạng, đan xen, chung sống hòa bình và không có xung đột lớn.",
+          "Việt Nam là nơi giao lưu của nhiều luồng văn hóa thế giới, tạo nên sự phong phú về nguồn gốc và truyền thống lịch sử của các tôn giáo. Các tôn giáo cùng tồn tại và phát triển trên một địa bàn cư trú, giữa họ có sự tôn trọng niềm tin của nhau và chưa từng xảy ra xung đột hay chiến tranh tôn giáo lớn. Thực tế cho thấy không có tôn giáo nào du nhập vào Việt Nam mà không mang dấu ấn hoặc chịu ảnh hưởng của bản sắc văn hóa dân tộc.",
+      },
+      {
+        type: "image",
+        src: "/images/den-buu-long.jpg",
+        alt: "Ảnh: “Đền Bửu Long ở Thành phố Hồ Chí Minh — minh hoạ sự đa dạng tôn giáo và tín ngưỡng ở Việt Nam, nơi nhiều đạo cùng tồn tại.”",
+        caption:
+          "Ảnh: “Đền Bửu Long ở Thành phố Hồ Chí Minh — minh hoạ sự đa dạng tôn giáo và tín ngưỡng ở Việt Nam, nơi nhiều đạo cùng tồn tại.”",
       },
       {
         type: "highlight-normal",
@@ -467,7 +589,15 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "paragraph",
-        content: "Tín đồ phần lớn là nhân dân lao động có tinh thần yêu nước.",
+        content:
+          "Đa số các tín đồ tôn giáo đều có lòng nồng nàn yêu nước, tinh thần chống ngoại xâm và tôn trọng công lý. Trong các giai đoạn lịch sử, đồng bào có đạo đã cùng các tầng lớp nhân dân khác đóng góp to lớn vào sự nghiệp giải phóng và xây dựng Tổ quốc",
+      },
+      {
+        type: "image",
+        src: "/images/chua-long-son.jpg",
+        alt: "Ảnh: “Chùa Long Sơn, Nha Trang — biểu tượng tôn giáo gắn liền với đời sống tinh thần của người dân lao động.”",
+        caption:
+          "Ảnh: “Chùa Long Sơn, Nha Trang — biểu tượng tôn giáo gắn liền với đời sống tinh thần của người dân lao động.”",
       },
       {
         type: "highlight-normal",
@@ -476,7 +606,14 @@ const timelineData: TimelineEvent[] = [
       {
         type: "paragraph",
         content:
-          "Hàng ngũ chức sắc có vai trò quan trọng và có quan hệ quốc tế rộng rãi.",
+          "Chức sắc các tôn giáo có vai trò, vị trí quan trọng trong giáo hội, có uy tín và ảnh hưởng lớn đến tâm lý, hành vi của tín đồ. Đồng thời, các tôn giáo ở Việt Nam đều có mối quan hệ rộng rãi với các tổ chức và cá nhân tôn giáo ở nước ngoài",
+      },
+      {
+        type: "image",
+        src: "/images/tong-bi-thu-gap-chuc-sac.webp",
+        alt: "Ảnh: “Chủ tịch nước Tô Lâm gặp mặt đoàn đại biểu chức sắc tôn giáo ",
+        caption:
+          "Ảnh: “Chủ tịch nước Tô Lâm gặp mặt đoàn đại biểu chức sắc tôn giáo ",
       },
       {
         type: "highlight",
@@ -489,16 +626,23 @@ const timelineData: TimelineEvent[] = [
       {
         type: "paragraph",
         content:
-          "Tôn trọng và bảo đảm quyền tự do tín ngưỡng, tôn giáo và quyền không theo tôn giáo của mọi người.",
+          "Đảng và Nhà nước xác định tín ngưỡng, tôn giáo là nhu cầu tinh thần của một bộ phận nhân dân, sẽ tồn tại cùng dân tộc trong quá trình xây dựng chủ nghĩa xã hội. Mọi công dân đều có quyền tự do theo hoặc không theo một tôn giáo nào; các tổ chức tôn giáo hợp pháp được hoạt động theo pháp luật và được pháp luật bảo hộ",
+      },
+      {
+        type: "image",
+        src: "/images/tu-do-tin-nguong.jpg",
+        alt: "Ảnh: Quang cảnh Đại lễ Phật đản Phật lịch 2568 tại Việt Nam Quốc tự. (Ảnh: TTXVN)",
+        caption:
+          "Ảnh: Quang cảnh Đại lễ Phật đản Phật lịch 2568 tại Việt Nam Quốc tự. (Ảnh: TTXVN)",
       },
       {
         type: "highlight-normal",
-        content: "Đoàn kết trong khối đại đoàn kết dân tộc",
+        content: "Đoàn kết trong khối đại đoàn kết dân tộc và ",
       },
       {
         type: "paragraph",
         content:
-          "Đoàn kết đồng bào có đạo và đồng bào không có đạo trong khối đại đoàn kết dân tộc.",
+          " Đây là nội dung trọng tâm nhằm đoàn kết đồng bào có đạo và đồng bào không có đạo, tập hợp mọi thành viên trong xã hội cùng phấn đấu cho mục tiêu 'dân giàu, nước mạnh, dân chủ, công bằng, văn minh'. Tuyệt đối không phân biệt đối xử vì lý do tín ngưỡng, tôn giáo",
       },
       {
         type: "highlight-normal",
@@ -506,7 +650,8 @@ const timelineData: TimelineEvent[] = [
       },
       {
         type: "paragraph",
-        content: "Công tác tôn giáo là trách nhiệm của cả hệ thống chính trị.",
+        content:
+          "Công tác tôn giáo không phải nhiệm vụ riêng lẻ của bất kỳ tổ chức nào mà là trách nhiệm của toàn bộ hệ thống chính trị do Đảng lãnh đạo",
       },
       {
         type: "highlight-normal",
@@ -515,7 +660,13 @@ const timelineData: TimelineEvent[] = [
       {
         type: "paragraph",
         content:
-          "Nghiêm cấm lợi dụng tôn giáo để hoạt động trái pháp luật, kích động chia rẽ dân tộc.",
+          "Mọi hoạt động tôn giáo phải tuân thủ Hiến pháp và pháp luật, đặc biệt là Luật Tín ngưỡng, Tôn giáo năm 2016. Nhà nước nghiêm cấm lợi dụng tôn giáo để tuyên truyền tà đạo, hoạt động mê tín dị đoan, ép buộc người dân theo đạo hoặc kích động chia rẽ dân tộc, chống phá Nhà nước. Các hành vi vi phạm pháp luật dưới danh nghĩa tôn giáo đều bị xử lý nghiêm minh",
+      },
+      {
+        type: "image",
+        src: "/images/loi-dung-ton-giao.jpg",
+        alt: "Ảnh: Lợi dụng tôn giáo.",
+        caption: "Ảnh: Lợi dụng tôn giáo, chia rẽ đoàn kết dân tộc. Nguồn: VTV",
       },
     ],
   },
@@ -545,6 +696,13 @@ const timelineData: TimelineEvent[] = [
           'Ở Việt Nam, các tôn giáo có truyền thống đồng hành cùng dân tộc trong mọi giai đoạn lịch sử. Đa số tín đồ là nhân dân lao động, họ vừa có lòng nồng nàn yêu nước, vừa có niềm tin tôn giáo sâu sắc, luôn thực hiện phương châm "tốt đời, đẹp đạo".',
       },
       {
+        type: "image",
+        src: "/images/tot-doi-dep-dao.jpg",
+        alt: "Ảnh: Minh họa phương châm ''Tốt đời, đẹp đạo'' trong cộng đồng tôn giáo ở Việt Nam",
+        caption:
+          "Ảnh: Minh họa phương châm ''Tốt đời, đẹp đạo'' trong cộng đồng tôn giáo ở Việt Nam",
+      },
+      {
         type: "highlight-normal",
         content: "2. Sự chi phối của tín ngưỡng truyền thống",
       },
@@ -553,6 +711,7 @@ const timelineData: TimelineEvent[] = [
         content:
           "Quan hệ dân tộc - tôn giáo chịu ảnh hưởng mạnh mẽ của các hình thái tín ngưỡng bản địa.",
       },
+
       {
         type: "highlight-normal",
         content: "Ở cấp độ gia đình",
@@ -561,6 +720,13 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content:
           "Tín ngưỡng thờ cúng tổ tiên là nét đẹp văn hóa phổ biến, gắn kết các thành viên trong dòng họ.",
+      },
+      {
+        type: "image",
+        src: "/images/tho-cung-to-tien.jpg",
+        alt: "Ảnh: Tín ngưỡng thờ cúng tổ tiên là một nét đẹp trong văn hóa người Việt",
+        caption:
+          "Ảnh: Tín ngưỡng thờ cúng tổ tiên là một nét đẹp trong văn hóa người Việt",
       },
       {
         type: "highlight-normal",
@@ -572,6 +738,13 @@ const timelineData: TimelineEvent[] = [
           "Thờ cúng Thành hoàng làng tạo nên sự cố kết cộng đồng địa phương.",
       },
       {
+        type: "image",
+        src: "/images/thanh-hoang-huyen-quang.jpg",
+        alt: "Ảnh: Lễ rước tượng thành hoàng Huyền Quang trong hội làng Hưng Học, thị xã Quảng Yên.",
+        caption:
+          "Ảnh: Lễ rước tượng thành hoàng Huyền Quang trong hội làng Hưng Học, thị xã Quảng Yên.",
+      },
+      {
         type: "highlight-normal",
         content: "Ở cấp độ quốc gia",
       },
@@ -579,6 +752,13 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content:
           'Tín ngưỡng thờ cúng Hùng Vương đã trở thành biểu tượng của sự hội tụ khối đại đoàn kết, nhắc nhở về nguồn gốc "đồng bào" chung của 54 dân tộc.',
+      },
+      {
+        type: "image",
+        src: "/images/tho-cung-vua-hung.jpg",
+        alt: "Ảnh: Tín ngưỡng thờ cúng Hùng Vương là biểu tượng của sự hội tụ khối đại đoàn kết dân tộc Việt Nam",
+        caption:
+          "Ảnh: Tín ngưỡng thờ cúng Hùng Vương là biểu tượng của sự hội tụ khối đại đoàn kết dân tộc Việt Nam",
       },
       {
         type: "highlight-normal",
@@ -631,6 +811,12 @@ const timelineData: TimelineEvent[] = [
           'Các hiện tượng như "Tin lành Đề Ga" hay "Hà Mòn" ở Tây Nguyên đã bị lợi dụng để tuyên truyền nội dung gây hoang mang, xuyên tạc chính sách của Đảng và Nhà nước.',
       },
       {
+        type: "image",
+        src: "/images/tin-lanh-de-ga.jpg",
+        alt: "Ảnh: Cờ của tổ chức tự xưng “Nhà nước Tin lành Đề-ga”",
+        caption: "Ảnh: Cờ của tổ chức tự xưng “Nhà nước Tin lành Đề-ga”",
+      },
+      {
         type: "highlight-normal",
         content: "Phá hoại đại đoàn kết",
       },
@@ -676,6 +862,13 @@ const timelineData: TimelineEvent[] = [
           "Tuyệt đối không được để các vấn đề tôn giáo trở thành cái cớ để đòi ly khai dân tộc. Mọi hoạt động tôn giáo phải bảo đảm giữ vững độc lập, chủ quyền và thống nhất đất nước.",
       },
       {
+        type: "image",
+        src: "/images/thu-tuong-PMC.jpg",
+        alt: "Ảnh: Thủ tướng Phạm Minh Chính gặp mặt, biểu dương các tổ chức tôn giáo có đóng góp trong sự nghiệp xây dựng và bảo vệ Tổ quốc",
+        caption:
+          "Ảnh: Thủ tướng Phạm Minh Chính gặp mặt, biểu dương các tổ chức tôn giáo có đóng góp trong sự nghiệp xây dựng và bảo vệ Tổ quốc. Nguồn: VGP",
+      },
+      {
         type: "highlight-normal",
         content: "3. Phát triển toàn diện kinh tế - xã hội",
       },
@@ -701,6 +894,13 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content:
           "Xây dựng cơ chế phối hợp giữa các lực lượng để nắm bắt tình hình, ngăn chặn từ sớm các hoạt động phá hoại khối đoàn kết dân tộc.",
+      },
+      {
+        type: "image",
+        src: "/images/tong-bi-thu-To-Lam.jpg",
+        alt: "Ảnh: Chủ tịch nước Tô Lâm đã gặp mặt đoàn đại biểu lãnh đạo, chức sắc các tổ chức tôn giáo nhằm biểu dương, tôn vinh, khích lệ lãnh đạo chức sắc, phát huy truyền thống “phụng đạo, yêu nước”, tinh thần đại đoàn kết toàn dân tộc.",
+        caption:
+          "Ảnh: Chủ tịch nước Tô Lâm đã gặp mặt đoàn đại biểu lãnh đạo, chức sắc các tổ chức tôn giáo nhằm biểu dương, tôn vinh, khích lệ lãnh đạo chức sắc, phát huy truyền thống “phụng đạo, yêu nước”, tinh thần đại đoàn kết toàn dân tộc.",
       },
     ],
   },
