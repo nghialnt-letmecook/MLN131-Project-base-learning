@@ -192,7 +192,7 @@ export default function TimelineNavbar(props: TimelineNavbarProps) {
                 className="flex items-center space-x-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 text-red-700 hover:bg-red-50 hover:text-red-800"
               >
                 <Calendar className="w-4 h-4" />
-                <span className="text-sm font-medium">Giai đoạn khác</span>
+                <span className="text-sm font-medium">Nội dung khác</span>
                 <motion.div
                   animate={{ rotate: isTimelineOpen ? 180 : 0 }}
                   transition={{ duration: 0.3, type: "spring", stiffness: 200 }}
