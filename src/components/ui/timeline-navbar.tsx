@@ -18,37 +18,47 @@ import {
   X,
 } from "lucide-react";
 
-// Timeline data for dropdown
+// Timeline data for Dân tộc và Tôn giáo
 const timelineData = [
   {
-    year: "Tháng 8 - 9 năm 1945",
-    title: "Giành Độc lập và Thành lập Chính quyền",
-    slug: "gianh-doc-lap-thanh-lap-chinh-quyen",
+    year: "Phần I",
+    title: "Khái niệm và Đặc trưng Dân tộc",
+    slug: "khai-niem-dac-trung-dan-toc",
   },
   {
-    year: "Cuối 1945 – Cuối 1946",
-    title: "Củng cố Chính quyền và Đối phó với Thù trong, Giặc ngoài",
-    slug: "cung-co-chinh-quyen",
+    year: "Phần II",
+    title: "Hai Xu hướng Phát triển và Cương lĩnh Lênin",
+    slug: "xu-huong-phat-trien",
   },
   {
-    year: "Cuối 1946 – 1947",
-    title: "Kháng chiến Toàn quốc Bùng nổ",
-    slug: "khang-chien-bung-no",
+    year: "Phần III",
+    title: "Đặc điểm và Chính sách Dân tộc ở Việt Nam",
+    slug: "dac-diem-chinh-sach-dan-toc",
   },
   {
-    year: "1948 – 1950",
-    title: "Xây dựng Lực lượng và Mở đầu Tổng phản công",
-    slug: "xay-dung-luc-luong",
+    year: "Phần IV",
+    title: "Bản chất, Nguồn gốc và Tính chất của Tôn giáo",
+    slug: "ban-chat-nguon-goc",
   },
   {
-    year: "1951 – 1953",
-    title: "Củng cố Đường lối và Đẩy mạnh Kháng chiến",
-    slug: "cung-co-duong-loi",
+    year: "Phần V",
+    title: "Đặc điểm và Chính sách Tôn giáo ở Việt Nam",
+    slug: "dac-diem-chinh-sach-ton-giao",
   },
   {
-    year: "1954",
-    title: "Chiến thắng Quyết định và Ký kết Hiệp định",
-    slug: "chien-thang",
+    year: "Phần VI",
+    title: "Đặc điểm Quan hệ Dân tộc – Tôn giáo",
+    slug: "dac-diem-quan-he",
+  },
+  {
+    year: "Phần VII",
+    title: "Những Thách thức Hiện nay",
+    slug: "nhung-thach-thuc-hien-nay",
+  },
+  {
+    year: "Phần VIII",
+    title: "Định hướng và Giải pháp",
+    slug: "dinh-huong-giai-phap",
   },
 ];
 
@@ -98,7 +108,7 @@ export default function TimelineNavbar(props: TimelineNavbarProps) {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const timelineDropdown = document.querySelector(
-        ".timeline-navbar-dropdown"
+        ".timeline-navbar-dropdown",
       );
       if (
         isTimelineOpen &&
