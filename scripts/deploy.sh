@@ -33,14 +33,27 @@ if [ -f "$WEB_DIR/.env" ]; then
     echo -e "${GREEN}---> Loading and Injecting .env from production...${NC}"
     cp "$WEB_DIR/.env" "$SOURCE_DIR/.env"
     
-    # Export các biến trong .env ra môi trường Build
-    export $(grep -v '^#' .env | xargs)
+    # Export các biến trong .env ra môi trường Build một cách an toàn
+    set -a
+    source ./.env
+    set +a
     
     if [ -n "$PORT" ]; then
         echo -e "${GREEN}---> Detected PORT=$PORT from .env${NC}"
     fi
 else
-    echo -e "${RED}---> WARNING: .env not found in $WEB_DIR. Build might miss variables.${NC}"
+    # Fallback cho local nếu không tìm thấy $WEB_DIR/.env
+    if [ -f "$SOURCE_DIR/.env" ]; then
+        echo -e "${GREEN}---> Loading .env from current directory...${NC}"
+        set -a
+        source ./.env
+        set +a
+    fi
+fi
+
+# Kiểm tra xem biến quan trọng có tồn tại không
+if [ -z "$MLN_LEADERBOARD_API_KEY" ]; then
+    echo -e "${RED}---> WARNING: MLN_LEADERBOARD_API_KEY is still empty after loading .env!${NC}"
 fi
 
 # 2. INSTALL & BUILD

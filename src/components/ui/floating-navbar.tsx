@@ -695,7 +695,7 @@ export default function FloatingNavbar() {
                   <div className="bg-white p-4 rounded-xl border-2 border-red-200 shadow-inner">
                     <div className="w-40 h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
                       <img
-                        src="/images/AR-img.jpg"
+                        src="/images/AR-img.png"
                         alt="AR Experience - 54 Dân tộc Việt Nam"
                         className="w-full h-full object-cover"
                       />
@@ -800,7 +800,7 @@ export default function FloatingNavbar() {
                     <div className="bg-white p-4 md:p-6 rounded-xl border-2 border-red-200 shadow-inner">
                       <div className="w-64 h-64 md:w-80 md:h-80 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
                         <img
-                          src="/images/AR-img.jpg"
+                          src="/images/AR-img.png"
                           alt="AR Experience - 54 Dân tộc Việt Nam"
                           className="w-full h-full object-contain"
                         />

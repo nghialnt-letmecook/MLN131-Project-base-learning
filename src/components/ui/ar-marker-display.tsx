@@ -86,7 +86,7 @@ export default function ARMarkerDisplay() {
                 <div className="bg-white p-4 md:p-6 rounded-xl border-2 border-red-200 shadow-inner">
                   <div className="w-80 h-80 md:w-96 md:h-96 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/images/AR-img.jpg"
+                      src="/images/AR-img.png"
                       alt="AR Experience - 54 Dân tộc Việt Nam"
                       className="w-full h-full object-contain"
                     />
