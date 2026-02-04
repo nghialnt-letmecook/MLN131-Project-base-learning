@@ -83,10 +83,10 @@ export default function ARMarkerDisplay() {
 
               {/* AR Marker Image */}
               <div className="flex flex-col items-center space-y-6">
-                <div className="bg-white p-4 md:p-6 rounded-xl border-2 border-red-200 shadow-inner">
-                  <div className="w-80 h-80 md:w-96 md:h-96 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
+                <div className="bg-black p-4 md:p-6 rounded-xl border-2 border-red-200 shadow-inner">
+                  <div className="w-80 h-80 md:w-96 md:h-96 bg-black-100 rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/images/AR-img.png"
+                      src="/images/1.png"
                       alt="AR Experience - 54 Dân tộc Việt Nam"
                       className="w-full h-full object-contain"
                     />
