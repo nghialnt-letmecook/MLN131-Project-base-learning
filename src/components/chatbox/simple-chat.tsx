@@ -241,8 +241,6 @@ export default function SimpleChat({ isOpen, onClose }: SimpleChatProps) {
                     </h3>
                     <p className="text-base text-gray-600 max-w-md leading-relaxed">
                       Hãy nhập câu hỏi của bạn và AI sẽ trả lời bằng giọng nói.
-                      Bạn có thể hỏi về cuộc kháng chiến chống thực dân Pháp từ
-                      năm 1945 đến 1954.
                     </p>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-gray-500 bg-white px-4 py-2 rounded-full shadow-md">
@@ -323,10 +321,11 @@ export default function SimpleChat({ isOpen, onClose }: SimpleChatProps) {
                           ? "Vui lòng chờ AI trả lời..."
                           : "Nhập câu hỏi của bạn..."
                       }
-                      className={`w-full px-5 py-4 border-2 rounded-full focus:outline-none focus:ring-2 text-base transition-all duration-300 ${isTyping
-                        ? "border-gray-300 bg-gray-100 text-gray-500 cursor-not-allowed placeholder:text-gray-400"
-                        : "border-red-200 bg-gray-50 text-gray-900 focus:ring-[#B22222] focus:border-transparent placeholder:text-gray-400"
-                        }`}
+                      className={`w-full px-5 py-4 border-2 rounded-full focus:outline-none focus:ring-2 text-base transition-all duration-300 ${
+                        isTyping
+                          ? "border-gray-300 bg-gray-100 text-gray-500 cursor-not-allowed placeholder:text-gray-400"
+                          : "border-red-200 bg-gray-50 text-gray-900 focus:ring-[#B22222] focus:border-transparent placeholder:text-gray-400"
+                      }`}
                       disabled={isTyping}
                       autoFocus
                     />
